@@ -1,0 +1,137 @@
+Atul S, Vadhavkar
+B.Sc (Miczo)  DML
+SHRGE
+FULLY
+DIAGDOSTIC
+COMPUTERISED
+PATHOLOGICAL
+CGITRE
+LABORATORY
+SHREE HOSPITAL, Gant
+Tm, 80a @ 800pm
+Suxdy-8,0b 120nX
+Murbad Road, Kalyan (W)
+Dr. BHAVESH CHAUHAN MD
+
+S
+Shree Hospital IPD
+Time
+12.47.26
+Sample Id
+10436879
+Report Release Time
+11342:13
+COMPLETE BLOOD COUNT
+Test
+Result
+Unit
+Biological Ref. Range
+Haemoglobin
+9.10 [L]
+13.0-17.0 gmdl
+Total R,B.C. Count
+3.19 [L]
+milllcmm
+4.5-5.5 milllcmm
+Haematocrit (PCVIHCT)
+27,20 [L]
+%
+40.0-50.0 %
+Mean Corpuscular Volume (M,C.VJ)
+85.30
+fl
+83.0-95.0 fl
+Mean Corpuscular Hb (M.C.H:)
+28.50
+Pg
+27.0-32.0 Pg
+Mean Corpuscular Hb Conc (MC.H.C )
+33.50
+gldl
+31,5-34.5 g/dl
+#} Red cell Distribution Width (R.D.W:-
+16.5 [H]
+%
+11.6-14.6 %
+CV)
+Total W.B.C_ Count
+10560 [H]
+lul
+4000-10000 Iul
+DIFFERENTIALCQUNI:
+Neutrophils
+87.7 [H}
+40-70 %
+5.9
+20-40 %
+Eosinophites
+0.7
+(4
+1
+1-6 %
+5.5
+2-10 %
+Monocytes
+0.2
+0-1 %
+Basophils
+PLATELETS
+370
+Iul
+150-450 /uL
+Platelet Count
+9.4
+fL
+6.78-13.46 fL
+{#
+MPV
+(#} IMMATURE PLATELET FRACTION
+2.90
+%
+0-5 %
+ABSOLUTE CQUNTS
+9261.12 [HJ
+IuL
+1575-8800 /uL
+Neutrophils (abs)
+Lymphocytes (abs)
+623.04 [Y]
+IuL
+1125-4950 /uL
+73.92
+IuL
+0-400 IuL
+Eosinophils (abs)
+580.80
+IuL
+0-1000 IuL
+Monocytes (abs)
+21.12
+luL
+0-100 IuL
+Basophils (abs)
+Speclmen; EDTA whola blood
+Equipment: Mindray BC-700
+HB-Calarimetic,WBC-Flcwcylometry by laser RBC & PLT-Elecrical Impedance HCTMCVMCHMCKC RDWMPV-Cakulaled
+Mothod
+Blbod Peripheral Smear-RBC-WBC-PLT Morphology-Manual Methad staining (Rornanowsky) Fiald Stain
+Mictoscopy_
+"CBC dne on tully autoamted Five Part Haomatology Analyser.
+Accuracy ol platelel count depends on blood collectian and anticoagulation;
+Note
+#Thls Parameter is not under NABL scope_
+End Of Report
+NABL
+8 $
+MEL)T
+Lab5
+Atul S
+Vadhavkar
+Dr: A_
+J. Ranadive
+B. Sc, (Micro} 0 ML'T_
+MD (Pathology)
+of 4
+gm/dl
+and
+UA
