@@ -5,7 +5,14 @@ class EasyOCREngine:
     def __init__(self):
         self.reader = easyocr.Reader(OCR_LANGUAGES, gpu=USE_GPU)
 
-    def extract_text(self, image):
+    def extract_text(self, image) -> str:
         results = self.reader.readtext(image)
-        text = "\n".join([res[1] for res in results])
+        text = "\n".join([text for _, text, _ in results])
         return text
+    
+    def extract_with_boxes(self, image):
+        """
+        Retourne texte + bounding boxes + confidence
+        """
+        return self.reader.readtext(image, detail=1)
+    

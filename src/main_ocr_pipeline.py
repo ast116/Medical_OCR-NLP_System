@@ -4,6 +4,7 @@ from src.config.settings import RAW_DIR, PROCESSED_DIR, OCR_OUTPUT_DIR, RESIZE_W
 from src.preprocessing.image_loader import load_image
 from src.preprocessing.resize import resize_image
 from src.preprocessing.denoise import denoise_image
+from src.preprocessing.deskew import deskew_image
 from src.preprocessing.binarization import binarize_image
 from src.preprocessing.morphology import apply_morphology
 from src.ocr.easyocr_engine import EasyOCREngine
@@ -17,6 +18,7 @@ def process_image(image_filename):
 
     image = resize_image(image, RESIZE_WIDTH)
     image = denoise_image(image)
+    image = deskew_image(image)
     image = binarize_image(image)
     image = apply_morphology(image)
 

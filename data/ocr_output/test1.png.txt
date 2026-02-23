@@ -1,4 +1,4 @@
-PLATELET INDICES
+PLATELET INDICES -
 125000
 117000
 209000
@@ -8,71 +8,71 @@ Icumm
 Icumm
 PLATELET INDICES
 10.9 @
-13.7 IL
-12.26
+13.7 @L
+12.20
 PDW
 PLATELET INDICES
 MPV
 10.6 fL
-10.8 @L
-10.4 @
+10.8 fL
+10.4 fL
 PLATELET INDICES
 P:
-30.0 4
-32.3 4
-28.3 40
-ICR
+30.0 %
+32.3 %
+28.3 %
+LCR
 PLATELET INDICES
 PCT
 0.13 %
 0.13 %
-0.22 %
+'0.22 %
 PSSR MO
+MIld
+MIld
 Mild
-Mild
-Mild
-Anisocytosl
-Anlsocytos)
+Anlsocytosl
+Anlsocytosi
 Anlsocytosl
 s, Mild
+S, Mild
 s, Mild
-Mild
-Microcytosi
 Mlcrocytosi
-Microcytosi
-s, Mild
-s, Mild
-s, Mild
-Ilypochmm
+Mlcrocytosl
+Mlcrocytosl
+S, Mild
+S, Mild
+S, Mild
+Hypochrom
 Ilypochrom
-Hypochromi
-Ia. few
-Ia
-Few
-pencil cells
-pencll cells
+[lypochromi
+Ia, few
+Ia;
+a; Fewv
+pencIl cells
+pencll cclls
+seen_
 seen:
-setn
-PSSw MO
-Within
-Mild
-Mlld
+PssW: MO
+WIthin
+Mllcl
+Mlldl
 Normal
 leucocytosis
 Polymorpho
-Lumits,
+Llmits
 nuclcar
 Leucocytosi
+S
 with mild
-left shin;
-PERIPHFRAL SMFAR
-Mild
-Mild
-Adequate
-STUDY
-PLATELETS
-Reduction
-Reductton 
+lelt shlo:
+PERIPIIERAL SMEAR
+Mlld
+Mlld
+Adcquate
+STUDY - PLATELETS
+Reduction:
+Reductlon:
 PERIPHERAL SMEAR
 Not
 Not
@@ -80,65 +80,65 @@ Not
 STUDY
 PARASITE
 detected
-detected
-detected
+detccted
+detccted
 PERIPHERAL SMEAR
-Suggested
+Suggested =
 STUDY
 Note
 Fe
-supplement
-Close
-Follow up
-for Hb
+supplement ,_
+Closc
+'Follow up
+'for Hb:
 HEMOGLOBIN
 11.0
-9.6 gm"
+9.6 gm%_
 9.6 gm%
 RBC COUNT
-483
+4,83
 4.21
 3.98
-mil/cumm
-mil/cumm
+mll/cumi
+mll/cumm
 mil/cumm
 PACKED CELL
 35.3 %
-30.2 4
+30.2 %
 29.5 %
-VOLUME(PCV)
-RRC INDICES
+VOLUMECPCV)
+RDC INDICES
 MCV
-73.08 @.
-71.736.
+73.08 6
+71,73 6,
 74.126.
 RBC INDICES
 MCH
-22.77 pgm
-22.80 pgm
+22.77 pgn
+22.80 pgm)
 24.12 pgm
 RBC INDICES
 MCHC
-31.16 g/dL
-31,79 g/dL
+31,16 g/dl
+31.79
 32.54 g/dL
 RBC INDICES
 RDW- SD
 44.9
 43.0
-43.4
-RBC INDICES
+434
+RBC INDICES ~
 RDW-CV
 16.9
 16.4
-16,8
-RBC INDICES
-WBC
+16.8
+RBC INDICES - WBC
 6220
 12580
 14310
 Icumm
+'(cumm
 Icumm
-Icumm
-#IVF ()1 |FNiJHA
-gmg
+TRIVEDI ITTENDRA
+gm%
+g/dL
