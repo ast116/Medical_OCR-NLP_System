@@ -10,7 +10,7 @@ from src.preprocessing.morphology import apply_morphology
 from src.ocr.easyocr_engine import EasyOCREngine
 from src.utils.file_utils import save_text
 from src.ocr.table_segmentation import detect_columns, assign_boxes_to_columns
-from src.ocr.box_utils import sort_boxes_top_to_bottom_left_to_right, group_boxes_by_line, reconstruct_text_from_lines
+from src.ocr.box_utils import sort_boxes_top_to_bottom_left_to_right, group_boxes_by_line, reconstruct_text_from_lines, refine_lines
 
 
 def process_image(image_filename):
@@ -35,7 +35,9 @@ def process_image(image_filename):
 
     # Regroupement par Lignes
     lines = group_boxes_by_line(sorted_results)
+    lines = refine_lines(lines)
 
+    # Texte Reconstruit à Partir des Lignes
     reconstructed_text = reconstruct_text_from_lines(lines)
 
     """

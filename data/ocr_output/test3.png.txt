@@ -1,74 +1,47 @@
 Atul S. Vadhavkar
 B.So '(Micro) DML:T
-SHEE
-FULLY
-miAgostIC COMPUTERISED
-PATHOLOGICAL
-CentrE
-024; LABORATORY
+SHEE FULLY
+024; miAgostIC PATHOLOGICAL COMPUTERISED
+CentrE LABORATORY
 'SHREE HOSPITAL; Gan
 Tne BcOtt 80 Fm Sinxdby -8,00t 12001on Murbad Road,Kalyan (W):
 DRBHAVESH CHAUHAN MD
 Shre@Hospital IPD' Tjme: 12.47*26
-410436879 Report Release Time 11342:13'
-Sample Id "
+Sample Id " 410436879 Report Release Time 11342:13'
 COMPLETE BLOOD COUNT"
-Unit Biological Ref. Range
-Test Result
-gmldl 13.0-17.0 gmidl
-Haemoglobin 9.10 [4]
-3.19 [L] milllcmm 4.5-5.5,milllcmm
-Total R,B.C. Count
-Haematocrit (PCVIHCT) 27.20 [L] 40.0-50.0 %
-%
-fl 83.0-95.0. fl
-Mean Corpuscular Volume (MG;V:); 85.30
-Pg 27.0-32.0 Pg
-Mean Corpuscular Hb (MCiH) 28.50
+Test Result Unit Biological Ref. Range
+Haemoglobin 9.10 [4] gmldl 13.0-17.0 gmidl
+Total R,B.C. Count 3.19 [L] milllcmm 4.5-5.5,milllcmm
+Haematocrit (PCVIHCT) 27.20 [L] % 40.0-50.0 %
+Mean Corpuscular Volume (MG;V:); 85.30 fl 83.0-95.0. fl
+Mean Corpuscular Hb (MCiH) 28.50 Pg 27.0-32.0 Pg
 Mean Corpuscular Hb Conc (MC.H.C.) '33.50: gldl 31.5-34.5 gldl
-% 11.6-14.6 %
-{#} Red cell Distribution Width (RDW:- : 16,5 [H]
+{#} Red cell Distribution Width (RDW:- : 16,5 [H] % 11.6-14.6 %
 CV)
-4000-10000 /ul
-Total WAB.C. Count 10560 [H] Iul
+Total WAB.C. Count 10560 [H] Iul 4000-10000 /ul
 DWFFERENTIALCQUNT:
-87.7 [H] '% 40-70 %
-Neutrophils
-5.9 [L] : 20-40 %;
-Lymphocytes
-Eosinophils 0.7 [L] 1-6, %
-2-10%;
-Monocytes 5.5
-0.2 0-1 %
-Basophils
+Neutrophils 87.7 [H] '% 40-70 %
+Lymphocytes Eosinophils Monocytes Basophils
+5.9 [L] 0.7 [L] 5.5 0.2
+:
+20-40 %; 1-6, % 2-10%; 0-1 %
 PLATELETS
-luL 150-450 /uL
-Platelet: Count: 370
-fL 6.78-13,46 fL
-{#}MPV 9.4
-{#} IMMATURE PLATELET FRACTION - 2.90 % '0:-5 %
+Platelet: Count: 370 luL 150-450 /uL
+{#}MPV {#} IMMATURE PLATELET FRACTION - 2.90 9.4 fL 6.78-13,46 fL '0:-5 %
+%
 ABSOLUTE CQUNTS
-9261.12 [H] IuL 1575-8800 /uL
-Neutrophils (abs)
-623.04 [L] luL 1125-4950,/uL
-Lymphocytes (abs)
-73.92 luL 0-400, luL,
-Eosinophils (abs)
-580,80 luL 0-1000 /uL
-Monocytes (abs)
-21.12 luL 0-100 /uL
-Basophils (abs)
+Neutrophils (abs) 9261.12 [H] IuL 1575-8800 /uL
+Lymphocytes (abs) Eosinophils (abs) 623.04 [L] 73.92 luL luL 0-400, luL, 1125-4950,/uL
+Monocytes (abs) 580,80 luL 0-1000 /uL
+Basophils (abs) 21.12 luL 0-100 /uL
 {Speclmen: 'EDTA'whola blood
 Equlpmenit: Mirdray BC:-700
 Methed : HB-Colorimetic WBC-Fiowoyiomelryiby laser,RBC: & PLT-Elecrical Impedance HCTMCVMCHMCHC ROW, MPV-Calculated
 Blqod Peripheral Smear-RBC-WBCPLT Morphalogy-Manual Melhod slaining (Fomariowsky) Field Stalin and Microscopy:
 "CBC done.on:lully auloamted Five Part Haematology Analyser.
 Accuracy ofplateletcountdepends on blood coilection and anlicoagulalion;
-#This Parameter isnot under NABL scope:
-Note
-6ri End Of Report UI_s _
-NABL
-M(el)t $; $
+Note #This Parameter isnot under NABL scope:
+M(el)t NABL 6ri End Of Report $; $ UI_s _
 Lazs
 Atul S. Vadhavkar Dr: A J. Ranadive
 B,Sc: (Micro): DMLT; M,D: (Palhology)
