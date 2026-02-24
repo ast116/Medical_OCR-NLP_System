@@ -2,52 +2,29 @@ Atul S; Vadhavkar
 B,So: MMlcro)  D.MLT
 SHREE
 FULLY
-DIAGmOSTIC
-COMPUTERISED
-0j6
+DIAGmOSTIC COMPUTERISED
 PATHOLOGICAL
-CEMTRE
+0j6 CEMTRE
 LABORATORY
 SHREE HOSPITAL, Qunogh Baug
-Ime: 800 emito 80O Pm &Sundby-800 t 1g00non
-Murbad Roed} Kolyen (W)
+Ime: 800 emito 80O Pm &Sundby-800 t 1g00non Murbad Roed} Kolyen (W)
 Patlent[
 @r; BHAVESH CHAUHAN MD
-Ghree Hospital IPD
-[& Tlma
-11;1;04*45
-Sample Id
-8: 180437984
-Report Release Tlme;
-12*52+39:
+Ghree Hospital IPD [& Tlma 11;1;04*45
+Sample Id 8: 180437984 Report Release Tlme; 12*52+39:
 CRP REPORT
-Test:
-Result;
-Unit
-Biological Rei: Range
-C-Reactive Protein (CRP)
-287,8 [H]
-mgIL
-0-5 mg/L?
+Test: Result; Unit Biological Rei: Range
+C-Reactive Protein (CRP) 287,8 [H] mgIL 0-5 mg/L?
 Method: Immunoturbidimetric
-Adults
-%5,mg/L
+Adults %5,mg/L
 New born up to 3 weeks : < 41 mg/L
-Infants and children
-<2.8
-mg/L
+Infants and children <2.8 mg/L
 'Specimen: Serum
 Equipment : Biosystems BA2OO
-0362582858cee
-End Of Report
-0obcrt
-ctccccvctt
-NAL
-MEL)T
-3.
-Lazs
-Atul S. Vadhavkar
-Dr: A. J: Ranadive
-8, Sc. (Micro} DM:LT
-MD: (Paltiology)
+0362582858cee End Of Report 0obcrt ctccccvctt
 ULk
+NAL
+MEL)T 3.
+Lazs
+Atul S. Vadhavkar Dr: A. J: Ranadive
+8, Sc. (Micro} DM:LT MD: (Paltiology)

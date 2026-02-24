@@ -1,114 +1,70 @@
 Tcsl Roporl
-SHREE DlAgnostic
+SHREE DlAgnostic Building,
 KP Patil
-Building,
 Near Shivaji Maharaj Statue,
-@ICHINBORORY
-Mohopada, Tal. Khalapur;
-Dist. Raigad
-410 222.
+@ICHINBORORY Mohopada, Tal. Khalapur;
+Dist. Raigad 410 222.
 2AHOURSRATHOLOOYSERUICE . | @IGMALXRAY
 Mb g 93726 96384
-Patient ID
-230425003
-By Doctor
-Dr: Ramesh Mhatre
+Patient ID 230425003
 
+By Doctor Dr: Ramesh Mhatre
 Samplc No
 Client _
 complete Blood Count (CBC)
 Testh
 IBLOOD COUNT ( CBC)
 Hemoglobin
-12.1
-13.0-17.0
+12.1 gm/dl 13.0-17.0
 Photometry
 Packed Ccll Volumc (HCT)
-42.5
+42.5 % 40-50
 Calculated
-%
-40-50
 RB.C. Count
-Electrical
-4.90
-mill/cmm
-4.5-5.5
-Impedence
+4.90 mill/cmm 4.5-5.5
+Electrical Impedence
 Mean Cell Volume(MCV)
-86.7
+86.7 83-101
 Calculated
-83-101
 Mean Cell Hemoglobin( MCH)
-24.7
-27-33
+24.7 pg 27-33
 Calculaled
-pg
 Mean Cell Hb Conc(MCHC)
-28.5
+28.5 % 32 -38
 Calculated
-%
-32 -38
 Total WBC Count
-13600
+13600 cells/cumm 4000-11000
 Flow Cytometry
-cells/cumm
-4000-11000
 Differential % WBCs count
 Neutrophils
-66
-%
-50-70
-FCM/
-M
-croscopy
+66 % 50-70
+FCM/ M croscopy
 Lymphocytes
-24
-%
-20 -40
-FCM/
-MIcroscopy
-Eosinophils
-4
-%
-1-6
+24 % 20 -40
+FCM/ MIcroscopy
+Eosinophils %
+4 1-6
 FCMI Microscopy
 Monocytes
-06
-%
-0-10
-FCM/
-Mi
-croscopy
+06 % 0-10
+FCM/ Mi croscopy
 Absolutc Differential Count :
-Absolute Neutrophils Count
-8976
-cumm
-2000-7000
+Absolute Neutrophils Count 8976
+cumm 2000-7000
 Absolute Lymphocytes Count
-3264
-cumm
-1000-3000
+3264 cumm 1000-3000
 Absolute Monocytes Count
-816
-cumm
-200-1000
+816 cumm 200-1000
 Absolute Eosinophils Count; AEC
-544
-cumm
-20-500
+544 cumm 20-500
 Platelet Count
-502000
-Electrical
-Impedence
-cells/cumm
+502000 cells/cumm
+Electrical Impedence
 END OF REPORT
 Scan to Validatc
 Evh.
 Dr;Swapnil V.Sirmukaddam
-628802aog3nEgm
+628802aog3nEgm 32272MV0.EIDunoRo um: Catojogva:
 84b32.2300927n22009728
-32272MV0.EIDunoRo um: Catojogva:
-IG Epedimg: Olaboaova rouistogdobdlapuan
-@rzSd@Jmu;
+IG Epedimg: Olaboaova rouistogdobdlapuan @rzSd@Jmu;
 27
-gm/dl
