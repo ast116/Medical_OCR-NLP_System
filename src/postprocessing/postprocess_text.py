@@ -65,14 +65,53 @@ def correct_medical_terms(text: str) -> str:
 
     return text
 
+"""
+def infer_missing_unit(line: str) -> str:
+    lower = line.lower()
+
+    for analyte, units in EXPECTED_UNITS.items():
+        if analyte in lower:
+            # valeur détectée mais aucune unité connue
+            if re.search(r"\d+(\.\d+)?", line):
+                if not any(u in lower for u in units):
+                    return line + f" {units[0]}"
+
+    return line
+"""
+
+def fix_missing_decimal(line: str) -> str:
+    patterns = [
+        # RBC : 3.5 – 6.0
+        ("rbc", 10, 1),
+        # Hb : 5 – 20
+        ("haemoglobin", 30, 1),
+        # WBC : 3 000 – 30 000
+        ("wbc", 100000, 3),
+    ]
+
+    for analyte, max_val, decimals in patterns:
+        if analyte in line.lower():
+            match = re.search(r"\b(\d{2,5})\b", line)
+            if match:
+                value = int(match.group(1))
+                if value > max_val:
+                    corrected = str(value / (10 ** decimals))
+                    return line.replace(match.group(1), corrected)
+
+    return line
+
 def postprocess_medical_text(text: str) -> str:
-    """
-    Pipeline complet de post-processing médical
-    """
+    processed = []
 
-    text = basic_cleaning(text)
-    text = normalize_units(text)
-    text = correct_medical_terms(text)
+    for line in text.splitlines():
+        line = basic_cleaning(line)
+        line = normalize_units(line)
+        line = correct_medical_terms(line)
+        line = fix_missing_decimal(line)
+       # line = infer_missing_unit(line)
 
-    return text
+        if line.strip():
+            processed.append(line)
+
+    return "\n".join(processed)
 

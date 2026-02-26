@@ -11,7 +11,7 @@ Sample Id " 410436879 Report Release Time 11342:13
 COMPLETE BLOOD COUNT"
 Test Result Unit Biological Ref. Range
 Haemoglobin 9.10 [4] g/dL 13.0-17.0 g/dL
-Total R,B.C. Count 3.19 [L] million/µL 4.5-5.5,million/µL
+Total R,B.C. Count 3.19 [L] mill/cmm 4.5-5.5,mill/cmm
 Haematocrit (PCV/HCT) 27.20 [L] % 40.0-50.0 %
 Mean Corpuscular Volume (MCV:); 85.30 fL 83.0-95.0. fL
 Mean Corpuscular Hb (MCH) 28.50 pg 27.0-32.0 pg
