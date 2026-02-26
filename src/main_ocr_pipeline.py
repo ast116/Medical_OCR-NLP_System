@@ -11,6 +11,7 @@ from src.ocr.easyocr_engine import EasyOCREngine
 from src.utils.file_utils import save_text
 from src.ocr.table_segmentation import detect_columns, assign_boxes_to_columns
 from src.ocr.box_utils import sort_boxes_top_to_bottom_left_to_right, group_boxes_by_line, reconstruct_text_from_lines, refine_lines
+from src.ocr.postprocess_text import postprocess_medical_text
 
 
 def process_image(image_filename):
@@ -39,6 +40,7 @@ def process_image(image_filename):
 
     # Texte Reconstruit à Partir des Lignes
     reconstructed_text = reconstruct_text_from_lines(lines)
+    final_text = postprocess_medical_text(reconstructed_text)
 
     """
     # Segmentation des Colonnes
@@ -47,7 +49,7 @@ def process_image(image_filename):
     """
     # Sauvegarde du texte reconstruit
     output_file = os.path.join(OCR_OUTPUT_DIR, image_filename + ".txt")
-    save_text(reconstructed_text, output_file)
+    save_text(final_text, output_file)
 
     """
     # Sauvegarde sous forme text lisible

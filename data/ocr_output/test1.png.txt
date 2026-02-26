@@ -1,11 +1,11 @@
 PLATELET INDICES - 125000 117000 209000
 PLATELET COUNT Icumm Icumm Icumm
-PLATELET INDICES 10.9 @ 13.7 @L 12.20
+PLATELET INDICES 10.9 13.7 L 12.20
 PDW
 PLATELET INDICES MPV 10.6 fL 10.8 fL 10.4 fL
 PLATELET INDICES P: 30.0 % 32.3 % 28.3 %
 LCR
-PLATELET INDICES PCT 0.13 % 0.13 % '0.22 %
+PLATELET INDICES PCT 0.13 % 0.13 % 0.22 %
 PSSR MO MIld MIld Mild
 Anlsocytosl Anlsocytosi Anlsocytosl
 s, Mild S, Mild s, Mild
@@ -14,7 +14,7 @@ S, Mild S, Mild S, Mild
 Hypochrom Ilypochrom [lypochromi
 Ia, few Ia; a; Fewv
 pencIl cells pencll cclls
-seen_ seen:
+seen seen:
 PssW: MO WIthin Mllcl Mlldl
 Normal leucocytosis Polymorpho
 Llmits nuclcar
@@ -27,20 +27,20 @@ PERIPHERAL SMEAR Not Not Not
 STUDY PARASITE detected detccted detccted
 PERIPHERAL SMEAR Suggested =
 STUDY Note Fe
-supplement ,_
+supplement ,
 Closc
-'Follow up
-'for Hb:
-HEMOGLOBIN 11.0 gm% 9.6 gm%_ 9.6 gm%
-RBC COUNT 4,83 4.21 3.98
-mll/cumi mll/cumm mil/cumm
+Follow up
+for Hb:
+HEMOGLOBIN 11.0 gm % 9.6 gm % 9.6 gm %
+RBC COUNT 4.83 4.21 3.98
+mll/cumi mll/cumm million/µL
 PACKED CELL 35.3 % 30.2 % 29.5 %
 VOLUMECPCV)
-RDC INDICES MCV 73.08 6 71,73 6, 74.126.
+RDC INDICES MCV 73.08 6 71.73 6, 74.126.
 RBC INDICES MCH 22.77 pgn 22.80 pgm) 24.12 pgm
-RBC INDICES MCHC 31,16 g/dl 31.79 g/dL 32.54 g/dL
+RBC INDICES MCHC 31.16 g/dl 31.79 g/dL 32.54 g/dL
 RBC INDICES RDW- SD 44.9 43.0 434
 RBC INDICES ~ RDW-CV 16.9 16.4 16.8
 RBC INDICES - WBC 6220 12580 14310
-Icumm '(cumm Icumm
+Icumm (cumm Icumm
 TRIVEDI ITTENDRA

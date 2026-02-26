@@ -7,7 +7,7 @@ Episode IP 113160 806
 Ref: Doctor Dr, ARADIND PANDA
 Facillty AIG Hospltals, Gachlbawl
 Haematology
-Test RESULT; UNIT AIOlOGIcAL:REF JNTERVA:'
+Test RESULT; UNIT AIOlOGIcAL:REF JNTERVA:
 Sample Ko AG110329|JA Callcction Date 10/01/25 .04 53 Acx Dato 18/04/2025 J0;59 Rupar Date 10/04025 1J542
 L
 CBP (COMPLETE BLOOD PICTURE)
@@ -16,35 +16,35 @@ HEMOGLOBIN 13.7 g/dl 13.0 17.0
 Meutvt enotunxxrclSixxlrophoroynrtry/CDlarictr
 RBC 4.51 cells/cuinm 4.5 - 5.5
 AcWhod Exenonx Inxnadantx Imxancc
-PCV 42.6 % 40.0 50,0
-{axtcr Cakuataa
+PCV 42.6 % 40.0 50.0
+axtcr Cakuataa
 MCV 91.4 11 83.0 101.0
-Mexiav VCS Trrmlgy _ @xbatv _ Mtonert
+Mexiav VCS Trrmlgy xbatv Mtonert
 Infegratitm)
 MCH 30.4 Fg 27.0 32.0
-Melfxv @rruliad
-MCHC 32.2 gldl 31.5 - 34,5
+Melfxv rruliad
+MCHC 32.2 g/dL 31.5 - 34.5
 1exixgg" Cictlalcy
-RDW 12.8 % 11,6 - 14
+RDW 12.8 % 11.6 - 14
 Xfzttxd VCS Tecmn ig/ , Cakexutoz
 TOTAL WBC 8120 cells}cumm 4000 10000
 SrUxyd Exrtta} Imgerafice: Follrylancty CSS md
 Imagt RUHrtoxlry (SF (UDE}
 DIFFERENTIALCOUNI
 NEUTROPHILS 76.8 % 40 80
-Matn VCS {extaneygy  @lkutcy_ KomtyronafY
-D{{ss
-LYMPHOCYTES 13,3 T (L) %a 20 40
+Matn VCS extaneygy lkutcy KomtyronafY
+Dss
+LYMPHOCYTES 13.3 T (L) % a 20 40
 MtYtioz VCS Tcxdinatgy / Catlared Rovrytowatry
 OXSS
 EOSINOPHILS 0.3 7 (L) % 1.0 = 6.0
 Mcxfrd VCS Taxhmewy / Catucalcv / Abbtylonety
-D'SS
+DSS
 MONOCYTES 9.5 % 2.0 LO,0
 Meli VCS Tethrtgy Cakulted Foncyoncty
 Dyss
 BASOPHILS 0.1 % 0 - 2.0
-(dcthod 'VCs Tcctnabgy Caxxlalt _ loniknxe
+(dcthod VCs Tcctnabgy Caxxlalt loniknxe
 ABSOLUTE LEUCOCYTE COUNI
 Mclsfmac Roxcl Gacllilxwli, /lyuleratd Tclangan: Sc03} +91 40 42444222 infom aighospitalscom
 AIG Hlospilals (1iInit ol Asia/) Inslllulc cl Gastracnterology) CIN: U992221GI 994PTCO183S2
