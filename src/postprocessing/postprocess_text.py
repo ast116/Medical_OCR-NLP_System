@@ -36,6 +36,8 @@ def normalize_units(text: str) -> str:
     unit_map = {
         r"\bgmldl\b|\bgldl\b|\bgmidl\b": "g/dL",
         r"\bfl\b": "fL",
+        r"\bCcll\b": "Cell",
+        r"\bcclls/cumm\b": "cells/cumm",
         r"\bpg\b": "pg",
         r"\biul\b|/ul\b|lul\b": "/µL",
         r"\bmilllcmm\b|\bmil/cumm\b": "mill/cmm",
