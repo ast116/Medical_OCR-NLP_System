@@ -7,13 +7,13 @@ Test Comnlcke IHlond Count]
 BLOOI) COLNT CI}C ) (nlt
 Hlemoglobin
 " 70+ IX 11.6 (nell 13.0-17.0
-Packedl Ccll Volume (UC) Xa- 81".1 45.2 QFs 40-50)
+Packedl Cell Volume (UC) Xa- 81".1 45.2 QFs 40-50)
 RB.C Count
 :trd"nec 5.10 mII /crm 45-55
-Acn) Ccll Volumc(MCV) 88.6 01 83-101
+Acn) Cell Volumc(MCV) 88.6 01 83-101
 Men CcIl Ilcmoplaluin( MCI) 22.7 pg 27-33
-Mcan Ccll Hlb Conc(MCIIC) CA 6 0:~ 25.7 % 32 -38
-Total WBC Count "M5 ro[ 7 9200 cclls/cumm 4000-11000
+Mcan Cell Hlb Conc(MCIIC) CA 6 0:~ 25.7 % 32 -38
+Total WBC Count "M5 ro[ 7 9200 cells/cumm 4000-11000
 Difcrcntial % WBCs count
 Neuxrophlls 66 % 50-70
 FXi K:ecaeeDY
@@ -26,7 +26,7 @@ Absolutc Neutrophils Count 6072 cumitu 2000.7000
 Absolutc Lymphocytes Count 22(8} cumm 1000-3000
 Absolute Monocytes Count 552 CUtitT} 200-10u0
 Absolute Eosinophils Count, AEC 36} CUIT}II 20-500
-Platelet Count 390000 cclls/cumm
+Platelet Count 390000 cells/cumm
 E8oatA2: mpodrncc
 END OF REPORT
 Scan t Valldatc 6 xh.
