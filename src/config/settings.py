@@ -7,6 +7,7 @@ DATA_DIR = os.path.join(BASE_DIR, "data")
 RAW_DIR = os.path.join(DATA_DIR, "raw")
 PROCESSED_DIR = os.path.join(DATA_DIR, "processed")
 OCR_OUTPUT_DIR = os.path.join(DATA_DIR, "ocr_output")
+GT_DIR = os.path.join(DATA_DIR, "gt")
 
 # OCR
 OCR_LANGUAGES = ['en']  # adapter si nécessaire ['fr','en']

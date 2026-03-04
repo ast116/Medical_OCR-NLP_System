@@ -12,6 +12,7 @@ from src.utils.file_utils import save_text
 from src.ocr.table_segmentation import detect_columns, assign_boxes_to_columns
 from src.ocr.box_utils import sort_boxes_top_to_bottom_left_to_right, group_boxes_by_line, reconstruct_text_from_lines, refine_lines
 from src.postprocessing.postprocess_text import postprocess_medical_text
+from src.preprocessing.pdfconverte import pdf_to_images
 
 def process_image(image_filename):
     image_path = os.path.join(RAW_DIR, image_filename)
@@ -59,5 +60,15 @@ def process_image(image_filename):
 
 if __name__ == "__main__":
     for file in os.listdir(RAW_DIR):
-        if file.lower().endswith((".png", ".jpg", ".jpeg")):
+        full_path = os.path.join(RAW_DIR, file)
+
+        # Cas PDF
+        if file.lower().endswith(".pdf"):
+            image_paths = pdf_to_images(full_path, RAW_DIR)
+
+            for img_path in image_paths:
+                process_image(os.path.basename(img_path))
+
+        # Cas images classiques
+        elif file.lower().endswith((".png", ".jpg", ".jpeg")):
             process_image(file)
