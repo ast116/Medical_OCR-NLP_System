@@ -3,7 +3,7 @@ from .ocr_metrics import cer
 
 def extract_medical_tokens(text):
     return " ".join(
-        re.findall(r"\d+(?:[.,]\d+)?|g/dl|fL|pg|%|/µl", text, flags=re.I)
+        re.findall(r"\d+(?:[.,]\d+)?|g/dl|fL|pg|%|/µl|mg/dl|IU/L|Gm/dL|g/dl|gm/dl|mill/cmm|cells/cumm|mg/L", text, flags=re.I)
     )
 
 def medical_cer(reference, hypothesis):
