@@ -9,7 +9,6 @@ from src.preprocessing.binarization import binarize_image
 from src.preprocessing.morphology import apply_morphology
 from src.ocr.easyocr_engine import EasyOCREngine
 from src.utils.file_utils import save_text
-from src.ocr.table_segmentation import detect_columns, assign_boxes_to_columns
 from src.ocr.box_utils import sort_boxes_top_to_bottom_left_to_right, group_boxes_by_line, reconstruct_text_from_lines, refine_lines
 from src.postprocessing.postprocess_text import postprocess_medical_text
 from src.preprocessing.pdfconverte import pdf_to_images
