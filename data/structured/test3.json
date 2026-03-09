@@ -1,0 +1,171 @@
+{
+    "metadata": {
+        "patient_id": null,
+        "sample_no": null,
+        "doctor": "BHAVESH CHAUHAN MD",
+        "dates": []
+    },
+    "lab_results": [
+        {
+            "test_name": "Haemoglobin",
+            "value": 9.1,
+            "unit": "g/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 13.0,
+                "high": 17.0
+            }
+        },
+        {
+            "test_name": "Total R,B.C. Count",
+            "value": 3.19,
+            "unit": "mill/cmm",
+            "reference_range": {
+                "type": "interval",
+                "low": 4.5,
+                "high": 5.5
+            },
+            "flags": [
+                "L"
+            ]
+        },
+        {
+            "test_name": "Haematocrit (PCV/HCT)",
+            "value": 27.2,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 40.0,
+                "high": 50.0
+            },
+            "flags": [
+                "L"
+            ]
+        },
+        {
+            "test_name": "Mean Corpuscular Volume (MCV:)",
+            "value": 85.3,
+            "unit": "fL",
+            "reference_range": {
+                "type": "interval",
+                "low": 83.0,
+                "high": 95.0
+            }
+        },
+        {
+            "test_name": "Mean Corpuscular Hb (MCH)",
+            "value": 28.5,
+            "unit": "pg",
+            "reference_range": {
+                "type": "interval",
+                "low": 27.0,
+                "high": 32.0
+            }
+        },
+        {
+            "test_name": "Mean Corpuscular Hb Conc (MCHC.)",
+            "value": 33.5,
+            "unit": "g/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 31.5,
+                "high": 34.5
+            }
+        },
+        {
+            "test_name": "} Red cell Distribution Width (RDW",
+            "value": 16.5,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 11.6,
+                "high": 14.6
+            },
+            "flags": [
+                "H"
+            ]
+        },
+        {
+            "test_name": "Total WBC. Count",
+            "value": 10560.0,
+            "unit": "/µL",
+            "reference_range": {
+                "type": "interval",
+                "low": 4000.0,
+                "high": 10000.0
+            },
+            "flags": [
+                "H"
+            ]
+        },
+        {
+            "test_name": "Neutrophils",
+            "value": 87.7,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 40.0,
+                "high": 70.0
+            },
+            "flags": [
+                "H"
+            ]
+        },
+        {
+            "test_name": "Platelet: Count",
+            "value": 370.0,
+            "unit": "/µL",
+            "reference_range": {
+                "type": "interval",
+                "low": 150.0,
+                "high": 450.0
+            }
+        },
+        {
+            "test_name": "}MPV } IMMATURE PLATELET FRACTION",
+            "value": 2.9,
+            "unit": "fL",
+            "reference_range": {
+                "type": "interval",
+                "low": 6.78,
+                "high": 13.46
+            }
+        },
+        {
+            "test_name": "Neutrophils (abs)",
+            "value": 9261.12,
+            "unit": "/µL",
+            "reference_range": {
+                "type": "interval",
+                "low": 1575.0,
+                "high": 8800.0
+            },
+            "flags": [
+                "H"
+            ]
+        },
+        {
+            "test_name": "Lymphocytes (abs) Eosinophils (abs) 623.04 [L]",
+            "value": 73.92,
+            "unit": "/µL",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.0,
+                "high": 400.0
+            },
+            "flags": [
+                "L"
+            ]
+        },
+        {
+            "test_name": "Monocytes (abs)",
+            "value": 580.8,
+            "unit": "/µL",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.0,
+                "high": 1000.0
+            }
+        }
+    ]
+}

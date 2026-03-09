@@ -12,6 +12,8 @@ from src.utils.file_utils import save_text
 from src.ocr.box_utils import sort_boxes_top_to_bottom_left_to_right, group_boxes_by_line, reconstruct_text_from_lines, refine_lines
 from src.postprocessing.postprocess_text import postprocess_medical_text
 from src.preprocessing.pdfconverte import pdf_to_images
+from src.nlp.table_extractor import extract_from_text
+from src.nlp.json_exporter import save_json
 
 def process_image(image_filename):
     image_path = os.path.join(RAW_DIR, image_filename)
@@ -49,6 +51,11 @@ def process_image(image_filename):
     # Sauvegarde du texte reconstruit
     output_file = os.path.join(OCR_OUTPUT_DIR, image_filename + ".txt")
     save_text(final_text, output_file)
+
+    # Extraction de données structurées (ex: tables de résultats)
+    structured_data = extract_from_text(final_text)
+    file_name = os.path.splitext(image_filename)[0]
+    save_json(structured_data, file_name, "data/structured")
 
     """
     # Sauvegarde sous forme text lisible

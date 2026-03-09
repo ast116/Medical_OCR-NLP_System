@@ -1,0 +1,32 @@
+{
+    "metadata": {
+        "patient_id": null,
+        "sample_no": null,
+        "doctor": "Lal",
+        "dates": [
+            "6:56"
+        ]
+    },
+    "lab_results": [
+        {
+            "test_name": "Bilirubin Total",
+            "value": 10.95,
+            "unit": "mg/dL"
+        },
+        {
+            "test_name": "Bilirubin Indirect",
+            "value": 10.6,
+            "unit": "mg/dL"
+        },
+        {
+            "test_name": "C-REACTIVE PROTEIN; CRP, SERUM",
+            "value": 6.5,
+            "unit": "mg/L",
+            "reference_range": {
+                "type": "threshold",
+                "operator": "<",
+                "value": 6.0
+            }
+        }
+    ]
+}

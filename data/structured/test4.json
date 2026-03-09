@@ -1,0 +1,90 @@
+{
+    "metadata": {
+        "patient_id": null,
+        "sample_no": null,
+        "doctor": null,
+        "dates": [
+            "10/01/25",
+            "18/04/2025",
+            "20825010",
+            "42444222"
+        ]
+    },
+    "lab_results": [
+        {
+            "test_name": "HEMOGLOBIN",
+            "value": 13.7,
+            "unit": "g/dL"
+        },
+        {
+            "test_name": "RBC",
+            "value": 4.5,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 4.5,
+                "high": 5.5
+            }
+        },
+        {
+            "test_name": "PCV",
+            "value": 42.6,
+            "unit": "%"
+        },
+        {
+            "test_name": "MCV",
+            "value": 91.4,
+            "unit": null
+        },
+        {
+            "test_name": "MCH",
+            "value": 30.4,
+            "unit": null
+        },
+        {
+            "test_name": "MCHC",
+            "value": 32.2,
+            "unit": "g/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 31.5,
+                "high": 34.5
+            }
+        },
+        {
+            "test_name": "RDW",
+            "value": 12.8,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 11.6,
+                "high": 14.0
+            }
+        },
+        {
+            "test_name": "TOTAL WBC",
+            "value": 8120.0,
+            "unit": "cumm"
+        },
+        {
+            "test_name": "NEUTROPHILS",
+            "value": 76.8,
+            "unit": "%"
+        },
+        {
+            "test_name": "LYMPHOCYTES",
+            "value": 13.3,
+            "unit": "%"
+        },
+        {
+            "test_name": "EOSINOPHILS",
+            "value": 0.3,
+            "unit": "%"
+        },
+        {
+            "test_name": "MONOCYTES",
+            "value": 9.5,
+            "unit": "%"
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "metadata": {
+        "patient_id": null,
+        "sample_no": null,
+        "doctor": "cular Road",
+        "dates": []
+    },
+    "lab_results": [
+        {
+            "test_name": "HAEMOGLOBIN",
+            "value": 10.0,
+            "unit": "%"
+        },
+        {
+            "test_name": "TOTAL LEUCOCYTE COUNT",
+            "value": 17200.0,
+            "unit": null
+        },
+        {
+            "test_name": "Neutrophils",
+            "value": 88.0,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 45.0,
+                "high": 75.0
+            }
+        },
+        {
+            "test_name": "Lymphocytes",
+            "value": 8.0,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 20.0,
+                "high": 45.0
+            }
+        },
+        {
+            "test_name": "Eosinophils",
+            "value": 2.0,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 1.0,
+                "high": 6.0
+            }
+        },
+        {
+            "test_name": "Monocytes",
+            "value": 2.0,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 2.0,
+                "high": 8.0
+            }
+        },
+        {
+            "test_name": "PLATELET COUNT",
+            "value": 2.2,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 145.0,
+                "high": 4.0
+            }
+        },
+        {
+            "test_name": "TOTAL R.B.C; COUNT",
+            "value": 3.15,
+            "unit": null
+        },
+        {
+            "test_name": "MCV",
+            "value": 94.6,
+            "unit": "fL"
+        },
+        {
+            "test_name": "MCH",
+            "value": 31.75,
+            "unit": "pg",
+            "reference_range": {
+                "type": "interval",
+                "low": 27.0,
+                "high": 32.0
+            }
+        },
+        {
+            "test_name": "ALBUMIN",
+            "value": 2.6,
+            "unit": "g/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 3.2,
+                "high": 5.0
+            }
+        }
+    ]
+}

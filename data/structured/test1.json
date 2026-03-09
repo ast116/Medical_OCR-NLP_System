@@ -1,0 +1,80 @@
+{
+    "metadata": {
+        "patient_id": null,
+        "sample_no": null,
+        "doctor": null,
+        "dates": []
+    },
+    "lab_results": [
+        {
+            "test_name": "PLATELET INDICES",
+            "value": 125000.0,
+            "unit": null
+        },
+        {
+            "test_name": "PLATELET INDICES",
+            "value": 10.9,
+            "unit": null
+        },
+        {
+            "test_name": "PLATELET INDICES MPV",
+            "value": 10.6,
+            "unit": "fL"
+        },
+        {
+            "test_name": "PLATELET INDICES P",
+            "value": 30.0,
+            "unit": "%"
+        },
+        {
+            "test_name": "PLATELET INDICES PCT",
+            "value": 0.13,
+            "unit": "%"
+        },
+        {
+            "test_name": "HEMOGLOBIN",
+            "value": 11.0,
+            "unit": "%"
+        },
+        {
+            "test_name": "RBC COUNT",
+            "value": 4.8,
+            "unit": null
+        },
+        {
+            "test_name": "PACKED CELL",
+            "value": 35.3,
+            "unit": "%"
+        },
+        {
+            "test_name": "RDC INDICES MCV",
+            "value": 73.08,
+            "unit": null
+        },
+        {
+            "test_name": "RBC INDICES MCH",
+            "value": 2.2,
+            "unit": null
+        },
+        {
+            "test_name": "RBC INDICES MCHC",
+            "value": 3.1,
+            "unit": "g/dL"
+        },
+        {
+            "test_name": "RBC INDICES RDW- SD",
+            "value": 4.4,
+            "unit": null
+        },
+        {
+            "test_name": "RBC INDICES ~ RDW-CV",
+            "value": 1.6,
+            "unit": null
+        },
+        {
+            "test_name": "RBC INDICES - WBC",
+            "value": 622.0,
+            "unit": null
+        }
+    ]
+}

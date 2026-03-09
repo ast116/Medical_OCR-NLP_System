@@ -15,8 +15,14 @@ def basic_cleaning(text: str) -> str:
         # Supprimer apostrophes parasites
         line = line.replace("'", "")
 
-        # Virgule décimale → point
+        # Virgule/point-virgule décimale → point
         line = re.sub(r"(\d),(\d)", r"\1.\2", line)
+        line = re.sub(r"(\d);(\d)", r"\1.\2", line)
+
+        # Corriger O/0 fréquemment confondus dans les décimales
+        line = re.sub(r"\bO\.(\d+)", r"0.\1", line, flags=re.IGNORECASE)
+        line = re.sub(r"(\d)\.O\b", r"\1.0", line, flags=re.IGNORECASE)
+        line = re.sub(r"\b(\d+)l\b", r"\g<1>1", line)
 
         # Réduction des espaces (ESPACES SEULEMENT)
         line = re.sub(r"[ \t]+", " ", line)
@@ -34,15 +40,17 @@ def normalize_units(text: str) -> str:
     """
 
     unit_map = {
-        r"\bgmldl\b|\bgldl\b|\bgmidl\b": "g/dL",
+        r"\bgmldl\b|\bgldl\b|\bgmidl\b|\bgm\/dl\b|\bgm\/d1\b": "g/dL",
         r"\bfl\b": "fL",
         r"\bCcll\b": "Cell",
         r"\bcclls/cumm\b": "cells/cumm",
         r"\bpg\b": "pg",
-        r"\bmgldL\b" : "mg/dL",
-        r"\bmglL\b": "mg/L",
+        r"\bmgldL\b|\bmg\/d1\b|\bmg\/dl\b": "mg/dL",
+        r"\bmglL\b|\bmg\/l\b": "mg/L",
         r"\biul\b|/ul\b|lul\b": "/µL",
-        r"\bmilllcmm\b|\bmil/cumm\b": "mill/cmm",
+        r"\bmilllcmm\b|\bmil/cumm\b|\bmlil/cmm\b": "mill/cmm",
+        r"\bcells\/cumm\b|\bcells/cumn\b": "cells/cumm",
+        r"\bcumm\b": "cumm",
     }
 
     for pattern, replacement in unit_map.items():
@@ -68,20 +76,6 @@ def correct_medical_terms(text: str) -> str:
         text = re.sub(pattern, replacement, text, flags=re.IGNORECASE)
 
     return text
-
-"""
-def infer_missing_unit(line: str) -> str:
-    lower = line.lower()
-
-    for analyte, units in EXPECTED_UNITS.items():
-        if analyte in lower:
-            # valeur détectée mais aucune unité connue
-            if re.search(r"\d+(\.\d+)?", line):
-                if not any(u in lower for u in units):
-                    return line + f" {units[0]}"
-
-    return line
-"""
 
 def fix_missing_decimal(line: str) -> str:
     patterns = [
@@ -118,4 +112,3 @@ def postprocess_medical_text(text: str) -> str:
             processed.append(line)
 
     return "\n".join(processed)
-

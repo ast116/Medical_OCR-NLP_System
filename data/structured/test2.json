@@ -1,0 +1,23 @@
+{
+    "metadata": {
+        "patient_id": null,
+        "sample_no": null,
+        "doctor": "A. J",
+        "dates": []
+    },
+    "lab_results": [
+        {
+            "test_name": "C-Reactive Protein (CRP) 287.8 [H] mgIL",
+            "value": 0.0,
+            "unit": "mg/L",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.0,
+                "high": 5.0
+            },
+            "flags": [
+                "H"
+            ]
+        }
+    ]
+}
