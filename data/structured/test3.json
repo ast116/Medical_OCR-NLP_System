@@ -166,6 +166,16 @@
                 "low": 0.0,
                 "high": 1000.0
             }
+        },
+        {
+            "test_name": "Basophils (abs)",
+            "value": 21.12,
+            "unit": "/µL",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.0,
+                "high": 100.0
+            }
         }
     ]
 }

@@ -7,14 +7,14 @@
     },
     "lab_results": [
         {
+            "test_name": "Ph",
+            "value": 5015246.0,
+            "unit": null
+        },
+        {
             "test_name": "iBlood Urea",
             "value": 28.0,
-            "unit": "mg/dL",
-            "reference_range": {
-                "type": "interval",
-                "low": 20.0,
-                "high": 4.0
-            }
+            "unit": "mg/dL"
         },
         {
             "test_name": "S.Creatinine",
@@ -24,6 +24,16 @@
                 "type": "interval",
                 "low": 0.2,
                 "high": 1.0
+            }
+        },
+        {
+            "test_name": "S.Protien; T",
+            "value": 7.2,
+            "unit": "g/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 6.0,
+                "high": 8.0
             }
         },
         {
@@ -44,6 +54,56 @@
                 "type": "interval",
                 "low": 3.5,
                 "high": 5.0
+            }
+        },
+        {
+            "test_name": "S.Bilurubin(D)",
+            "value": 0.6,
+            "unit": "mg/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.2,
+                "high": 1.0
+            }
+        },
+        {
+            "test_name": "S.Bilurubin(D)",
+            "value": 0.2,
+            "unit": "mg/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.0,
+                "high": 0.3
+            }
+        },
+        {
+            "test_name": "SGOT 36U/L",
+            "value": 5.0,
+            "unit": "U/L",
+            "reference_range": {
+                "type": "interval",
+                "low": 5.0,
+                "high": 35.0
+            }
+        },
+        {
+            "test_name": "SGPT",
+            "value": 20.0,
+            "unit": "U/L",
+            "reference_range": {
+                "type": "interval",
+                "low": 5.0,
+                "high": 35.0
+            }
+        },
+        {
+            "test_name": "Alk phosphatase",
+            "value": 205.0,
+            "unit": "U/L",
+            "reference_range": {
+                "type": "interval",
+                "low": 30.0,
+                "high": 120.0
             }
         }
     ]

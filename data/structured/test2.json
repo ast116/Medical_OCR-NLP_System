@@ -18,6 +18,21 @@
             "flags": [
                 "H"
             ]
+        },
+        {
+            "test_name": "Adults %",
+            "value": 5.0,
+            "unit": "mg/L"
+        },
+        {
+            "test_name": "New born up to 3 weeks : <",
+            "value": 41.0,
+            "unit": "mg/L",
+            "reference_range": {
+                "type": "threshold",
+                "operator": "<",
+                "value": 41.0
+            }
         }
     ]
 }

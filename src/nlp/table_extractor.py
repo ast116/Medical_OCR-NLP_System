@@ -4,7 +4,11 @@ from typing import Optional
 VALUE_PATTERN = re.compile(r"(?<!\w)(?:\d+[.,;]\d+|\d+)(?!\w)")
 UNIT_PATTERN = re.compile(
     r"(?<![A-Za-z])(?:g\s*/\s*dL|gm\s*/\s*dL|mg\s*/\s*dL|mg\s*/\s*L|"
-    r"fL|pg|%|/\s*ul|/\s*µl|IU\s*/\s*L|mill\s*/\s*cmm|cells\s*/\s*cumm|cumm)(?![A-Za-z])",
+    r"gmldl|gldl|mgldl|mglL|"
+    r"mmol\s*/\s*L|mmoll|mmoli|mmolil|"
+    r"fL|pg|%|/\s*ul|/\s*µl|IU\s*/\s*L|U\s*/\s*L|IUIL|UIL|"
+    r"x10\^?3\s*/\s*µ?l|x1o\(\)\s*ul|x1o\s*ul|"
+    r"mill\s*/\s*cmm|cells\s*/\s*cumm|cumm|IHPF)(?![A-Za-z])",
     re.I,
 )
 
@@ -22,41 +26,75 @@ IGNORE_LINE_PATTERNS = [
     r"\blevels are typically\b",
     r"\bconcentralion above\b",
     r"\bbetween days\b",
+    r"\bphone\b",
+    r"\btel\b",
+    r"\bfax\b",
+    r"\bph:\b",
+    r"\bsector\b",
+    r"\bcolony\b",
+    r"\broad\b",
+    r"\bmarket\b",
+    r"\bnear\b",
+    r"\bgate\b",
 ]
 
 LAB_HINT_PATTERN = re.compile(
     r"\b("
     r"ha?emoglobin|hemoglobin|bil[il1]*rubin|hct|pcv|rbc|wbc|mcv|mch|mchc|rdw|"
     r"neutrophils?|lymphocytes?|eosinophils?|monocytes?|platelet|"
-    r"bilirubin|crp|protein|albumin|globulin|glucose|urea|creatinine|"
-    r"sodium|potassium|chloride|ast|alt|alp|count|cell|differential|aec"
+    r"bilirubin|crp|protein|albumin|globulin|glucose|urea|urc?a|creatinine|"
+    r"sodium|potassium|chloride|ast|alt|alp|sgpt|sgot|tlc|dlc|"
+    r"ratio|ph|pus|urine|"
+    r"count|cell|cells|differential|aec"
     r")\b",
     re.I,
 )
 
+UNIT_OPTIONAL_HINTS = ("ratio", "ph")
+
+MULTI_ANALYTE_HINTS = {
+    "neutrophil": "Neutrophils",
+    "lymphocyte": "Lymphocytes",
+    "monocyte": "Monocytes",
+    "eosinophil": "Eosinophils",
+    "basophil": "Basophils",
+}
+
 UNIT_CANONICAL_MAP = {
     "g/dl": "g/dL",
-    "gm/dl": "gm/dL",
-    "gmldl": "gm/dL",
-    "mmoll": "mmol/L",
-    "mmoli": "mmol/L",
-    "MMoliL": "mmol/L",
-    "uIL": "/µL",
+    "gm/dl": "g/dL",
+    "gmldl": "g/dL",
+    "gldl": "g/dL",
     "mg/dl": "mg/dL",
+    "mgldl": "mg/dL",
     "mg/l": "mg/L",
+    "mgll": "mg/L",
+    "mmol/l": "mmol/L",
     "fl": "fL",
     "pg": "pg",
     "%": "%",
     "/ul": "/µL",
     "/µl": "/µL",
     "iu/l": "IU/L",
+    "u/l": "U/L",
+    "iuil": "IU/L",
+    "uil": "U/L",
+    "x10^3/µl": "x10^3/µL",
+    "x10^3/ul": "x10^3/µL",
+    "x1o()ul": "x10^3/µL",
+    "x1oul": "x10^3/µL",
+    "mmoll": "mmol/L",
+    "mmoli": "mmol/L",
+    "mmolil": "mmol/L",
     "mill/cmm": "mill/cmm",
     "cells/cumm": "cells/cumm",
     "cumm": "cumm",
+    "ihpf": "IHPF",
 }
 
 
 def _normalize_spaces(text: str) -> str:
+    text = re.sub(r"(?<=\d)D(?=\d)", "-", text)
     return re.sub(r"\s+", " ", text).strip()
 
 
@@ -80,10 +118,14 @@ def _is_noise_line(line: str) -> bool:
 def _extract_reference_range(line: str):
     range_match = re.search(r"(\d+(?:[.,]\d+)?)\s*[-~]\s*(\d+(?:[.,]\d+)?)", line)
     if range_match:
+        low = _normalize_numeric_token(range_match.group(1))
+        high = _normalize_numeric_token(range_match.group(2))
+        if low > high:
+            return None
         return {
             "type": "interval",
-            "low": _normalize_numeric_token(range_match.group(1)),
-            "high": _normalize_numeric_token(range_match.group(2)),
+            "low": low,
+            "high": high,
         }
 
     threshold_match = re.search(r"([<>])\s*(\d+(?:[.,]\d+)?)", line)
@@ -93,6 +135,17 @@ def _extract_reference_range(line: str):
             "operator": threshold_match.group(1),
             "value": _normalize_numeric_token(threshold_match.group(2)),
         }
+
+    numbers = [match.group(0) for match in VALUE_PATTERN.finditer(line)]
+    if len(numbers) >= 3:
+        low = _normalize_numeric_token(numbers[-2])
+        high = _normalize_numeric_token(numbers[-1])
+        if low <= high:
+            return {
+                "type": "interval",
+                "low": low,
+                "high": high,
+            }
 
     return None
 
@@ -142,10 +195,54 @@ def _extract_test_name(line: str, value_start: int) -> str:
     return _normalize_spaces(test_name)
 
 
+def _extract_multi_analyte_entries(line: str):
+    if "%" not in line:
+        return []
+
+    lower = line.lower()
+    matches = []
+    for key in MULTI_ANALYTE_HINTS:
+        for match in re.finditer(rf"\b{key}s?\b", lower):
+            matches.append((match.start(), key))
+
+    if len(matches) < 2:
+        return []
+
+    matches.sort(key=lambda item: item[0])
+    # Deduplicate while preserving order
+    seen = set()
+    ordered_keys = []
+    for _, key in matches:
+        if key not in seen:
+            seen.add(key)
+            ordered_keys.append(key)
+
+    percent_pos = line.find("%")
+    before_percent = line[:percent_pos] if percent_pos != -1 else line
+    values = [match for match in VALUE_PATTERN.finditer(before_percent)]
+    values = [
+        match for match in values
+        if 0 <= _normalize_numeric_token(match.group()) <= 100
+    ]
+
+    if len(values) < len(ordered_keys):
+        return []
+
+    results = []
+    for key, value_match in zip(ordered_keys, values):
+        results.append({
+            "test_name": MULTI_ANALYTE_HINTS[key],
+            "value": _normalize_numeric_token(value_match.group()),
+            "unit": "%",
+        })
+
+    return results
+
+
 def _is_likely_lab_line(line: str, test_name: str, unit_match, values) -> bool:
     if _is_noise_line(line):
         return False
-    if not test_name or len(test_name) < 3:
+    if not test_name:
         return False
 
     # Metadata/header lines often include ID and very long integers.
@@ -154,12 +251,18 @@ def _is_likely_lab_line(line: str, test_name: str, unit_match, values) -> bool:
 
     has_lab_hint = bool(LAB_HINT_PATTERN.search(line))
 
-    # A strong positive condition: unit + medical term.
-    if unit_match is not None and has_lab_hint:
+    if len(test_name) < 3 and not has_lab_hint:
+        return False
+
+    # A strong positive condition: unit present (accept unknown analytes).
+    if unit_match is not None:
         return True
 
     # Fallback for lines where OCR misses unit, but analyte and range are present.
     if has_lab_hint and len(values) >= 2:
+        return True
+
+    if has_lab_hint and any(hint in test_name.lower() for hint in UNIT_OPTIONAL_HINTS):
         return True
 
     return False
@@ -233,7 +336,14 @@ def extract_metadata(text: str):
         r"\b(?:\d{1,2}[/-]\d{1,2}[/-]\d{2,4}|\d{8}|\d{1,2}:\d{2}(?::\d{2})?\s*(?:AM|PM)?)\b",
         re.I,
     )
-    metadata["dates"] = sorted(set(match.group(0) for match in date_pattern.finditer(joined)))
+    date_context = re.compile(r"\b(date|collected|collection|time|accepted)\b", re.I)
+    dates = set()
+    for raw_line in lines:
+        if not date_context.search(raw_line):
+            continue
+        for match in date_pattern.finditer(raw_line):
+            dates.add(match.group(0))
+    metadata["dates"] = sorted(dates)
 
     return metadata
 
@@ -244,9 +354,12 @@ def extract_from_text(text):
     lines = text.split("\n")
 
     for line in lines:
+        multi_entries = _extract_multi_analyte_entries(line)
+        if multi_entries:
+            results.extend(multi_entries)
+            continue
 
         parsed = extract_lab_line(line)
-
         if parsed:
             results.append(parsed)
 

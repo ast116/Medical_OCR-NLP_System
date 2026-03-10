@@ -5,5 +5,31 @@
         "doctor": "MRINAL VERMA No",
         "dates": []
     },
-    "lab_results": []
+    "lab_results": [
+        {
+            "test_name": "PH",
+            "value": 6.5,
+            "unit": null
+        },
+        {
+            "test_name": "PUS CELLS",
+            "value": 10.0,
+            "unit": "IHPF",
+            "reference_range": {
+                "type": "interval",
+                "low": 10.0,
+                "high": 15.0
+            }
+        },
+        {
+            "test_name": "EPITHELIAL CELLS",
+            "value": 5.0,
+            "unit": "IHPF",
+            "reference_range": {
+                "type": "interval",
+                "low": 5.0,
+                "high": 7.0
+            }
+        }
+    ]
 }

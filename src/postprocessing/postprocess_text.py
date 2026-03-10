@@ -23,6 +23,7 @@ def basic_cleaning(text: str) -> str:
         line = re.sub(r"\bO\.(\d+)", r"0.\1", line, flags=re.IGNORECASE)
         line = re.sub(r"(\d)\.O\b", r"\1.0", line, flags=re.IGNORECASE)
         line = re.sub(r"\b(\d+)l\b", r"\g<1>1", line)
+        line = re.sub(r"(?<=\d)D(?=\d)", "-", line)
 
         # Réduction des espaces (ESPACES SEULEMENT)
         line = re.sub(r"[ \t]+", " ", line)
@@ -51,6 +52,10 @@ def normalize_units(text: str) -> str:
         r"\bmilllcmm\b|\bmil/cumm\b|\bmlil/cmm\b": "mill/cmm",
         r"\bcells\/cumm\b|\bcells/cumn\b": "cells/cumm",
         r"\bcumm\b": "cumm",
+        r"\bmmoll\b|\bmmoli\b|\bmmolil\b|\bmmol\/l\b": "mmol/L",
+        r"\biuil\b": "IU/L",
+        r"\buil\b|\bu\/l\b": "U/L",
+        r"\bx\s*1o\(\)\s*ul\b|\bx\s*10\s*\^?\s*3\s*\/\s*ul\b": "x10^3/µL",
     }
 
     for pattern, replacement in unit_map.items():

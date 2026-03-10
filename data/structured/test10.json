@@ -3,15 +3,33 @@
         "patient_id": null,
         "sample_no": null,
         "doctor": null,
-        "dates": [
-            "14076449"
-        ]
+        "dates": []
     },
     "lab_results": [
         {
+            "test_name": "Blood Urca",
+            "value": 22.8,
+            "unit": "mg/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 17.0,
+                "high": 43.0
+            }
+        },
+        {
+            "test_name": "Serum Croalnlnc",
+            "value": 0.6,
+            "unit": "mg/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.5,
+                "high": 1.1
+            }
+        },
+        {
             "test_name": "Sodium(Na+)",
             "value": 135.0,
-            "unit": null,
+            "unit": "mmol/L",
             "reference_range": {
                 "type": "interval",
                 "low": 135.0,
@@ -21,7 +39,7 @@
         {
             "test_name": "Potassium(K+)",
             "value": 4.5,
-            "unit": null,
+            "unit": "mmol/L",
             "reference_range": {
                 "type": "interval",
                 "low": 3.5,
@@ -31,27 +49,67 @@
         {
             "test_name": "Chloride(CL-)",
             "value": 98.9,
-            "unit": null
+            "unit": "mmol/L",
+            "reference_range": {
+                "type": "interval",
+                "low": 96.0,
+                "high": 110.0
+            }
         },
         {
             "test_name": "Tolal Billrubin",
             "value": 0.397,
-            "unit": "mg/dL"
+            "unit": "mg/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.3,
+                "high": 1.2
+            }
+        },
+        {
+            "test_name": "Direct Blllrubin",
+            "value": 0.163,
+            "unit": "mg/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.0,
+                "high": 0.25
+            }
+        },
+        {
+            "test_name": "Indirect Bllirubin",
+            "value": 0.23,
+            "unit": "mg/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.0,
+                "high": 0.6
+            }
         },
         {
             "test_name": "SGPT(ALT)",
             "value": 61.1,
-            "unit": null
+            "unit": "U/L",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.0,
+                "high": 50.0
+            }
         },
         {
             "test_name": "SGOT(AST)",
             "value": 55.2,
-            "unit": null
+            "unit": "U/L",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.0,
+                "high": 50.0
+            }
         },
         {
             "test_name": "Alkaline Phosphale(ALP)",
             "value": 107.0,
-            "unit": null,
+            "unit": "U/L",
             "reference_range": {
                 "type": "interval",
                 "low": 20.0,
@@ -99,6 +157,16 @@
             }
         },
         {
+            "test_name": "TLC",
+            "value": 8.34,
+            "unit": "x10^3/µL",
+            "reference_range": {
+                "type": "interval",
+                "low": 4.5,
+                "high": 11.0
+            }
+        },
+        {
             "test_name": "NEUTROPHILS",
             "value": 66.0,
             "unit": "%",
@@ -119,19 +187,29 @@
             }
         },
         {
-            "test_name": "EOSiNOPHIL MONOCYTES",
+            "test_name": "Eosinophils",
             "value": 0.5,
-            "unit": "%",
-            "reference_range": {
-                "type": "interval",
-                "low": 10.0,
-                "high": 6.0
-            }
+            "unit": "%"
+        },
+        {
+            "test_name": "Monocytes",
+            "value": 11.2,
+            "unit": "%"
+        },
+        {
+            "test_name": "BASOPHILS",
+            "value": 0.1,
+            "unit": "%"
         },
         {
             "test_name": "HCT",
             "value": 34.5,
-            "unit": "%"
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 40.0,
+                "high": 50.0
+            }
         }
     ]
 }

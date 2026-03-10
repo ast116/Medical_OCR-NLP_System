@@ -4,20 +4,14 @@
         "sample_no": null,
         "doctor": "Dhenesh .R",
         "dates": [
-            "07:50 ",
-            "41412222"
+            "07:50 "
         ]
     },
     "lab_results": [
         {
             "test_name": "Bilirubin Total H",
             "value": 7.71,
-            "unit": "mg/dL",
-            "reference_range": {
-                "type": "interval",
-                "low": 2.0,
-                "high": 1.2
-            }
+            "unit": "mg/dL"
         },
         {
             "test_name": "Bilirubin Direct H",
@@ -40,6 +34,56 @@
             }
         },
         {
+            "test_name": "SGPT H",
+            "value": 755.0,
+            "unit": "U/L",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.0,
+                "high": 45.0
+            }
+        },
+        {
+            "test_name": "NADH (Without P-5-P) SGOT H",
+            "value": 161.0,
+            "unit": "U/L",
+            "reference_range": {
+                "type": "interval",
+                "low": 11.0,
+                "high": 34.0
+            }
+        },
+        {
+            "test_name": "Alkaline Phosphatase H",
+            "value": 152.0,
+            "unit": "U/L",
+            "reference_range": {
+                "type": "interval",
+                "low": 40.0,
+                "high": 150.0
+            }
+        },
+        {
+            "test_name": "Gamma Glutamyl Transferase H",
+            "value": 177.0,
+            "unit": "U/L",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.0,
+                "high": 55.0
+            }
+        },
+        {
+            "test_name": "Biuret Proteins (Total)",
+            "value": 6.9,
+            "unit": "g/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 6.4,
+                "high": 8.3
+            }
+        },
+        {
             "test_name": "Albumin",
             "value": 4.0,
             "unit": "g/dL",
@@ -57,6 +101,16 @@
                 "type": "interval",
                 "low": 2.0,
                 "high": 3.5
+            }
+        },
+        {
+            "test_name": "AG Ratio",
+            "value": 1.4,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 1.0,
+                "high": 2.0
             }
         }
     ]

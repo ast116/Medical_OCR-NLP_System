@@ -3,15 +3,28 @@
         "patient_id": null,
         "sample_no": null,
         "doctor": "Lal",
-        "dates": [
-            "6:56"
-        ]
+        "dates": []
     },
     "lab_results": [
         {
             "test_name": "Bilirubin Total",
             "value": 10.95,
-            "unit": "mg/dL"
+            "unit": "mg/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 1.5,
+                "high": 12.0
+            }
+        },
+        {
+            "test_name": "Bllltubin Dlrect",
+            "value": 0.35,
+            "unit": "mg/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.0,
+                "high": 0.4
+            }
         },
         {
             "test_name": "Bilirubin Indirect",
