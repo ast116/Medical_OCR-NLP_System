@@ -6,7 +6,7 @@ Client Patient ID By Doctor 230425003 Dr: Ramesh Mhatre Samplc No
 complete Blood Count (CBC)
 Testh
 IBLOOD COUNT ( CBC)
-Photometry Hemoglobin 12.1 gm/dl 13.0-17.0
+Photometry Hemoglobin 12.1 g/dL 13.0-17.0
 Packed Cell Volumc (HCT) Calculated 42.5 % 40-50
 Electrical RB.C. Count Impedence 4.90 mill/cmm 4.5-5.5
 Calculated Mean Cell Volume(MCV) 86.7 83-101

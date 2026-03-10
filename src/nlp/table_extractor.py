@@ -36,7 +36,12 @@ LAB_HINT_PATTERN = re.compile(
 
 UNIT_CANONICAL_MAP = {
     "g/dl": "g/dL",
-    "gm/dl": "g/dL",
+    "gm/dl": "gm/dL",
+    "gmldl": "gm/dL",
+    "mmoll": "mmol/L",
+    "mmoli": "mmol/L",
+    "MMoliL": "mmol/L",
+    "uIL": "/µL",
     "mg/dl": "mg/dL",
     "mg/l": "mg/L",
     "fl": "fL",

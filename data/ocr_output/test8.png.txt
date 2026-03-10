@@ -11,7 +11,7 @@ Test Report
 BILIRUBIN TOTAL, DIRECT AND INDIRECT, SERUM
 (Diazo)
 Bilirubin Total 10.95 mg/dL 1.50 12.00
-Bllltubin Dlrect 0.35 mg/dL O.00 - 0.40
+Bllltubin Dlrect 0.35 mg/dL 0.00 - 0.40
 Bilirubin Indirect 10.60 mg/dL 21.10
 Comment
 Unconjugated hyperblllrublnemia poses a risk for development of Kernlcterus, especially in Tow blrth weight

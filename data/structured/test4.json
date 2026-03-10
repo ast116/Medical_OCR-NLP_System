@@ -1,90 +1,50 @@
 {
     "metadata": {
         "patient_id": null,
-        "sample_no": null,
+        "sample_no": "7",
         "doctor": null,
-        "dates": [
-            "10/01/25",
-            "18/04/2025",
-            "20825010",
-            "42444222"
-        ]
+        "dates": []
     },
     "lab_results": [
         {
-            "test_name": "HEMOGLOBIN",
-            "value": 13.7,
-            "unit": "g/dL"
-        },
-        {
-            "test_name": "RBC",
-            "value": 4.5,
-            "unit": null,
+            "test_name": "iBlood Urea",
+            "value": 28.0,
+            "unit": "mg/dL",
             "reference_range": {
                 "type": "interval",
-                "low": 4.5,
+                "low": 20.0,
+                "high": 4.0
+            }
+        },
+        {
+            "test_name": "S.Creatinine",
+            "value": 0.8,
+            "unit": "mg/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.2,
+                "high": 1.0
+            }
+        },
+        {
+            "test_name": "Albumin}",
+            "value": 4.1,
+            "unit": "g/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 3.5,
                 "high": 5.5
             }
         },
         {
-            "test_name": "PCV",
-            "value": 42.6,
-            "unit": "%"
-        },
-        {
-            "test_name": "MCV",
-            "value": 91.4,
-            "unit": null
-        },
-        {
-            "test_name": "MCH",
-            "value": 30.4,
-            "unit": null
-        },
-        {
-            "test_name": "MCHC",
-            "value": 32.2,
+            "test_name": "Globulin",
+            "value": 3.1,
             "unit": "g/dL",
             "reference_range": {
                 "type": "interval",
-                "low": 31.5,
-                "high": 34.5
+                "low": 3.5,
+                "high": 5.0
             }
-        },
-        {
-            "test_name": "RDW",
-            "value": 12.8,
-            "unit": "%",
-            "reference_range": {
-                "type": "interval",
-                "low": 11.6,
-                "high": 14.0
-            }
-        },
-        {
-            "test_name": "TOTAL WBC",
-            "value": 8120.0,
-            "unit": "cumm"
-        },
-        {
-            "test_name": "NEUTROPHILS",
-            "value": 76.8,
-            "unit": "%"
-        },
-        {
-            "test_name": "LYMPHOCYTES",
-            "value": 13.3,
-            "unit": "%"
-        },
-        {
-            "test_name": "EOSINOPHILS",
-            "value": 0.3,
-            "unit": "%"
-        },
-        {
-            "test_name": "MONOCYTES",
-            "value": 9.5,
-            "unit": "%"
         }
     ]
 }

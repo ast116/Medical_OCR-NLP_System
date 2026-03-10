@@ -2,101 +2,62 @@
     "metadata": {
         "patient_id": null,
         "sample_no": null,
-        "doctor": "Swapnil V.Sirmukaddam",
+        "doctor": "Dhenesh .R",
         "dates": [
-            "10:18 AM"
+            "07:50 ",
+            "41412222"
         ]
     },
     "lab_results": [
         {
-            "test_name": "Packedl Cell Volume (UC) Xa",
-            "value": 81.0,
-            "unit": null,
+            "test_name": "Bilirubin Total H",
+            "value": 7.71,
+            "unit": "mg/dL",
             "reference_range": {
                 "type": "interval",
-                "low": 40.0,
-                "high": 50.0
+                "low": 2.0,
+                "high": 1.2
             }
         },
         {
-            "test_name": "Acn) Cell Volumc(MCV)",
-            "value": 88.6,
-            "unit": null,
+            "test_name": "Bilirubin Direct H",
+            "value": 5.99,
+            "unit": "mg/dL",
             "reference_range": {
                 "type": "interval",
-                "low": 83.0,
-                "high": 101.0
+                "low": 0.0,
+                "high": 0.5
             }
         },
         {
-            "test_name": "Mcan Cell Hlb Conc(MCIIC) CA 6",
-            "value": 0.0,
-            "unit": "%",
+            "test_name": "Bilirubin Indirect H",
+            "value": 1.72,
+            "unit": "mg/dL",
             "reference_range": {
                 "type": "interval",
-                "low": 32.0,
-                "high": 38.0
+                "low": 0.1,
+                "high": 1.0
             }
         },
         {
-            "test_name": "Total WBC Count \"M5 ro[",
-            "value": 7.0,
-            "unit": "cells/cumm",
+            "test_name": "Albumin",
+            "value": 4.0,
+            "unit": "g/dL",
             "reference_range": {
                 "type": "interval",
-                "low": 4000.0,
-                "high": 11000.0
+                "low": 3.5,
+                "high": 5.0
             }
         },
         {
-            "test_name": "Lymphocytes 0341 K:eosz\"s y",
-            "value": 24.0,
-            "unit": "%",
+            "test_name": "Globulin",
+            "value": 2.9,
+            "unit": "g/dL",
             "reference_range": {
                 "type": "interval",
-                "low": 20.0,
-                "high": 40.0
+                "low": 2.0,
+                "high": 3.5
             }
-        },
-        {
-            "test_name": "Absolutc Neutrophils Count",
-            "value": 6072.0,
-            "unit": null
-        },
-        {
-            "test_name": "Absolutc Lymphocytes Count",
-            "value": 22.0,
-            "unit": "cumm",
-            "reference_range": {
-                "type": "interval",
-                "low": 1000.0,
-                "high": 3000.0
-            }
-        },
-        {
-            "test_name": "Absolute Monocytes Count",
-            "value": 552.0,
-            "unit": null,
-            "reference_range": {
-                "type": "interval",
-                "low": 200.0,
-                "high": 10.0
-            }
-        },
-        {
-            "test_name": "Absolute Eosinophils Count, AEC",
-            "value": 36.0,
-            "unit": null,
-            "reference_range": {
-                "type": "interval",
-                "low": 20.0,
-                "high": 500.0
-            }
-        },
-        {
-            "test_name": "Platelet Count",
-            "value": 390000.0,
-            "unit": "cells/cumm"
         }
     ]
 }
