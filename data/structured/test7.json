@@ -31,5 +31,126 @@
                 "high": 7.0
             }
         }
+    ],
+    "ner_entities": [
+        {
+            "label": "PATIENT_ID",
+            "text": "21723",
+            "group_id": "metadata",
+            "source": "structured"
+        },
+        {
+            "label": "DOCTOR",
+            "text": "MRINAL VERMA No",
+            "group_id": "metadata",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "PH",
+            "group_id": "lab_1",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "6.5",
+            "normalized": 6.5,
+            "group_id": "lab_1",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "PUS CELLS",
+            "group_id": "lab_2",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "10.0",
+            "normalized": 10.0,
+            "group_id": "lab_2",
+            "source": "structured"
+        },
+        {
+            "label": "UNIT",
+            "text": "IHPF",
+            "group_id": "lab_2",
+            "source": "structured"
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "10.0-15.0",
+            "group_id": "lab_2",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "EPITHELIAL CELLS",
+            "group_id": "lab_3",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "5.0",
+            "normalized": 5.0,
+            "group_id": "lab_3",
+            "source": "structured"
+        },
+        {
+            "label": "UNIT",
+            "text": "IHPF",
+            "group_id": "lab_3",
+            "source": "structured"
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "5.0-7.0",
+            "group_id": "lab_3",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "PUS CELLS 10",
+            "group_id": "raw_19_2",
+            "source": "raw_line",
+            "line_number": 19
+        },
+        {
+            "label": "VALUE",
+            "text": "15.0",
+            "normalized": 15.0,
+            "group_id": "raw_19_2",
+            "source": "raw_line",
+            "line_number": 19
+        },
+        {
+            "label": "UNIT",
+            "text": "IHPF",
+            "group_id": "raw_19_2",
+            "source": "raw_line",
+            "line_number": 19
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "EPITHELIAL CELLS 5",
+            "group_id": "raw_23_2",
+            "source": "raw_line",
+            "line_number": 23
+        },
+        {
+            "label": "VALUE",
+            "text": "7.0",
+            "normalized": 7.0,
+            "group_id": "raw_23_2",
+            "source": "raw_line",
+            "line_number": 23
+        },
+        {
+            "label": "UNIT",
+            "text": "IHPF",
+            "group_id": "raw_23_2",
+            "source": "raw_line",
+            "line_number": 23
+        }
     ]
 }

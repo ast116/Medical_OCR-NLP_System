@@ -177,5 +177,1376 @@
                 "high": 100.0
             }
         }
+    ],
+    "ner_entities": [
+        {
+            "label": "DOCTOR",
+            "text": "BHAVESH CHAUHAN MD",
+            "group_id": "metadata",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Haemoglobin",
+            "group_id": "lab_1",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "9.1",
+            "normalized": 9.1,
+            "group_id": "lab_1",
+            "source": "structured"
+        },
+        {
+            "label": "UNIT",
+            "text": "g/dL",
+            "group_id": "lab_1",
+            "source": "structured"
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "13.0-17.0",
+            "group_id": "lab_1",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Total R,B.C. Count",
+            "group_id": "lab_2",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "3.19",
+            "normalized": 3.19,
+            "group_id": "lab_2",
+            "source": "structured"
+        },
+        {
+            "label": "UNIT",
+            "text": "mill/cmm",
+            "group_id": "lab_2",
+            "source": "structured"
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "4.5-5.5",
+            "group_id": "lab_2",
+            "source": "structured"
+        },
+        {
+            "label": "FLAG",
+            "text": "L",
+            "group_id": "lab_2",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Haematocrit (PCV/HCT)",
+            "group_id": "lab_3",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "27.2",
+            "normalized": 27.2,
+            "group_id": "lab_3",
+            "source": "structured"
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "lab_3",
+            "source": "structured"
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "40.0-50.0",
+            "group_id": "lab_3",
+            "source": "structured"
+        },
+        {
+            "label": "FLAG",
+            "text": "L",
+            "group_id": "lab_3",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Mean Corpuscular Volume (MCV:)",
+            "group_id": "lab_4",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "85.3",
+            "normalized": 85.3,
+            "group_id": "lab_4",
+            "source": "structured"
+        },
+        {
+            "label": "UNIT",
+            "text": "fL",
+            "group_id": "lab_4",
+            "source": "structured"
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "83.0-95.0",
+            "group_id": "lab_4",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Mean Corpuscular Hb (MCH)",
+            "group_id": "lab_5",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "28.5",
+            "normalized": 28.5,
+            "group_id": "lab_5",
+            "source": "structured"
+        },
+        {
+            "label": "UNIT",
+            "text": "pg",
+            "group_id": "lab_5",
+            "source": "structured"
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "27.0-32.0",
+            "group_id": "lab_5",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Mean Corpuscular Hb Conc (MCHC.)",
+            "group_id": "lab_6",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "33.5",
+            "normalized": 33.5,
+            "group_id": "lab_6",
+            "source": "structured"
+        },
+        {
+            "label": "UNIT",
+            "text": "g/dL",
+            "group_id": "lab_6",
+            "source": "structured"
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "31.5-34.5",
+            "group_id": "lab_6",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "} Red cell Distribution Width (RDW",
+            "group_id": "lab_7",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "16.5",
+            "normalized": 16.5,
+            "group_id": "lab_7",
+            "source": "structured"
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "lab_7",
+            "source": "structured"
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "11.6-14.6",
+            "group_id": "lab_7",
+            "source": "structured"
+        },
+        {
+            "label": "FLAG",
+            "text": "H",
+            "group_id": "lab_7",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Total WBC. Count",
+            "group_id": "lab_8",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "10560.0",
+            "normalized": 10560.0,
+            "group_id": "lab_8",
+            "source": "structured"
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "lab_8",
+            "source": "structured"
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "4000.0-10000.0",
+            "group_id": "lab_8",
+            "source": "structured"
+        },
+        {
+            "label": "FLAG",
+            "text": "H",
+            "group_id": "lab_8",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Neutrophils",
+            "group_id": "lab_9",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "87.7",
+            "normalized": 87.7,
+            "group_id": "lab_9",
+            "source": "structured"
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "lab_9",
+            "source": "structured"
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "40.0-70.0",
+            "group_id": "lab_9",
+            "source": "structured"
+        },
+        {
+            "label": "FLAG",
+            "text": "H",
+            "group_id": "lab_9",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Platelet: Count",
+            "group_id": "lab_10",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "370.0",
+            "normalized": 370.0,
+            "group_id": "lab_10",
+            "source": "structured"
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "lab_10",
+            "source": "structured"
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "150.0-450.0",
+            "group_id": "lab_10",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "}MPV } IMMATURE PLATELET FRACTION",
+            "group_id": "lab_11",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "2.9",
+            "normalized": 2.9,
+            "group_id": "lab_11",
+            "source": "structured"
+        },
+        {
+            "label": "UNIT",
+            "text": "fL",
+            "group_id": "lab_11",
+            "source": "structured"
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "6.78-13.46",
+            "group_id": "lab_11",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Neutrophils (abs)",
+            "group_id": "lab_12",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "9261.12",
+            "normalized": 9261.12,
+            "group_id": "lab_12",
+            "source": "structured"
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "lab_12",
+            "source": "structured"
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "1575.0-8800.0",
+            "group_id": "lab_12",
+            "source": "structured"
+        },
+        {
+            "label": "FLAG",
+            "text": "H",
+            "group_id": "lab_12",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Lymphocytes (abs) Eosinophils (abs) 623.04 [L]",
+            "group_id": "lab_13",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "73.92",
+            "normalized": 73.92,
+            "group_id": "lab_13",
+            "source": "structured"
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "lab_13",
+            "source": "structured"
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "0.0-400.0",
+            "group_id": "lab_13",
+            "source": "structured"
+        },
+        {
+            "label": "FLAG",
+            "text": "L",
+            "group_id": "lab_13",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Monocytes (abs)",
+            "group_id": "lab_14",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "580.8",
+            "normalized": 580.8,
+            "group_id": "lab_14",
+            "source": "structured"
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "lab_14",
+            "source": "structured"
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "0.0-1000.0",
+            "group_id": "lab_14",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Basophils (abs)",
+            "group_id": "lab_15",
+            "source": "structured"
+        },
+        {
+            "label": "VALUE",
+            "text": "21.12",
+            "normalized": 21.12,
+            "group_id": "lab_15",
+            "source": "structured"
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "lab_15",
+            "source": "structured"
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "0.0-100.0",
+            "group_id": "lab_15",
+            "source": "structured"
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Haemoglobin 9.10 [",
+            "group_id": "raw_13_2",
+            "source": "raw_line",
+            "line_number": 13
+        },
+        {
+            "label": "VALUE",
+            "text": "4.0",
+            "normalized": 4.0,
+            "group_id": "raw_13_2",
+            "source": "raw_line",
+            "line_number": 13
+        },
+        {
+            "label": "UNIT",
+            "text": "g/dL",
+            "group_id": "raw_13_2",
+            "source": "raw_line",
+            "line_number": 13
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Haemoglobin 9.10 [4] g/dL",
+            "group_id": "raw_13_3",
+            "source": "raw_line",
+            "line_number": 13
+        },
+        {
+            "label": "VALUE",
+            "text": "13.0",
+            "normalized": 13.0,
+            "group_id": "raw_13_3",
+            "source": "raw_line",
+            "line_number": 13
+        },
+        {
+            "label": "UNIT",
+            "text": "g/dL",
+            "group_id": "raw_13_3",
+            "source": "raw_line",
+            "line_number": 13
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Haemoglobin 9.10 [4] g/dL 13.0",
+            "group_id": "raw_13_4",
+            "source": "raw_line",
+            "line_number": 13
+        },
+        {
+            "label": "VALUE",
+            "text": "17.0",
+            "normalized": 17.0,
+            "group_id": "raw_13_4",
+            "source": "raw_line",
+            "line_number": 13
+        },
+        {
+            "label": "UNIT",
+            "text": "g/dL",
+            "group_id": "raw_13_4",
+            "source": "raw_line",
+            "line_number": 13
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Total R,B.C. Count 3.19 [L] mill/cmm",
+            "group_id": "raw_14_2",
+            "source": "raw_line",
+            "line_number": 14
+        },
+        {
+            "label": "VALUE",
+            "text": "4.5",
+            "normalized": 4.5,
+            "group_id": "raw_14_2",
+            "source": "raw_line",
+            "line_number": 14
+        },
+        {
+            "label": "UNIT",
+            "text": "mill/cmm",
+            "group_id": "raw_14_2",
+            "source": "raw_line",
+            "line_number": 14
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Total R,B.C. Count 3.19 [L] mill/cmm 4.5",
+            "group_id": "raw_14_3",
+            "source": "raw_line",
+            "line_number": 14
+        },
+        {
+            "label": "VALUE",
+            "text": "5.5",
+            "normalized": 5.5,
+            "group_id": "raw_14_3",
+            "source": "raw_line",
+            "line_number": 14
+        },
+        {
+            "label": "UNIT",
+            "text": "mill/cmm",
+            "group_id": "raw_14_3",
+            "source": "raw_line",
+            "line_number": 14
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Haematocrit (PCV/HCT) 27.20 [L] %",
+            "group_id": "raw_15_2",
+            "source": "raw_line",
+            "line_number": 15
+        },
+        {
+            "label": "VALUE",
+            "text": "40.0",
+            "normalized": 40.0,
+            "group_id": "raw_15_2",
+            "source": "raw_line",
+            "line_number": 15
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "raw_15_2",
+            "source": "raw_line",
+            "line_number": 15
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Haematocrit (PCV/HCT) 27.20 [L] % 40.0",
+            "group_id": "raw_15_3",
+            "source": "raw_line",
+            "line_number": 15
+        },
+        {
+            "label": "VALUE",
+            "text": "50.0",
+            "normalized": 50.0,
+            "group_id": "raw_15_3",
+            "source": "raw_line",
+            "line_number": 15
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "raw_15_3",
+            "source": "raw_line",
+            "line_number": 15
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Mean Corpuscular Volume (MCV:); 85.30 fL",
+            "group_id": "raw_16_2",
+            "source": "raw_line",
+            "line_number": 16
+        },
+        {
+            "label": "VALUE",
+            "text": "83.0",
+            "normalized": 83.0,
+            "group_id": "raw_16_2",
+            "source": "raw_line",
+            "line_number": 16
+        },
+        {
+            "label": "UNIT",
+            "text": "fL",
+            "group_id": "raw_16_2",
+            "source": "raw_line",
+            "line_number": 16
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Mean Corpuscular Volume (MCV:); 85.30 fL 83.0",
+            "group_id": "raw_16_3",
+            "source": "raw_line",
+            "line_number": 16
+        },
+        {
+            "label": "VALUE",
+            "text": "95.0",
+            "normalized": 95.0,
+            "group_id": "raw_16_3",
+            "source": "raw_line",
+            "line_number": 16
+        },
+        {
+            "label": "UNIT",
+            "text": "fL",
+            "group_id": "raw_16_3",
+            "source": "raw_line",
+            "line_number": 16
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Mean Corpuscular Hb (MCH) 28.50 pg",
+            "group_id": "raw_17_2",
+            "source": "raw_line",
+            "line_number": 17
+        },
+        {
+            "label": "VALUE",
+            "text": "27.0",
+            "normalized": 27.0,
+            "group_id": "raw_17_2",
+            "source": "raw_line",
+            "line_number": 17
+        },
+        {
+            "label": "UNIT",
+            "text": "pg",
+            "group_id": "raw_17_2",
+            "source": "raw_line",
+            "line_number": 17
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Mean Corpuscular Hb (MCH) 28.50 pg 27.0",
+            "group_id": "raw_17_3",
+            "source": "raw_line",
+            "line_number": 17
+        },
+        {
+            "label": "VALUE",
+            "text": "32.0",
+            "normalized": 32.0,
+            "group_id": "raw_17_3",
+            "source": "raw_line",
+            "line_number": 17
+        },
+        {
+            "label": "UNIT",
+            "text": "pg",
+            "group_id": "raw_17_3",
+            "source": "raw_line",
+            "line_number": 17
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Mean Corpuscular Hb Conc (MCHC.) 33.50: g/dL",
+            "group_id": "raw_18_2",
+            "source": "raw_line",
+            "line_number": 18
+        },
+        {
+            "label": "VALUE",
+            "text": "31.5",
+            "normalized": 31.5,
+            "group_id": "raw_18_2",
+            "source": "raw_line",
+            "line_number": 18
+        },
+        {
+            "label": "UNIT",
+            "text": "g/dL",
+            "group_id": "raw_18_2",
+            "source": "raw_line",
+            "line_number": 18
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Mean Corpuscular Hb Conc (MCHC.) 33.50: g/dL 31.5",
+            "group_id": "raw_18_3",
+            "source": "raw_line",
+            "line_number": 18
+        },
+        {
+            "label": "VALUE",
+            "text": "34.5",
+            "normalized": 34.5,
+            "group_id": "raw_18_3",
+            "source": "raw_line",
+            "line_number": 18
+        },
+        {
+            "label": "UNIT",
+            "text": "g/dL",
+            "group_id": "raw_18_3",
+            "source": "raw_line",
+            "line_number": 18
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "} Red cell Distribution Width (RDW:- : 16.5 [H] %",
+            "group_id": "raw_19_2",
+            "source": "raw_line",
+            "line_number": 19
+        },
+        {
+            "label": "VALUE",
+            "text": "11.6",
+            "normalized": 11.6,
+            "group_id": "raw_19_2",
+            "source": "raw_line",
+            "line_number": 19
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "raw_19_2",
+            "source": "raw_line",
+            "line_number": 19
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "} Red cell Distribution Width (RDW:- : 16.5 [H] % 11.6",
+            "group_id": "raw_19_3",
+            "source": "raw_line",
+            "line_number": 19
+        },
+        {
+            "label": "VALUE",
+            "text": "14.6",
+            "normalized": 14.6,
+            "group_id": "raw_19_3",
+            "source": "raw_line",
+            "line_number": 19
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "raw_19_3",
+            "source": "raw_line",
+            "line_number": 19
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Total WBC. Count 10560 [H] /µL",
+            "group_id": "raw_21_2",
+            "source": "raw_line",
+            "line_number": 21
+        },
+        {
+            "label": "VALUE",
+            "text": "4000.0",
+            "normalized": 4000.0,
+            "group_id": "raw_21_2",
+            "source": "raw_line",
+            "line_number": 21
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "raw_21_2",
+            "source": "raw_line",
+            "line_number": 21
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Total WBC. Count 10560 [H] /µL 4000",
+            "group_id": "raw_21_3",
+            "source": "raw_line",
+            "line_number": 21
+        },
+        {
+            "label": "VALUE",
+            "text": "10000.0",
+            "normalized": 10000.0,
+            "group_id": "raw_21_3",
+            "source": "raw_line",
+            "line_number": 21
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "raw_21_3",
+            "source": "raw_line",
+            "line_number": 21
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Neutrophils 87.7 [H] %",
+            "group_id": "raw_23_2",
+            "source": "raw_line",
+            "line_number": 23
+        },
+        {
+            "label": "VALUE",
+            "text": "40.0",
+            "normalized": 40.0,
+            "group_id": "raw_23_2",
+            "source": "raw_line",
+            "line_number": 23
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "raw_23_2",
+            "source": "raw_line",
+            "line_number": 23
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Neutrophils 87.7 [H] % 40",
+            "group_id": "raw_23_3",
+            "source": "raw_line",
+            "line_number": 23
+        },
+        {
+            "label": "VALUE",
+            "text": "70.0",
+            "normalized": 70.0,
+            "group_id": "raw_23_3",
+            "source": "raw_line",
+            "line_number": 23
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "raw_23_3",
+            "source": "raw_line",
+            "line_number": 23
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "20",
+            "group_id": "raw_27_1",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "VALUE",
+            "text": "40.0",
+            "normalized": 40.0,
+            "group_id": "raw_27_1",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "raw_27_1",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "20-40 %",
+            "group_id": "raw_27_2",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "VALUE",
+            "text": "1.0",
+            "normalized": 1.0,
+            "group_id": "raw_27_2",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "raw_27_2",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "20-40 % ; 1",
+            "group_id": "raw_27_3",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "VALUE",
+            "text": "6.0",
+            "normalized": 6.0,
+            "group_id": "raw_27_3",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "raw_27_3",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "20-40 % ; 1-6, %",
+            "group_id": "raw_27_4",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "VALUE",
+            "text": "2.0",
+            "normalized": 2.0,
+            "group_id": "raw_27_4",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "raw_27_4",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "20-40 % ; 1-6, % 2",
+            "group_id": "raw_27_5",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "VALUE",
+            "text": "10.0",
+            "normalized": 10.0,
+            "group_id": "raw_27_5",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "raw_27_5",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "20-40 % ; 1-6, % 2-10 %",
+            "group_id": "raw_27_6",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "VALUE",
+            "text": "0.0",
+            "normalized": 0.0,
+            "group_id": "raw_27_6",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "raw_27_6",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "20-40 % ; 1-6, % 2-10 % ; 0",
+            "group_id": "raw_27_7",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "VALUE",
+            "text": "1.0",
+            "normalized": 1.0,
+            "group_id": "raw_27_7",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "raw_27_7",
+            "source": "raw_line",
+            "line_number": 27
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Platelet: Count: 370 /µL",
+            "group_id": "raw_29_2",
+            "source": "raw_line",
+            "line_number": 29
+        },
+        {
+            "label": "VALUE",
+            "text": "150.0",
+            "normalized": 150.0,
+            "group_id": "raw_29_2",
+            "source": "raw_line",
+            "line_number": 29
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "raw_29_2",
+            "source": "raw_line",
+            "line_number": 29
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Platelet: Count: 370 /µL 150",
+            "group_id": "raw_29_3",
+            "source": "raw_line",
+            "line_number": 29
+        },
+        {
+            "label": "VALUE",
+            "text": "450.0",
+            "normalized": 450.0,
+            "group_id": "raw_29_3",
+            "source": "raw_line",
+            "line_number": 29
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "raw_29_3",
+            "source": "raw_line",
+            "line_number": 29
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "}MPV } IMMATURE PLATELET FRACTION - 2.90",
+            "group_id": "raw_30_2",
+            "source": "raw_line",
+            "line_number": 30
+        },
+        {
+            "label": "VALUE",
+            "text": "9.4",
+            "normalized": 9.4,
+            "group_id": "raw_30_2",
+            "source": "raw_line",
+            "line_number": 30
+        },
+        {
+            "label": "UNIT",
+            "text": "fL",
+            "group_id": "raw_30_2",
+            "source": "raw_line",
+            "line_number": 30
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "}MPV } IMMATURE PLATELET FRACTION - 2.90 9.4 fL",
+            "group_id": "raw_30_3",
+            "source": "raw_line",
+            "line_number": 30
+        },
+        {
+            "label": "VALUE",
+            "text": "6.78",
+            "normalized": 6.78,
+            "group_id": "raw_30_3",
+            "source": "raw_line",
+            "line_number": 30
+        },
+        {
+            "label": "UNIT",
+            "text": "fL",
+            "group_id": "raw_30_3",
+            "source": "raw_line",
+            "line_number": 30
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "}MPV } IMMATURE PLATELET FRACTION - 2.90 9.4 fL 6.78",
+            "group_id": "raw_30_4",
+            "source": "raw_line",
+            "line_number": 30
+        },
+        {
+            "label": "VALUE",
+            "text": "13.46",
+            "normalized": 13.46,
+            "group_id": "raw_30_4",
+            "source": "raw_line",
+            "line_number": 30
+        },
+        {
+            "label": "UNIT",
+            "text": "fL",
+            "group_id": "raw_30_4",
+            "source": "raw_line",
+            "line_number": 30
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "}MPV } IMMATURE PLATELET FRACTION - 2.90 9.4 fL 6.78-13.46 fL",
+            "group_id": "raw_30_5",
+            "source": "raw_line",
+            "line_number": 30
+        },
+        {
+            "label": "VALUE",
+            "text": "0.0",
+            "normalized": 0.0,
+            "group_id": "raw_30_5",
+            "source": "raw_line",
+            "line_number": 30
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "raw_30_5",
+            "source": "raw_line",
+            "line_number": 30
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "}MPV } IMMATURE PLATELET FRACTION - 2.90 9.4 fL 6.78-13.46 fL 0",
+            "group_id": "raw_30_6",
+            "source": "raw_line",
+            "line_number": 30
+        },
+        {
+            "label": "VALUE",
+            "text": "5.0",
+            "normalized": 5.0,
+            "group_id": "raw_30_6",
+            "source": "raw_line",
+            "line_number": 30
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "raw_30_6",
+            "source": "raw_line",
+            "line_number": 30
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Neutrophils (abs) 9261.12 [H] /µL",
+            "group_id": "raw_33_2",
+            "source": "raw_line",
+            "line_number": 33
+        },
+        {
+            "label": "VALUE",
+            "text": "1575.0",
+            "normalized": 1575.0,
+            "group_id": "raw_33_2",
+            "source": "raw_line",
+            "line_number": 33
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "raw_33_2",
+            "source": "raw_line",
+            "line_number": 33
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Neutrophils (abs) 9261.12 [H] /µL 1575",
+            "group_id": "raw_33_3",
+            "source": "raw_line",
+            "line_number": 33
+        },
+        {
+            "label": "VALUE",
+            "text": "8800.0",
+            "normalized": 8800.0,
+            "group_id": "raw_33_3",
+            "source": "raw_line",
+            "line_number": 33
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "raw_33_3",
+            "source": "raw_line",
+            "line_number": 33
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Lymphocytes (abs) Eosinophils (abs) 623.04 [L] 73.92 /µL /µL",
+            "group_id": "raw_34_2",
+            "source": "raw_line",
+            "line_number": 34
+        },
+        {
+            "label": "VALUE",
+            "text": "0.0",
+            "normalized": 0.0,
+            "group_id": "raw_34_2",
+            "source": "raw_line",
+            "line_number": 34
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "raw_34_2",
+            "source": "raw_line",
+            "line_number": 34
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Lymphocytes (abs) Eosinophils (abs) 623.04 [L] 73.92 /µL /µL 0",
+            "group_id": "raw_34_3",
+            "source": "raw_line",
+            "line_number": 34
+        },
+        {
+            "label": "VALUE",
+            "text": "400.0",
+            "normalized": 400.0,
+            "group_id": "raw_34_3",
+            "source": "raw_line",
+            "line_number": 34
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "raw_34_3",
+            "source": "raw_line",
+            "line_number": 34
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Lymphocytes (abs) Eosinophils (abs) 623.04 [L] 73.92 /µL /µL 0-400, /µL",
+            "group_id": "raw_34_4",
+            "source": "raw_line",
+            "line_number": 34
+        },
+        {
+            "label": "VALUE",
+            "text": "1125.0",
+            "normalized": 1125.0,
+            "group_id": "raw_34_4",
+            "source": "raw_line",
+            "line_number": 34
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "raw_34_4",
+            "source": "raw_line",
+            "line_number": 34
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Lymphocytes (abs) Eosinophils (abs) 623.04 [L] 73.92 /µL /µL 0-400, /µL, 1125",
+            "group_id": "raw_34_5",
+            "source": "raw_line",
+            "line_number": 34
+        },
+        {
+            "label": "VALUE",
+            "text": "4950.0",
+            "normalized": 4950.0,
+            "group_id": "raw_34_5",
+            "source": "raw_line",
+            "line_number": 34
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "raw_34_5",
+            "source": "raw_line",
+            "line_number": 34
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Monocytes (abs) 580.80 /µL",
+            "group_id": "raw_35_2",
+            "source": "raw_line",
+            "line_number": 35
+        },
+        {
+            "label": "VALUE",
+            "text": "0.0",
+            "normalized": 0.0,
+            "group_id": "raw_35_2",
+            "source": "raw_line",
+            "line_number": 35
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "raw_35_2",
+            "source": "raw_line",
+            "line_number": 35
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Monocytes (abs) 580.80 /µL 0",
+            "group_id": "raw_35_3",
+            "source": "raw_line",
+            "line_number": 35
+        },
+        {
+            "label": "VALUE",
+            "text": "1000.0",
+            "normalized": 1000.0,
+            "group_id": "raw_35_3",
+            "source": "raw_line",
+            "line_number": 35
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "raw_35_3",
+            "source": "raw_line",
+            "line_number": 35
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Basophils (abs) 21.12 /µL",
+            "group_id": "raw_36_2",
+            "source": "raw_line",
+            "line_number": 36
+        },
+        {
+            "label": "VALUE",
+            "text": "0.0",
+            "normalized": 0.0,
+            "group_id": "raw_36_2",
+            "source": "raw_line",
+            "line_number": 36
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "raw_36_2",
+            "source": "raw_line",
+            "line_number": 36
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Basophils (abs) 21.12 /µL 0",
+            "group_id": "raw_36_3",
+            "source": "raw_line",
+            "line_number": 36
+        },
+        {
+            "label": "VALUE",
+            "text": "100.0",
+            "normalized": 100.0,
+            "group_id": "raw_36_3",
+            "source": "raw_line",
+            "line_number": 36
+        },
+        {
+            "label": "UNIT",
+            "text": "/µL",
+            "group_id": "raw_36_3",
+            "source": "raw_line",
+            "line_number": 36
+        }
     ]
 }

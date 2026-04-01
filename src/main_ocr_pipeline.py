@@ -13,6 +13,7 @@ from src.ocr.box_utils import sort_boxes_top_to_bottom_left_to_right, group_boxe
 from src.postprocessing.postprocess_text import postprocess_medical_text
 from src.preprocessing.pdfconverte import pdf_to_images
 from src.nlp.table_extractor import extract_from_text
+from src.nlp.ner_extractor import extract_ner_entities
 from src.nlp.json_exporter import save_json
 
 def process_image(image_filename):
@@ -54,6 +55,7 @@ def process_image(image_filename):
 
     # Extraction de données structurées (ex: tables de résultats)
     structured_data = extract_from_text(final_text)
+    structured_data["ner_entities"] = extract_ner_entities(final_text, structured_data)
     file_name = os.path.splitext(image_filename)[0]
     save_json(structured_data, file_name, "data/structured")
 
