@@ -1,0 +1,63 @@
+{
+    "source_file": "test1.png.txt",
+    "ner_entities": [
+        {
+            "label": "TEST_NAME",
+            "text": "(Hexokinase) Blood Glucose (Random)-Plasma",
+            "group_id": "lab_1",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "86.0",
+            "normalized": 86.0,
+            "group_id": "lab_1",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "mg/dL",
+            "group_id": "lab_1",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "70.0-140.0",
+            "group_id": "lab_1",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "(Kinetc Alkallne Plcrate) Creatinine Serum",
+            "group_id": "lab_2",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "0.0",
+            "normalized": 0.0,
+            "group_id": "lab_2",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "mg/dL",
+            "group_id": "lab_2",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "0.9-1.3",
+            "group_id": "lab_2",
+            "source": "structured",
+            "confidence": 0.8
+        }
+    ]
+}

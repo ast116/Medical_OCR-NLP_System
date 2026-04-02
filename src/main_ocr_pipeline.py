@@ -55,9 +55,14 @@ def process_image(image_filename):
 
     # Extraction de données structurées (ex: tables de résultats)
     structured_data = extract_from_text(final_text)
-    structured_data["ner_entities"] = extract_ner_entities(final_text, structured_data)
+    ner_entities = extract_ner_entities(final_text, structured_data)
+    ner_output = {
+        "source_file": image_filename,
+        "ner_entities": ner_entities,
+    }
     file_name = os.path.splitext(image_filename)[0]
     save_json(structured_data, file_name, "data/structured")
+    save_json(ner_output, file_name, "data/ner_output")
 
     """
     # Sauvegarde sous forme text lisible

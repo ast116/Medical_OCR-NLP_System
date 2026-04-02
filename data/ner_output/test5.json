@@ -1,0 +1,469 @@
+{
+    "source_file": "test5.png.txt",
+    "ner_entities": [
+        {
+            "label": "PATIENT_ID",
+            "text": "230425003",
+            "group_id": "metadata",
+            "source": "structured",
+            "confidence": 0.85
+        },
+        {
+            "label": "DOCTOR",
+            "text": "Ramesh Mhatre",
+            "group_id": "metadata",
+            "source": "structured",
+            "confidence": 0.85
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Photometry Hemoglobin",
+            "group_id": "lab_1",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "12.1",
+            "normalized": 12.1,
+            "group_id": "lab_1",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "g/dL",
+            "group_id": "lab_1",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "13.0-17.0",
+            "group_id": "lab_1",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Packed Cell Volumc (HCT) Calculated",
+            "group_id": "lab_2",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "42.5",
+            "normalized": 42.5,
+            "group_id": "lab_2",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "lab_2",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "40.0-50.0",
+            "group_id": "lab_2",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Electrical RB.C. Count Impedence",
+            "group_id": "lab_3",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "4.9",
+            "normalized": 4.9,
+            "group_id": "lab_3",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "mill/cmm",
+            "group_id": "lab_3",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "4.5-5.5",
+            "group_id": "lab_3",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Calculated Mean Cell Volume(MCV)",
+            "group_id": "lab_4",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "86.7",
+            "normalized": 86.7,
+            "group_id": "lab_4",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "83.0-101.0",
+            "group_id": "lab_4",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Mean Cell Hemoglobin( MCH) Calculaled",
+            "group_id": "lab_5",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "24.7",
+            "normalized": 24.7,
+            "group_id": "lab_5",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "pg",
+            "group_id": "lab_5",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "27.0-33.0",
+            "group_id": "lab_5",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Calculated Mean Cell Hb Conc(MCHC)",
+            "group_id": "lab_6",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "28.5",
+            "normalized": 28.5,
+            "group_id": "lab_6",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "lab_6",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "32.0-38.0",
+            "group_id": "lab_6",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Flow Cytometry Total WBC Count",
+            "group_id": "lab_7",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "13600.0",
+            "normalized": 13600.0,
+            "group_id": "lab_7",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "cells/cumm",
+            "group_id": "lab_7",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "4000.0-11000.0",
+            "group_id": "lab_7",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Neutrophils FCM/ M croscopy",
+            "group_id": "lab_8",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "66.0",
+            "normalized": 66.0,
+            "group_id": "lab_8",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "lab_8",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "50.0-70.0",
+            "group_id": "lab_8",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Lymphocytes FCM/ MIcroscopy",
+            "group_id": "lab_9",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "24.0",
+            "normalized": 24.0,
+            "group_id": "lab_9",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "lab_9",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "20.0-40.0",
+            "group_id": "lab_9",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Eosinophils",
+            "group_id": "lab_10",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "4.0",
+            "normalized": 4.0,
+            "group_id": "lab_10",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "lab_10",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "1.0-6.0",
+            "group_id": "lab_10",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Monocytes FCM/ Mi croscopy",
+            "group_id": "lab_11",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "6.0",
+            "normalized": 6.0,
+            "group_id": "lab_11",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "%",
+            "group_id": "lab_11",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "0.0-10.0",
+            "group_id": "lab_11",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Absolute Neutrophils Count",
+            "group_id": "lab_12",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "8976.0",
+            "normalized": 8976.0,
+            "group_id": "lab_12",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "cumm",
+            "group_id": "lab_12",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "2000.0-7000.0",
+            "group_id": "lab_12",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Absolute Lymphocytes Count",
+            "group_id": "lab_13",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "3264.0",
+            "normalized": 3264.0,
+            "group_id": "lab_13",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "cumm",
+            "group_id": "lab_13",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "1000.0-3000.0",
+            "group_id": "lab_13",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Absolute Monocytes Count",
+            "group_id": "lab_14",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "816.0",
+            "normalized": 816.0,
+            "group_id": "lab_14",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "cumm",
+            "group_id": "lab_14",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "200.0-1000.0",
+            "group_id": "lab_14",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Absolute Eosinophils Count; AEC",
+            "group_id": "lab_15",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "544.0",
+            "normalized": 544.0,
+            "group_id": "lab_15",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "cumm",
+            "group_id": "lab_15",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "20.0-500.0",
+            "group_id": "lab_15",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Platelet Count Electrical Impedence",
+            "group_id": "lab_16",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "502000.0",
+            "normalized": 502000.0,
+            "group_id": "lab_16",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "cells/cumm",
+            "group_id": "lab_16",
+            "source": "structured",
+            "confidence": 0.9
+        }
+    ]
+}

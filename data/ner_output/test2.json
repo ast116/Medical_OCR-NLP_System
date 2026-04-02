@@ -1,0 +1,124 @@
+{
+    "source_file": "test2.png.txt",
+    "ner_entities": [
+        {
+            "label": "DOCTOR",
+            "text": "A. J",
+            "group_id": "metadata",
+            "source": "structured",
+            "confidence": 0.85
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "C-Reactive Protein (CRP) 287.8 [H] mgIL",
+            "group_id": "lab_1",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "0.0",
+            "normalized": 0.0,
+            "group_id": "lab_1",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "mg/L",
+            "group_id": "lab_1",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "0.0-5.0",
+            "group_id": "lab_1",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "FLAG",
+            "text": "H",
+            "group_id": "lab_1",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "Adults %",
+            "group_id": "lab_2",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "5.0",
+            "normalized": 5.0,
+            "group_id": "lab_2",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "mg/L",
+            "group_id": "lab_2",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "New born up to 3 weeks : <",
+            "group_id": "lab_3",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "VALUE",
+            "text": "41.0",
+            "normalized": 41.0,
+            "group_id": "lab_3",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "UNIT",
+            "text": "mg/L",
+            "group_id": "lab_3",
+            "source": "structured",
+            "confidence": 0.9
+        },
+        {
+            "label": "REFERENCE_RANGE",
+            "text": "<41.0",
+            "group_id": "lab_3",
+            "source": "structured",
+            "confidence": 0.8
+        },
+        {
+            "label": "TEST_NAME",
+            "text": "C-Reactive Protein (CRP) 287.8 [H] mgIL 0",
+            "group_id": "raw_14_2",
+            "source": "raw_line",
+            "line_number": 14,
+            "confidence": 0.6
+        },
+        {
+            "label": "VALUE",
+            "text": "5.0",
+            "normalized": 5.0,
+            "group_id": "raw_14_2",
+            "source": "raw_line",
+            "line_number": 14,
+            "confidence": 0.6
+        },
+        {
+            "label": "UNIT",
+            "text": "mg/L",
+            "group_id": "raw_14_2",
+            "source": "raw_line",
+            "line_number": 14,
+            "confidence": 0.6
+        }
+    ]
+}

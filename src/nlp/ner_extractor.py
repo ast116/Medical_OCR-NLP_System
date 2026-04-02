@@ -10,6 +10,18 @@ from .table_extractor import (
 
 _NOISE_RE = re.compile("|".join(IGNORE_LINE_PATTERNS), re.IGNORECASE)
 
+_METADATA_LABELS = {"PATIENT_ID", "SAMPLE_NO", "DOCTOR", "DATE_TIME"}
+
+
+def _default_confidence(label: str, source: str) -> float:
+    if source == "raw_line":
+        return 0.6
+    if label in _METADATA_LABELS:
+        return 0.85
+    if label == "REFERENCE_RANGE":
+        return 0.8
+    return 0.9
+
 
 def _normalize_number(token: str) -> float:
     token = token.replace(",", ".").replace(";", ".")
@@ -69,6 +81,8 @@ def _format_reference_range(reference: Dict[str, Any]) -> str:
 
 
 def _add_entity(entities: List[Dict[str, Any]], seen: set, entity: Dict[str, Any]) -> None:
+    if "confidence" not in entity:
+        entity["confidence"] = _default_confidence(entity.get("label", ""), entity.get("source", ""))
     key = (
         entity.get("label"),
         entity.get("text"),
