@@ -13,12 +13,12 @@ Bilirubin Direct H 5.99 mg/dL 0 - 0.5
 DIAZO REACTION
 Bilirubin Indirect H 1.72 mg/dL 0.1 - 1
 Calculated
-SGPT H 755 UIL 0 - 45
+SGPT H 755 U/L 0 - 45
 NADH (Without P-5-P)
-NADH (Without P-5-P) SGOT H 161 UIL 11 -34
-Alkaline Phosphatase H 152 UIL 40-150
+NADH (Without P-5-P) SGOT H 161 U/L 11 -34
+Alkaline Phosphatase H 152 U/L 40-150
 Para-Nitrophenyl Phosphate
-Gamma Glutamyl Transferase H 177 UIL 0 - 55
+Gamma Glutamyl Transferase H 177 U/L 0 - 55
 L-Gamma-glutamyl-3-carboxy-4-nitroanilide
 Substrate
 Biuret Proteins (Total) 6.9 g/dL 6.4 - 8.3

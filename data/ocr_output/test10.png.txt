@@ -11,17 +11,17 @@ INVESTIGATIONI IRESULT; (UNIT?: ABIOLOGICALIREFERENCEIRANGE
 RFT |i-
 Blood Urca 22.8 mg/dL 17--43
 Serum Croalnlnc 0.60 mg/dL F0.5-1.1
-Sodium(Na+) 135 mmoll 135 - 155
-Potassium(K+) 4.50 mmoli 3.5 - 5.5
-Chloride(CL-) 98.9 MMoliL 96,; 110
+Sodium(Na+) 135 mmol/L 135 - 155
+Potassium(K+) 4.50 mmol/L 3.5 - 5.5
+Chloride(CL-) 98.9 mmol/L 96,; 110
 Lfti
 SERUM BILIRUBIN
 Tolal Billrubin 0.397 mg/dL 0.3 . 1.2
 Direct Blllrubin 0.163 mg/dL 0 - 0.25
 Indirect Bllirubin 0.23 mg/dL 0 - 0.6
-SGPT(ALT) , 61.1 H uIL 0 50
-SGOT(AST) 55.2 H uIL 0 50
-Alkaline Phosphale(ALP) 107 uIL 20 - 140
+SGPT(ALT) , 61.1 H U/L 0 50
+SGOT(AST) 55.2 H U/L 0 50
+Alkaline Phosphale(ALP) 107 U/L 20 - 140
 Tolal Protein 8.02 g/dL 6.6-8.3
 Albumin 4.17 g/dL 3.5 - 5.2
 Globulin 3.85 H g/dL 2 -3.5
@@ -31,13 +31,13 @@ INESTIGATIONi RESULTF (unit: BIOLOGIcALIREFERENCERANGE:
 44
 CBC (Haemogram)
 Hb(Haemoglobin) 11.8 g/dL F 12 - 151
-TLC 8.34 x1o()uL 4.5 - 11
+TLC 8.34 x10^3/µL 4.5 - 11
 DLC
 NEUTROPHILS 66.0 % 40 - 80
 LYMPHOCYTES 22.,2 % 20 - 40
 EOSiNOPHIL MONOCYTES 0.5 11.2 4 % 2 -.10 -6
 BASOPHILS 0.1 %
-HCT 34.5 % 40D50
+HCT 34.5 % 40-50
 CINNo U8sI1OQL199ZPLCQ88RQ9
 Sarvodava Hospllal; Seclor 19, Gopl Colony: Farldabad
 Tely Faxi 14076449

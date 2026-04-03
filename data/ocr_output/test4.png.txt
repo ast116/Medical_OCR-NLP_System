@@ -17,8 +17,8 @@ Albumin} 4.1 g/dL 3.5-5.5gmldl
 Globulin 3.1 g/dL 3.5-5.Ogmldl
 S.Bilurubin(D) 0.6 mg/dL 0.2-1.Omgldl
 S.Bilurubin(D) 0.2 mg/dL 0.0-0.3mgldl
-SGOT 36U/L 05-35 UIL
-SGPT 20 UIL 05-35 UIL
-Alk phosphatase 205 UIL 30-120 UIL
+SGOT 36U/L 05-35 U/L
+SGPT 20 U/L 05-35 U/L
+Alk phosphatase 205 U/L 30-120 U/L
 n*rtrktartt END OF REPORT rrrrrctr
 siGNAJARE
