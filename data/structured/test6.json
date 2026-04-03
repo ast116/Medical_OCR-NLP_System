@@ -135,5 +135,6 @@
             "status": "normal",
             "interpretation": "Within normal range."
         }
-    ]
+    ],
+    "summary": "Identify the lab abnormalities."
 }

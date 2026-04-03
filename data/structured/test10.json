@@ -255,5 +255,6 @@
             "status": "low",
             "interpretation": "The HCT value is 34.5 %."
         }
-    ]
+    ],
+    "summary": "Identify the lab abnormalities."
 }

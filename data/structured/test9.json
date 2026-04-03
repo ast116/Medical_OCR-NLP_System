@@ -114,5 +114,6 @@
             "status": "normal",
             "interpretation": "Within normal range."
         }
-    ]
+    ],
+    "summary": "All laboratory values are within normal limits."
 }

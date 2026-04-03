@@ -193,5 +193,6 @@
             "status": "unknown",
             "interpretation": "The platelet count is 502000.0 cells/cumm."
         }
-    ]
+    ],
+    "summary": "Acute hemoglobin abnormalities."
 }
