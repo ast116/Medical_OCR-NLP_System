@@ -14,7 +14,9 @@
                 "type": "interval",
                 "low": 0.0,
                 "high": 1.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "CONJUGATED (D. Bilirubin)",
@@ -24,7 +26,9 @@
                 "type": "interval",
                 "low": 0.0,
                 "high": 0.25
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "UNCONJUGATED (I.D.Bilirubin)",
@@ -34,7 +38,9 @@
                 "type": "interval",
                 "low": 0.0,
                 "high": 0.7
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "TOTAL PROTEIN",
@@ -44,7 +50,9 @@
                 "type": "interval",
                 "low": 6.6,
                 "high": 8.3
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "ALBUMIN",
@@ -54,7 +62,9 @@
                 "type": "interval",
                 "low": 3.4,
                 "high": 4.8
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "GLOBULIN",
@@ -64,7 +74,9 @@
                 "type": "interval",
                 "low": 2.3,
                 "high": 3.5
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "SGOT",
@@ -74,7 +86,9 @@
                 "type": "interval",
                 "low": 0.0,
                 "high": 40.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "SGPT",
@@ -84,7 +98,9 @@
                 "type": "interval",
                 "low": 0.0,
                 "high": 40.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "ALKALINE PHOSPHATASE",
@@ -94,7 +110,9 @@
                 "type": "interval",
                 "low": 45.0,
                 "high": 250.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         }
     ]
 }

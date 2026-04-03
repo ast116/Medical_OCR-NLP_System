@@ -11,7 +11,9 @@
         {
             "test_name": "Bilirubin Total H",
             "value": 7.71,
-            "unit": "mg/dL"
+            "unit": "mg/dL",
+            "status": "unknown",
+            "interpretation": "Bilirubin is a metabolite of bilirubin."
         },
         {
             "test_name": "Bilirubin Direct H",
@@ -21,7 +23,9 @@
                 "type": "interval",
                 "low": 0.0,
                 "high": 0.5
-            }
+            },
+            "status": "high",
+            "interpretation": "Bilirubin Direct H Value: 5.99 mg/dL Status: high (normal range: 0.0 - 0.5)"
         },
         {
             "test_name": "Bilirubin Indirect H",
@@ -31,7 +35,9 @@
                 "type": "interval",
                 "low": 0.1,
                 "high": 1.0
-            }
+            },
+            "status": "high",
+            "interpretation": "Bilirubin Indirect H Value: 1.72 mg/dL Status: high (normal range: 0.1 - 1.0)"
         },
         {
             "test_name": "SGPT H",
@@ -41,7 +47,9 @@
                 "type": "interval",
                 "low": 0.0,
                 "high": 45.0
-            }
+            },
+            "status": "high",
+            "interpretation": "The SGPT H value is 755.0 U/L."
         },
         {
             "test_name": "NADH (Without P-5-P) SGOT H",
@@ -51,7 +59,9 @@
                 "type": "interval",
                 "low": 11.0,
                 "high": 34.0
-            }
+            },
+            "status": "high",
+            "interpretation": "The SGOT H value is 161.0 U/L."
         },
         {
             "test_name": "Alkaline Phosphatase H",
@@ -61,7 +71,9 @@
                 "type": "interval",
                 "low": 40.0,
                 "high": 150.0
-            }
+            },
+            "status": "high",
+            "interpretation": "The alkaline phosphatase H value is 152.0 U/L."
         },
         {
             "test_name": "Gamma Glutamyl Transferase H",
@@ -71,7 +83,9 @@
                 "type": "interval",
                 "low": 0.0,
                 "high": 55.0
-            }
+            },
+            "status": "high",
+            "interpretation": "Gamma Glutamyl Transferase H Value: 177.0 U/L Status: high (normal range: 0.0 - 55.0)"
         },
         {
             "test_name": "Biuret Proteins (Total)",
@@ -81,7 +95,9 @@
                 "type": "interval",
                 "low": 6.4,
                 "high": 8.3
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "Albumin",
@@ -91,7 +107,9 @@
                 "type": "interval",
                 "low": 3.5,
                 "high": 5.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "Globulin",
@@ -101,7 +119,9 @@
                 "type": "interval",
                 "low": 2.0,
                 "high": 3.5
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "AG Ratio",
@@ -111,7 +131,9 @@
                 "type": "interval",
                 "low": 1.0,
                 "high": 2.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         }
     ]
 }

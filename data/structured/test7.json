@@ -9,7 +9,9 @@
         {
             "test_name": "PH",
             "value": 6.5,
-            "unit": null
+            "unit": null,
+            "status": "unknown",
+            "interpretation": "The PH value is 6.5."
         },
         {
             "test_name": "PUS CELLS",
@@ -19,7 +21,9 @@
                 "type": "interval",
                 "low": 10.0,
                 "high": 15.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "EPITHELIAL CELLS",
@@ -29,7 +33,9 @@
                 "type": "interval",
                 "low": 5.0,
                 "high": 7.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         }
     ]
 }

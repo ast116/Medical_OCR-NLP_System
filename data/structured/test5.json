@@ -14,7 +14,9 @@
                 "type": "interval",
                 "low": 13.0,
                 "high": 17.0
-            }
+            },
+            "status": "low",
+            "interpretation": "Hemoglobin values are 12.1 g/dL."
         },
         {
             "test_name": "Packed Cell Volumc (HCT) Calculated",
@@ -24,7 +26,9 @@
                 "type": "interval",
                 "low": 40.0,
                 "high": 50.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "Electrical RB.C. Count Impedence",
@@ -34,7 +38,9 @@
                 "type": "interval",
                 "low": 4.5,
                 "high": 5.5
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "Calculated Mean Cell Volume(MCV)",
@@ -44,7 +50,9 @@
                 "type": "interval",
                 "low": 83.0,
                 "high": 101.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "Mean Cell Hemoglobin( MCH) Calculaled",
@@ -54,7 +62,9 @@
                 "type": "interval",
                 "low": 27.0,
                 "high": 33.0
-            }
+            },
+            "status": "low",
+            "interpretation": "The mean cell hemoglobin ( MCH) value is 24.7 pg."
         },
         {
             "test_name": "Calculated Mean Cell Hb Conc(MCHC)",
@@ -64,7 +74,9 @@
                 "type": "interval",
                 "low": 32.0,
                 "high": 38.0
-            }
+            },
+            "status": "low",
+            "interpretation": "Test: Calculated Mean Cell Hb Conc(MCHC) Value: 28.5 % Status: low (normal range: 32.0 - 38.0)"
         },
         {
             "test_name": "Flow Cytometry Total WBC Count",
@@ -74,7 +86,9 @@
                 "type": "interval",
                 "low": 4000.0,
                 "high": 11000.0
-            }
+            },
+            "status": "high",
+            "interpretation": "Test: Flow Cytometry Total WBC Count Value: 13600.0 cells/cumm Status: high (normal range: 4000.0 - 11000.0)"
         },
         {
             "test_name": "Neutrophils FCM/ M croscopy",
@@ -84,7 +98,9 @@
                 "type": "interval",
                 "low": 50.0,
                 "high": 70.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "Lymphocytes FCM/ MIcroscopy",
@@ -94,7 +110,9 @@
                 "type": "interval",
                 "low": 20.0,
                 "high": 40.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "Eosinophils",
@@ -104,7 +122,9 @@
                 "type": "interval",
                 "low": 1.0,
                 "high": 6.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "Monocytes FCM/ Mi croscopy",
@@ -114,7 +134,9 @@
                 "type": "interval",
                 "low": 0.0,
                 "high": 10.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "Absolute Neutrophils Count",
@@ -124,7 +146,9 @@
                 "type": "interval",
                 "low": 2000.0,
                 "high": 7000.0
-            }
+            },
+            "status": "high",
+            "interpretation": "The absolute neutrophil count value is 8976.0 cumm."
         },
         {
             "test_name": "Absolute Lymphocytes Count",
@@ -134,7 +158,9 @@
                 "type": "interval",
                 "low": 1000.0,
                 "high": 3000.0
-            }
+            },
+            "status": "high",
+            "interpretation": "The total number of lymphocytes in the body is 3264.0 cumm."
         },
         {
             "test_name": "Absolute Monocytes Count",
@@ -144,7 +170,9 @@
                 "type": "interval",
                 "low": 200.0,
                 "high": 1000.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "Absolute Eosinophils Count; AEC",
@@ -154,12 +182,16 @@
                 "type": "interval",
                 "low": 20.0,
                 "high": 500.0
-            }
+            },
+            "status": "high",
+            "interpretation": "The AEC value for absolute eosinophils is 544.0 cumm."
         },
         {
             "test_name": "Platelet Count Electrical Impedence",
             "value": 502000.0,
-            "unit": "cells/cumm"
+            "unit": "cells/cumm",
+            "status": "unknown",
+            "interpretation": "The platelet count is 502000.0 cells/cumm."
         }
     ]
 }

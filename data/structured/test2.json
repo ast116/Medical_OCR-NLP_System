@@ -17,12 +17,16 @@
             },
             "flags": [
                 "H"
-            ]
+            ],
+            "status": "high",
+            "interpretation": "The CRP value is 0.0 mg/L."
         },
         {
             "test_name": "Adults %",
             "value": 5.0,
-            "unit": "mg/L"
+            "unit": "mg/L",
+            "status": "unknown",
+            "interpretation": "Adults % Value: 5.0 mg/L Status: unknown"
         },
         {
             "test_name": "New born up to 3 weeks : <",
@@ -32,7 +36,9 @@
                 "type": "threshold",
                 "operator": "<",
                 "value": 41.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         }
     ]
 }

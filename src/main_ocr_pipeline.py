@@ -14,6 +14,7 @@ from src.postprocessing.postprocess_text import postprocess_medical_text
 from src.preprocessing.pdfconverte import pdf_to_images
 from src.nlp.table_extractor import extract_from_text
 from src.nlp.ner_extractor import extract_ner_entities
+from src.nlp.interpreter import enrich_lab_results
 from src.nlp.json_exporter import save_json
 
 def process_image(image_filename):
@@ -55,6 +56,8 @@ def process_image(image_filename):
 
     # Extraction de données structurées (ex: tables de résultats)
     structured_data = extract_from_text(final_text)
+    # Enrichissement avec interprétation clinique
+    structured_data = enrich_lab_results(structured_data)
 
     # Structured Data Export & NER entities (ex: JSON)
     """

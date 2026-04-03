@@ -9,12 +9,16 @@
         {
             "test_name": "Ph",
             "value": 5015246.0,
-            "unit": null
+            "unit": null,
+            "status": "unknown",
+            "interpretation": "The ph value of the test is 5015246.0."
         },
         {
             "test_name": "iBlood Urea",
             "value": 28.0,
-            "unit": "mg/dL"
+            "unit": "mg/dL",
+            "status": "unknown",
+            "interpretation": "Blood Urea Value: 28.0 mg/dL Status: unknown"
         },
         {
             "test_name": "S.Creatinine",
@@ -24,7 +28,9 @@
                 "type": "interval",
                 "low": 0.2,
                 "high": 1.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "S.Protien; T",
@@ -34,7 +40,9 @@
                 "type": "interval",
                 "low": 6.0,
                 "high": 8.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "Albumin}",
@@ -44,7 +52,9 @@
                 "type": "interval",
                 "low": 3.5,
                 "high": 5.5
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "Globulin",
@@ -54,7 +64,9 @@
                 "type": "interval",
                 "low": 3.5,
                 "high": 5.0
-            }
+            },
+            "status": "low",
+            "interpretation": "The globulin value is 3.1 g/dL."
         },
         {
             "test_name": "S.Bilurubin(D)",
@@ -64,7 +76,9 @@
                 "type": "interval",
                 "low": 0.2,
                 "high": 1.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "S.Bilurubin(D)",
@@ -74,7 +88,9 @@
                 "type": "interval",
                 "low": 0.0,
                 "high": 0.3
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "SGOT 36U/L",
@@ -84,7 +100,9 @@
                 "type": "interval",
                 "low": 5.0,
                 "high": 35.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "SGPT",
@@ -94,7 +112,9 @@
                 "type": "interval",
                 "low": 5.0,
                 "high": 35.0
-            }
+            },
+            "status": "normal",
+            "interpretation": "Within normal range."
         },
         {
             "test_name": "Alk phosphatase",
@@ -104,7 +124,9 @@
                 "type": "interval",
                 "low": 30.0,
                 "high": 120.0
-            }
+            },
+            "status": "high",
+            "interpretation": "The alk phosphatase value is 205.0 U/L."
         }
     ]
 }
