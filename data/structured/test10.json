@@ -256,5 +256,13 @@
             "interpretation": "The HCT value is 34.5 %."
         }
     ],
-    "summary": "Identify the lab abnormalities."
+    "summary": "Identify the lab abnormalities.",
+    "alerts": [
+        "possible anemia"
+    ],
+    "severity_score": 0.13,
+    "clinical_priority": "normal",
+    "ocr_confidence": 0.78,
+    "extraction_confidence": 0.97,
+    "pipeline_confidence": 0.9
 }

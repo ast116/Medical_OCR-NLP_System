@@ -31,5 +31,11 @@
             "interpretation": "The concentration of a metabolite of a metabolite of a metabolite of a metabolite of a metabolite of a metabolite of a metabolite of a metabolite of a metabolite of a metabolite of a metabolite of a metabolite of a metabolite of a metabolit"
         }
     ],
-    "summary": "Creatinine Serum is low."
+    "summary": "Creatinine Serum is low.",
+    "alerts": [],
+    "severity_score": 0.25,
+    "clinical_priority": "normal",
+    "ocr_confidence": 0.8,
+    "extraction_confidence": 1.0,
+    "pipeline_confidence": 0.91
 }

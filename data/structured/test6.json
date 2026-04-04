@@ -136,5 +136,11 @@
             "interpretation": "Within normal range."
         }
     ],
-    "summary": "Identify the lab abnormalities."
+    "summary": "Identify the lab abnormalities.",
+    "alerts": [],
+    "severity_score": 0.33,
+    "clinical_priority": "normal",
+    "ocr_confidence": 0.83,
+    "extraction_confidence": 0.96,
+    "pipeline_confidence": 0.9
 }

@@ -16,6 +16,8 @@ from src.nlp.table_extractor import extract_from_text
 from src.nlp.ner_extractor import extract_ner_entities
 from src.nlp.interpreter import enrich_lab_results
 from src.nlp.summary import add_global_summary
+from src.nlp.clinical_analysis import add_clinical_analysis
+from src.evaluation.confidence import add_confidence_scores
 from src.nlp.json_exporter import save_json
 
 def process_image(image_filename):
@@ -61,6 +63,10 @@ def process_image(image_filename):
     structured_data = enrich_lab_results(structured_data)
     # Ajout d'un résumé global
     structured_data = add_global_summary(structured_data)
+    # Analyse clinique
+    structured_data = add_clinical_analysis(structured_data)
+    # Scores de confiance
+    structured_data = add_confidence_scores(structured_data, ocr_results)
 
     # Structured Data Export & NER entities (ex: JSON)
     """

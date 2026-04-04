@@ -129,5 +129,11 @@
             "interpretation": "The alk phosphatase value is 205.0 U/L."
         }
     ],
-    "summary": "A spleen is abnormally low ; a spleen is abnormally high ; a spleen is abnormally high ; a spleen is abnormally low ; a spleen is abnormally high ; a spleen is abnormally low ; a spleen is abnormal"
+    "summary": "A spleen is abnormally low ; a spleen is abnormally high ; a spleen is abnormally high ; a spleen is abnormally low ; a spleen is abnormally high ; a spleen is abnormally low ; a spleen is abnormal",
+    "alerts": [],
+    "severity_score": 0.1,
+    "clinical_priority": "normal",
+    "ocr_confidence": 0.72,
+    "extraction_confidence": 0.95,
+    "pipeline_confidence": 0.88
 }

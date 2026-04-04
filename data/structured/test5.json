@@ -194,5 +194,14 @@
             "interpretation": "The platelet count is 502000.0 cells/cumm."
         }
     ],
-    "summary": "Acute hemoglobin abnormalities."
+    "summary": "Acute hemoglobin abnormalities.",
+    "alerts": [
+        "possible infection",
+        "possible anemia"
+    ],
+    "severity_score": 0.24,
+    "clinical_priority": "normal",
+    "ocr_confidence": 0.81,
+    "extraction_confidence": 0.98,
+    "pipeline_confidence": 0.91
 }

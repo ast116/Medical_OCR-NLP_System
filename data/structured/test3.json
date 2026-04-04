@@ -208,5 +208,13 @@
             "interpretation": "Within normal range."
         }
     ],
-    "summary": "Blood Count is low ; Total R,B.C. Count is low ; Total WBC. Count is high ; Neutrophils (abs) is high ; Lymphocytes (abs) Eosinophils (abs) 623.04 [L] is low."
+    "summary": "Blood Count is low ; Total R,B.C. Count is low ; Total WBC. Count is high ; Neutrophils (abs) is high ; Lymphocytes (abs) Eosinophils (abs) 623.04 [L] is low.",
+    "alerts": [
+        "possible infection"
+    ],
+    "severity_score": 0.33,
+    "clinical_priority": "normal",
+    "ocr_confidence": 0.68,
+    "extraction_confidence": 1.0,
+    "pipeline_confidence": 0.86
 }

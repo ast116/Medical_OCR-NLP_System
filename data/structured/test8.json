@@ -50,5 +50,11 @@
             "interpretation": "Within normal range."
         }
     ],
-    "summary": "All laboratory values are within normal limits."
+    "summary": "All laboratory values are within normal limits.",
+    "alerts": [],
+    "severity_score": 0.0,
+    "clinical_priority": "normal",
+    "ocr_confidence": 0.78,
+    "extraction_confidence": 0.95,
+    "pipeline_confidence": 0.91
 }

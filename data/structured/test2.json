@@ -41,5 +41,11 @@
             "interpretation": "Within normal range."
         }
     ],
-    "summary": "C-Reactive Protein (CRP) 287.8 [H] mgIL is high"
+    "summary": "C-Reactive Protein (CRP) 287.8 [H] mgIL is high",
+    "alerts": [],
+    "severity_score": 0.2,
+    "clinical_priority": "normal",
+    "ocr_confidence": 0.62,
+    "extraction_confidence": 0.93,
+    "pipeline_confidence": 0.83
 }
