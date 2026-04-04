@@ -194,9 +194,9 @@
             "interpretation": "The platelet count is 502000.0 cells/cumm."
         }
     ],
-    "summary": "Acute hemoglobin abnormalities.",
+    "summary": "Abnormal results: Photometry Hemoglobin is low; Mean Cell Hemoglobin( MCH) Calculaled is low; Calculated Mean Cell Hb Conc(MCHC) is low; Flow Cytometry Total WBC Count is high; Absolute Neutrophils Count is high; Absolute Lymphocytes Count is high; Absolute Eosinophils Count; AEC is high.",
     "alerts": [
-        "possible infection",
+        "possible infection or inflammation",
         "possible anemia"
     ],
     "severity_score": 0.24,

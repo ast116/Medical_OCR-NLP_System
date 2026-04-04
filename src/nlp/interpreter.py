@@ -1,3 +1,4 @@
+import re
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 
@@ -58,14 +59,36 @@ def build_prompt(entry, status):
 def generate_interpretation(prompt):
     inputs = tokenizer(prompt, return_tensors="pt", truncation=True)
 
-    with torch.no_grad():  # 🔥 très important pour perf
+    with torch.no_grad():  # très important pour perf
         outputs = model.generate(
             **inputs,
             max_length=100,
-            do_sample=False
+            do_sample=False,
+            no_repeat_ngram_size=3,
+            repetition_penalty=1.15
         )
 
     return tokenizer.decode(outputs[0], skip_special_tokens=True).strip()
+
+def _clean_text(text):
+    text = text.replace("\n", " ").strip()
+    return " ".join(text.split())
+
+def _is_repetitive(text):
+    words = re.findall(r"\w+", text.lower())
+    if len(words) < 8:
+        return False
+    unique_ratio = len(set(words)) / max(len(words), 1)
+    if unique_ratio < 0.4:
+        return True
+    repeated = re.search(r"\b(\w+)\b(?:\s+\1\b){2,}", text.lower())
+    return repeated is not None
+
+def _fallback_interpretation(entry, status):
+    test = entry.get("test_name", "Result")
+    value = entry.get("value", "")
+    unit = entry.get("unit", "")
+    return f"{test}: {value} {unit} ({status})."
 
 
 # Fonction principale
@@ -97,6 +120,10 @@ def enrich_lab_results(data):
             interpretation = generate_interpretation(prompt)
         except Exception:
             interpretation = "Unable to interpret result."
+
+        interpretation = _clean_text(interpretation)
+        if _is_repetitive(interpretation):
+            interpretation = _fallback_interpretation(entry, status)
 
         entry["interpretation"] = interpretation
 

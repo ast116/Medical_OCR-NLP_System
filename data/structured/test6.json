@@ -13,7 +13,7 @@
             "value": 7.71,
             "unit": "mg/dL",
             "status": "unknown",
-            "interpretation": "Bilirubin is a metabolite of bilirubin."
+            "interpretation": "Bilirubin is a metabolite of bilirubine."
         },
         {
             "test_name": "Bilirubin Direct H",
@@ -136,9 +136,11 @@
             "interpretation": "Within normal range."
         }
     ],
-    "summary": "Identify the lab abnormalities.",
-    "alerts": [],
-    "severity_score": 0.33,
+    "summary": "Identify the following lab abnormalities.",
+    "alerts": [
+        "possible liver dysfunction"
+    ],
+    "severity_score": 0.35,
     "clinical_priority": "normal",
     "ocr_confidence": 0.83,
     "extraction_confidence": 0.96,

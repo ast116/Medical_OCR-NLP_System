@@ -42,7 +42,9 @@
         }
     ],
     "summary": "C-Reactive Protein (CRP) 287.8 [H] mgIL is high",
-    "alerts": [],
+    "alerts": [
+        "possible infection or inflammation"
+    ],
     "severity_score": 0.2,
     "clinical_priority": "normal",
     "ocr_confidence": 0.62,

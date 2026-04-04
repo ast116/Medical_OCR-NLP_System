@@ -1,29 +1,109 @@
+def _name_matches(name, keywords):
+    name = name.lower()
+    return any(keyword in name for keyword in keywords)
+
+
 def detect_conditions(lab_results):
     conditions = []
 
-    # Flags simples
-    has_high_wbc = False
-    has_low_hemoglobin = False
+    flags = {
+        "infection": False,
+        "anemia": False,
+        "polycythemia": False,
+        "thrombocytopenia": False,
+        "thrombocytosis": False,
+        "renal": False,
+        "liver": False,
+        "hyperglycemia": False,
+        "hypoglycemia": False,
+        "electrolyte": False,
+        "hypoalbuminemia": False,
+        "possible_malaria": False,
+    }
 
     for entry in lab_results:
         name = entry.get("test_name", "").lower()
         status = entry.get("status")
+        value = entry.get("value")
 
-        # Infection (WBC élevé)
-        if "wbc" in name or "leukocyte" in name:
+        if status not in ["high", "low", "normal", "unknown"]:
+            continue
+
+        # Infection / inflammation
+        if _name_matches(name, ["wbc", "leukocyte", "leucocyte", "tlc", "neutrophil", "crp"]):
             if status == "high":
-                has_high_wbc = True
+                flags["infection"] = True
 
-        # Anémie (Hb faible)
-        if "hemoglobin" in name or "hb" in name:
+        # Anemia / polycythemia
+        if _name_matches(name, ["hemoglobin", "haemoglobin", "hb", "hgb", "hct", "hematocrit", "haematocrit", "pcv", "rbc"]):
             if status == "low":
-                has_low_hemoglobin = True
+                flags["anemia"] = True
+            if status == "high" and _name_matches(name, ["hemoglobin", "haemoglobin", "hb", "hgb", "hct", "hematocrit", "haematocrit"]):
+                flags["polycythemia"] = True
 
-    if has_high_wbc:
-        conditions.append("possible infection")
+        # Platelets
+        if _name_matches(name, ["platelet", "plt"]):
+            if status == "low":
+                flags["thrombocytopenia"] = True
+            if status == "high":
+                flags["thrombocytosis"] = True
 
-    if has_low_hemoglobin:
+        # Renal function
+        if _name_matches(name, ["creatinine", "urea", "bun", "egfr"]):
+            if status == "high":
+                flags["renal"] = True
+
+        # Liver function
+        if _name_matches(name, ["bilirubin", "sgot", "ast", "sgpt", "alt", "alp", "alkaline phosphatase"]):
+            if status == "high":
+                flags["liver"] = True
+
+        # Glucose / diabetes
+        if _name_matches(name, ["glucose", "blood sugar", "glycemia", "random glucose", "fasting glucose"]):
+            if status == "high":
+                flags["hyperglycemia"] = True
+            if status == "low":
+                flags["hypoglycemia"] = True
+
+        # Electrolytes
+        if _name_matches(name, ["sodium", "na+", "potassium", "k+", "chloride", "cl-"]):
+            if status in ["high", "low"]:
+                flags["electrolyte"] = True
+
+        # Proteins
+        if _name_matches(name, ["albumin"]):
+            if status == "low":
+                flags["hypoalbuminemia"] = True
+
+        # Malaria / goutte épaisse (heuristique)
+        if _name_matches(name, ["goutte", "malaria", "plasmodium", "parasite", "pf", "pan"]):
+            if status == "high" or (isinstance(value, (int, float)) and value > 0):
+                flags["possible_malaria"] = True
+
+    if flags["infection"]:
+        conditions.append("possible infection or inflammation")
+    if flags["anemia"]:
         conditions.append("possible anemia")
+    if flags["polycythemia"]:
+        conditions.append("possible polycythemia")
+    if flags["thrombocytopenia"]:
+        conditions.append("possible thrombocytopenia")
+    if flags["thrombocytosis"]:
+        conditions.append("possible thrombocytosis")
+    if flags["renal"]:
+        conditions.append("possible renal impairment")
+    if flags["liver"]:
+        conditions.append("possible liver dysfunction")
+    if flags["hyperglycemia"]:
+        conditions.append("possible hyperglycemia / diabetes")
+    if flags["hypoglycemia"]:
+        conditions.append("possible hypoglycemia")
+    if flags["electrolyte"]:
+        conditions.append("possible electrolyte imbalance")
+    if flags["hypoalbuminemia"]:
+        conditions.append("possible low albumin")
+    if flags["possible_malaria"]:
+        conditions.append("possible malaria infection")
 
     return conditions
 
@@ -37,6 +117,7 @@ def compute_severity_score(lab_results):
 
     for entry in lab_results:
         status = entry.get("status")
+        name = entry.get("test_name", "").lower()
 
         if status in ["high", "low"]:
             abnormal_count += 1
@@ -46,6 +127,10 @@ def compute_severity_score(lab_results):
                 weight += 1.2
             else:
                 weight += 1
+
+            # pondération des tests plus critiques
+            if any(term in name for term in ["potassium", "sodium", "creatinine", "bilirubin", "glucose"]):
+                weight += 0.3
 
     if total == 0:
         return 0
@@ -62,7 +147,10 @@ def compute_priority(severity_score, conditions):
     if severity_score > 0.7:
         return "urgent"
 
-    if "possible infection" in conditions and severity_score > 0.5:
+    if "possible infection or inflammation" in conditions and severity_score > 0.5:
+        return "urgent"
+
+    if ("possible renal impairment" in conditions or "possible electrolyte imbalance" in conditions) and severity_score > 0.6:
         return "urgent"
 
     return "normal"

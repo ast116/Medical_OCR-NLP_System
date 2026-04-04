@@ -151,7 +151,7 @@
                 "high": 13.46
             },
             "status": "low",
-            "interpretation": "The fL value of the platelet fraction is 2.9 fL."
+            "interpretation": "The fL value of the platelet fraction is 2.9 fl."
         },
         {
             "test_name": "Neutrophils (abs)",
@@ -208,9 +208,11 @@
             "interpretation": "Within normal range."
         }
     ],
-    "summary": "Blood Count is low ; Total R,B.C. Count is low ; Total WBC. Count is high ; Neutrophils (abs) is high ; Lymphocytes (abs) Eosinophils (abs) 623.04 [L] is low.",
+    "summary": "Abnormal results: Haemoglobin is low; Total R,B.C. Count is low; Haematocrit (PCV/HCT) is low; } Red cell Distribution Width (RDW is high; Total WBC. Count is high; Neutrophils is high; }MPV } IMMATURE PLATELET FRACTION is low; Neutrophils (abs) is high; Lymphocytes (abs) Eosinophils (abs) 623.04 [L] is low.",
     "alerts": [
-        "possible infection"
+        "possible infection or inflammation",
+        "possible anemia",
+        "possible thrombocytopenia"
     ],
     "severity_score": 0.33,
     "clinical_priority": "normal",

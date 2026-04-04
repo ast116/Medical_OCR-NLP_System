@@ -35,7 +35,7 @@
             "value": 10.6,
             "unit": "mg/dL",
             "status": "unknown",
-            "interpretation": "Bilirubin is an important metabolite of bilirubin."
+            "interpretation": "Bilirubin is an important metabolite of bilirubine."
         },
         {
             "test_name": "C-REACTIVE PROTEIN; CRP, SERUM",

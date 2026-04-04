@@ -227,7 +227,7 @@
             "value": 0.5,
             "unit": "%",
             "status": "unknown",
-            "interpretation": "Eosinophils are a bacterial pathogen."
+            "interpretation": "Eosinophils are a type of bacterial pathogen."
         },
         {
             "test_name": "Monocytes",
@@ -241,7 +241,7 @@
             "value": 0.1,
             "unit": "%",
             "status": "unknown",
-            "interpretation": "The value of the bacterial spores is 0.1 %."
+            "interpretation": "The value of the bacterial species is 0.1 %."
         },
         {
             "test_name": "HCT",
@@ -256,9 +256,10 @@
             "interpretation": "The HCT value is 34.5 %."
         }
     ],
-    "summary": "Identify the lab abnormalities.",
+    "summary": "Identify lab abnormalities.",
     "alerts": [
-        "possible anemia"
+        "possible anemia",
+        "possible liver dysfunction"
     ],
     "severity_score": 0.13,
     "clinical_priority": "normal",
