@@ -65,6 +65,7 @@ UNIT_CANONICAL_MAP = {
     "gm/dl": "g/dL",
     "gmldl": "g/dL",
     "gldl": "g/dL",
+    "mgIL": "mg/L",
     "mg/dl": "mg/dL",
     "mgldl": "mg/dL",
     "mg/l": "mg/L",

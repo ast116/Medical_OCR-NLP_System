@@ -19,14 +19,16 @@
                 "H"
             ],
             "status": "high",
-            "interpretation": "The CRP value is 0.0 mg/L."
+            "interpretation": "The CRP value is 0.0 mg/L.",
+            "interpretation_fr": "La valeur de CRP est de 0,0 mg/L."
         },
         {
             "test_name": "Adults %",
             "value": 5.0,
             "unit": "mg/L",
             "status": "unknown",
-            "interpretation": "Adults % Value: 5.0 mg/L Status: unknown"
+            "interpretation": "Adults % Value: 5.0 mg/L Status: unknown",
+            "interpretation_fr": "Adultes % Valeur : 5,0 mg/L Statut : inconnu"
         },
         {
             "test_name": "New born up to 3 weeks : <",
@@ -38,7 +40,8 @@
                 "value": 41.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         }
     ],
     "summary": "C-Reactive Protein (CRP) 287.8 [H] mgIL is high",
@@ -49,5 +52,6 @@
     "clinical_priority": "normal",
     "ocr_confidence": 0.62,
     "extraction_confidence": 0.93,
-    "pipeline_confidence": 0.83
+    "pipeline_confidence": 0.83,
+    "summary_fr": "Protéines C-réactives (CRP) 287,8 [H] mgIL est élevé"
 }

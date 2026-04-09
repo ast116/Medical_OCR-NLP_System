@@ -11,7 +11,8 @@
             "value": 6.5,
             "unit": null,
             "status": "unknown",
-            "interpretation": "The PH value is 6.5."
+            "interpretation": "The PH value is 6.5.",
+            "interpretation_fr": "La valeur PH est de 6,5."
         },
         {
             "test_name": "PUS CELLS",
@@ -23,7 +24,8 @@
                 "high": 15.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "EPITHELIAL CELLS",
@@ -35,7 +37,8 @@
                 "high": 7.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         }
     ],
     "summary": "All laboratory values are within normal limits.",
@@ -44,5 +47,6 @@
     "clinical_priority": "normal",
     "ocr_confidence": 0.83,
     "extraction_confidence": 0.87,
-    "pipeline_confidence": 0.9
+    "pipeline_confidence": 0.9,
+    "summary_fr": "Toutes les valeurs biologiques sont dans les limites normales."
 }

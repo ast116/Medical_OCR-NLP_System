@@ -16,7 +16,8 @@
                 "high": 43.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Serum Croalnlnc",
@@ -28,7 +29,8 @@
                 "high": 1.1
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Sodium(Na+)",
@@ -40,7 +42,8 @@
                 "high": 155.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Potassium(K+)",
@@ -52,7 +55,8 @@
                 "high": 5.5
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Chloride(CL-)",
@@ -64,7 +68,8 @@
                 "high": 110.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Tolal Billrubin",
@@ -76,7 +81,8 @@
                 "high": 1.2
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Direct Blllrubin",
@@ -88,7 +94,8 @@
                 "high": 0.25
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Indirect Bllirubin",
@@ -100,7 +107,8 @@
                 "high": 0.6
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "SGPT(ALT)",
@@ -112,7 +120,8 @@
                 "high": 50.0
             },
             "status": "high",
-            "interpretation": "The SGPT (ALT) value is 61.1 U/L."
+            "interpretation": "The SGPT (ALT) value is 61.1 U/L.",
+            "interpretation_fr": "La valeur SGPT (ALT) est de 61,1 U/L."
         },
         {
             "test_name": "SGOT(AST)",
@@ -124,7 +133,8 @@
                 "high": 50.0
             },
             "status": "high",
-            "interpretation": "The SGOT (AST) value is 55.2 U/L."
+            "interpretation": "The SGOT (AST) value is 55.2 U/L.",
+            "interpretation_fr": "La valeur SGOT (AST) est de 55,2 U/L."
         },
         {
             "test_name": "Alkaline Phosphale(ALP)",
@@ -136,7 +146,8 @@
                 "high": 140.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Tolal Protein",
@@ -148,7 +159,8 @@
                 "high": 8.3
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Albumin",
@@ -160,7 +172,8 @@
                 "high": 5.2
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Globulin",
@@ -172,7 +185,8 @@
                 "high": 3.5
             },
             "status": "high",
-            "interpretation": "The globulin value is 3.85 g/dL."
+            "interpretation": "The globulin value is 3.85 g/dL.",
+            "interpretation_fr": "La valeur de la globuline est de 3,85 g/dL."
         },
         {
             "test_name": "Hb(Haemoglobin)",
@@ -184,7 +198,8 @@
                 "high": 151.0
             },
             "status": "low",
-            "interpretation": "The Hb(Haemoglobin) value is 11.8 g/dL."
+            "interpretation": "The Hb(Haemoglobin) value is 11.8 g/dL.",
+            "interpretation_fr": "La valeur Hb(Haemoglobin) est de 11,8 g/dL."
         },
         {
             "test_name": "TLC",
@@ -196,7 +211,8 @@
                 "high": 11.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "NEUTROPHILS",
@@ -208,7 +224,8 @@
                 "high": 80.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "LYMPHOCYTES",
@@ -220,28 +237,32 @@
                 "high": 40.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Eosinophils",
             "value": 0.5,
             "unit": "%",
             "status": "unknown",
-            "interpretation": "Eosinophils are a type of bacterial pathogen."
+            "interpretation": "Eosinophils are a type of bacterial pathogen.",
+            "interpretation_fr": "Les éosinophiles sont un type de pathogène bactérien."
         },
         {
             "test_name": "Monocytes",
             "value": 11.2,
             "unit": "%",
             "status": "unknown",
-            "interpretation": "The marrow cell count is 11.2 %."
+            "interpretation": "The marrow cell count is 11.2 %.",
+            "interpretation_fr": "Le nombre de cellules médullaires est de 11,2 %."
         },
         {
             "test_name": "BASOPHILS",
             "value": 0.1,
             "unit": "%",
             "status": "unknown",
-            "interpretation": "The value of the bacterial species is 0.1 %."
+            "interpretation": "The value of the bacterial species is 0.1 %.",
+            "interpretation_fr": "La valeur de l'espèce bactérienne est de 0,1 %."
         },
         {
             "test_name": "HCT",
@@ -253,7 +274,8 @@
                 "high": 50.0
             },
             "status": "low",
-            "interpretation": "The HCT value is 34.5 %."
+            "interpretation": "The HCT value is 34.5 %.",
+            "interpretation_fr": "La valeur HCT est de 34,5 %."
         }
     ],
     "summary": "Identify lab abnormalities.",
@@ -265,5 +287,6 @@
     "clinical_priority": "normal",
     "ocr_confidence": 0.78,
     "extraction_confidence": 0.97,
-    "pipeline_confidence": 0.9
+    "pipeline_confidence": 0.9,
+    "summary_fr": "Identifier les anomalies de laboratoire."
 }

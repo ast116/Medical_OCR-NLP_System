@@ -16,7 +16,8 @@
                 "high": 17.0
             },
             "status": "low",
-            "interpretation": "Hemoglobin values are 12.1 g/dL."
+            "interpretation": "Hemoglobin values are 12.1 g/dL.",
+            "interpretation_fr": "Les valeurs d'hémoglobine sont de 12,1 g/dL."
         },
         {
             "test_name": "Packed Cell Volumc (HCT) Calculated",
@@ -28,7 +29,8 @@
                 "high": 50.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Electrical RB.C. Count Impedence",
@@ -40,7 +42,8 @@
                 "high": 5.5
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Calculated Mean Cell Volume(MCV)",
@@ -52,7 +55,8 @@
                 "high": 101.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Mean Cell Hemoglobin( MCH) Calculaled",
@@ -64,7 +68,8 @@
                 "high": 33.0
             },
             "status": "low",
-            "interpretation": "The mean cell hemoglobin ( MCH) value is 24.7 pg."
+            "interpretation": "The mean cell hemoglobin ( MCH) value is 24.7 pg.",
+            "interpretation_fr": "La valeur moyenne de l'hémoglobine cellulaire (MCH) est de 24,7 pg."
         },
         {
             "test_name": "Calculated Mean Cell Hb Conc(MCHC)",
@@ -76,7 +81,8 @@
                 "high": 38.0
             },
             "status": "low",
-            "interpretation": "Test: Calculated Mean Cell Hb Conc(MCHC) Value: 28.5 % Status: low (normal range: 32.0 - 38.0)"
+            "interpretation": "Test: Calculated Mean Cell Hb Conc(MCHC) Value: 28.5 % Status: low (normal range: 32.0 - 38.0)",
+            "interpretation_fr": "Test: Calcul de la valeur moyenne de Hb Conc(MCHC): 28,5 % État: faible (intervalle normal: 32,0 - 38,0)"
         },
         {
             "test_name": "Flow Cytometry Total WBC Count",
@@ -88,7 +94,8 @@
                 "high": 11000.0
             },
             "status": "high",
-            "interpretation": "Test: Flow Cytometry Total WBC Count Value: 13600.0 cells/cumm Status: high (normal range: 4000.0 - 11000.0)"
+            "interpretation": "Test: Flow Cytometry Total WBC Count Value: 13600.0 cells/cumm Status: high (normal range: 4000.0 - 11000.0)",
+            "interpretation_fr": "Essai : Cytométrie de débit Valeur totale de comptage WBC : 13600.0 cellules/cumm État : élevé (intervalle normal : 4000.0 - 11000.0)"
         },
         {
             "test_name": "Neutrophils FCM/ M croscopy",
@@ -100,7 +107,8 @@
                 "high": 70.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Lymphocytes FCM/ MIcroscopy",
@@ -112,7 +120,8 @@
                 "high": 40.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Eosinophils",
@@ -124,7 +133,8 @@
                 "high": 6.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Monocytes FCM/ Mi croscopy",
@@ -136,7 +146,8 @@
                 "high": 10.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Absolute Neutrophils Count",
@@ -148,7 +159,8 @@
                 "high": 7000.0
             },
             "status": "high",
-            "interpretation": "The absolute neutrophil count value is 8976.0 cumm."
+            "interpretation": "The absolute neutrophil count value is 8976.0 cumm.",
+            "interpretation_fr": "La valeur absolue du nombre de neutrophiles est de 8976,0 cumm."
         },
         {
             "test_name": "Absolute Lymphocytes Count",
@@ -160,7 +172,8 @@
                 "high": 3000.0
             },
             "status": "high",
-            "interpretation": "The total number of lymphocytes in the body is 3264.0 cumm."
+            "interpretation": "The total number of lymphocytes in the body is 3264.0 cumm.",
+            "interpretation_fr": "Le nombre total de lymphocytes dans le corps est de 3264.0 cumm."
         },
         {
             "test_name": "Absolute Monocytes Count",
@@ -172,7 +185,8 @@
                 "high": 1000.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Absolute Eosinophils Count; AEC",
@@ -184,14 +198,16 @@
                 "high": 500.0
             },
             "status": "high",
-            "interpretation": "The AEC value for absolute eosinophils is 544.0 cumm."
+            "interpretation": "The AEC value for absolute eosinophils is 544.0 cumm.",
+            "interpretation_fr": "La valeur AEC pour les éosinophiles absolus est de 544,0 cumm."
         },
         {
             "test_name": "Platelet Count Electrical Impedence",
             "value": 502000.0,
             "unit": "cells/cumm",
             "status": "unknown",
-            "interpretation": "The platelet count is 502000.0 cells/cumm."
+            "interpretation": "The platelet count is 502000.0 cells/cumm.",
+            "interpretation_fr": "Le nombre de plaquettes est de 502000.0 cellules/cum."
         }
     ],
     "summary": "Abnormal results: Photometry Hemoglobin is low; Mean Cell Hemoglobin( MCH) Calculaled is low; Calculated Mean Cell Hb Conc(MCHC) is low; Flow Cytometry Total WBC Count is high; Absolute Neutrophils Count is high; Absolute Lymphocytes Count is high; Absolute Eosinophils Count; AEC is high.",
@@ -203,5 +219,6 @@
     "clinical_priority": "normal",
     "ocr_confidence": 0.81,
     "extraction_confidence": 0.98,
-    "pipeline_confidence": 0.91
+    "pipeline_confidence": 0.91,
+    "summary_fr": "Résultats anormaux : Photométrie L'hémoglobine est faible; hémoglobine cellulaire moyenne (MCH) Calculée est faible; Hb Conc (MCHC) moyenne calculée est faible; Cytométrie de débit Nombre total de la BBC est élevé; Neutrophiles absolus Le nombre est élevé; Lymphocytes absolus Le nombre est élevé; Eosinophiles absolus; CAE est élevé."
 }

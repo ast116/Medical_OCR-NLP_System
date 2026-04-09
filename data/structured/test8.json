@@ -16,7 +16,8 @@
                 "high": 12.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Bllltubin Dlrect",
@@ -28,14 +29,16 @@
                 "high": 0.4
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Bilirubin Indirect",
             "value": 10.6,
             "unit": "mg/dL",
             "status": "unknown",
-            "interpretation": "Bilirubin is an important metabolite of bilirubine."
+            "interpretation": "Bilirubin is an important metabolite of bilirubine.",
+            "interpretation_fr": "La bilirubine est un métabolite important de la bilirubine."
         },
         {
             "test_name": "C-REACTIVE PROTEIN; CRP, SERUM",
@@ -47,7 +50,8 @@
                 "value": 6.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         }
     ],
     "summary": "All laboratory values are within normal limits.",
@@ -56,5 +60,6 @@
     "clinical_priority": "normal",
     "ocr_confidence": 0.78,
     "extraction_confidence": 0.95,
-    "pipeline_confidence": 0.91
+    "pipeline_confidence": 0.91,
+    "summary_fr": "Toutes les valeurs biologiques sont dans les limites normales."
 }

@@ -16,7 +16,8 @@
                 "high": 17.0
             },
             "status": "low",
-            "interpretation": "The hemoglobin value is 9.1 g/dL."
+            "interpretation": "The hemoglobin value is 9.1 g/dL.",
+            "interpretation_fr": "La valeur de l'hémoglobine est de 9,1 g/dL."
         },
         {
             "test_name": "Total R,B.C. Count",
@@ -31,7 +32,8 @@
                 "L"
             ],
             "status": "low",
-            "interpretation": "Test: Total R,B.C. Count Value: 3.19 mill/cmm Status: low (normal range: 4.5 - 5.5)"
+            "interpretation": "Test: Total R,B.C. Count Value: 3.19 mill/cmm Status: low (normal range: 4.5 - 5.5)",
+            "interpretation_fr": "Essai : Total R,B.C. Valeur de comptage : 3,19 mil/cmm État : faible (intervalle normal : 4,5 - 5,5)"
         },
         {
             "test_name": "Haematocrit (PCV/HCT)",
@@ -46,7 +48,8 @@
                 "L"
             ],
             "status": "low",
-            "interpretation": "The hematocrit value is 27.2 %."
+            "interpretation": "The hematocrit value is 27.2 %.",
+            "interpretation_fr": "La valeur de l'hématocrite est de 27,2 %."
         },
         {
             "test_name": "Mean Corpuscular Volume (MCV:)",
@@ -58,7 +61,8 @@
                 "high": 95.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Mean Corpuscular Hb (MCH)",
@@ -70,7 +74,8 @@
                 "high": 32.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Mean Corpuscular Hb Conc (MCHC.)",
@@ -82,7 +87,8 @@
                 "high": 34.5
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "} Red cell Distribution Width (RDW",
@@ -97,7 +103,8 @@
                 "H"
             ],
             "status": "high",
-            "interpretation": "The red cell distribution width (RDW value: 16.5 %) is high."
+            "interpretation": "The red cell distribution width (RDW value: 16.5 %) is high.",
+            "interpretation_fr": "La largeur de distribution des globules rouges (valeur de RDW : 16,5 %) est élevée."
         },
         {
             "test_name": "Total WBC. Count",
@@ -112,7 +119,8 @@
                 "H"
             ],
             "status": "high",
-            "interpretation": "Test: Total WBC. Count Value: 10560.0 /L Status: high (normal range: 4000.0 - 10000.0)"
+            "interpretation": "Test: Total WBC. Count Value: 10560.0 /L Status: high (normal range: 4000.0 - 10000.0)",
+            "interpretation_fr": "Test: Total WBC. Valeur de comptage: 10560.0 /L État: élevé (intervalle normal: 4000.0 - 10000.0)"
         },
         {
             "test_name": "Neutrophils",
@@ -127,7 +135,8 @@
                 "H"
             ],
             "status": "high",
-            "interpretation": "Neutrophils are high in the oocytes."
+            "interpretation": "Neutrophils are high in the oocytes.",
+            "interpretation_fr": "Les neutrophiles sont élevés dans les ovocytes."
         },
         {
             "test_name": "Platelet: Count",
@@ -139,7 +148,8 @@
                 "high": 450.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "}MPV } IMMATURE PLATELET FRACTION",
@@ -151,7 +161,8 @@
                 "high": 13.46
             },
             "status": "low",
-            "interpretation": "The fL value of the platelet fraction is 2.9 fl."
+            "interpretation": "The fL value of the platelet fraction is 2.9 fl.",
+            "interpretation_fr": "La valeur fL de la fraction plaquettaire est de 2,9 fl."
         },
         {
             "test_name": "Neutrophils (abs)",
@@ -166,7 +177,8 @@
                 "H"
             ],
             "status": "high",
-            "interpretation": "Neutrophils (abs) Value: 9261.12 /L Status: high (normal range: 1575.0 - 8800.0)"
+            "interpretation": "Neutrophils (abs) Value: 9261.12 /L Status: high (normal range: 1575.0 - 8800.0)",
+            "interpretation_fr": "Neutrophiles (abs) Valeur : 9261.12 /L Statut : élevé (intervalle normal : 1575,0 - 880,0)"
         },
         {
             "test_name": "Lymphocytes (abs) Eosinophils (abs) 623.04 [L]",
@@ -181,7 +193,8 @@
                 "L"
             ],
             "status": "low",
-            "interpretation": "The eosinophil count is low."
+            "interpretation": "The eosinophil count is low.",
+            "interpretation_fr": "Le nombre d'éosinophiles est faible."
         },
         {
             "test_name": "Monocytes (abs)",
@@ -193,7 +206,8 @@
                 "high": 1000.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Basophils (abs)",
@@ -205,7 +219,8 @@
                 "high": 100.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         }
     ],
     "summary": "Abnormal results: Haemoglobin is low; Total R,B.C. Count is low; Haematocrit (PCV/HCT) is low; } Red cell Distribution Width (RDW is high; Total WBC. Count is high; Neutrophils is high; }MPV } IMMATURE PLATELET FRACTION is low; Neutrophils (abs) is high; Lymphocytes (abs) Eosinophils (abs) 623.04 [L] is low.",
@@ -218,5 +233,6 @@
     "clinical_priority": "normal",
     "ocr_confidence": 0.68,
     "extraction_confidence": 1.0,
-    "pipeline_confidence": 0.86
+    "pipeline_confidence": 0.86,
+    "summary_fr": "Résultats anormaux : l'hémoglobine est faible; le nombre total de R,C.-B. est faible; l'hématocrite (PCV/HCT) est faible; } La largeur de distribution des globules rouges (RDW est élevée; Total WBC. Le nombre est élevé; les neutrophiles sont élevés; }MPV } LA FRACTION DE LA PLATELET IMMATURE est faible; les neutrophiles (abs) sont élevés; les lymphocytes (abs) Eosinophiles (abs) 623.04 [L] sont faibles."
 }

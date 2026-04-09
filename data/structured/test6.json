@@ -13,7 +13,8 @@
             "value": 7.71,
             "unit": "mg/dL",
             "status": "unknown",
-            "interpretation": "Bilirubin is a metabolite of bilirubine."
+            "interpretation": "Bilirubin is a metabolite of bilirubine.",
+            "interpretation_fr": "La bilirubine est un métabolite de la bilirubine."
         },
         {
             "test_name": "Bilirubin Direct H",
@@ -25,7 +26,8 @@
                 "high": 0.5
             },
             "status": "high",
-            "interpretation": "Bilirubin Direct H Value: 5.99 mg/dL Status: high (normal range: 0.0 - 0.5)"
+            "interpretation": "Bilirubin Direct H Value: 5.99 mg/dL Status: high (normal range: 0.0 - 0.5)",
+            "interpretation_fr": "Bilirubine Direct H Valeur : 5,99 mg/dL État : élevé (intervalle normal : 0,0 - 0,5)"
         },
         {
             "test_name": "Bilirubin Indirect H",
@@ -37,7 +39,8 @@
                 "high": 1.0
             },
             "status": "high",
-            "interpretation": "Bilirubin Indirect H Value: 1.72 mg/dL Status: high (normal range: 0.1 - 1.0)"
+            "interpretation": "Bilirubin Indirect H Value: 1.72 mg/dL Status: high (normal range: 0.1 - 1.0)",
+            "interpretation_fr": "Bilirubine Indirecte H Valeur : 1,72 mg/dL État : élevé (intervalle normal : 0,1 - 1,0)"
         },
         {
             "test_name": "SGPT H",
@@ -49,7 +52,8 @@
                 "high": 45.0
             },
             "status": "high",
-            "interpretation": "The SGPT H value is 755.0 U/L."
+            "interpretation": "The SGPT H value is 755.0 U/L.",
+            "interpretation_fr": "La valeur SGPT H est 755,0 U/L."
         },
         {
             "test_name": "NADH (Without P-5-P) SGOT H",
@@ -61,7 +65,8 @@
                 "high": 34.0
             },
             "status": "high",
-            "interpretation": "The SGOT H value is 161.0 U/L."
+            "interpretation": "The SGOT H value is 161.0 U/L.",
+            "interpretation_fr": "La valeur SGOT H est de 161,0 U/L."
         },
         {
             "test_name": "Alkaline Phosphatase H",
@@ -73,7 +78,8 @@
                 "high": 150.0
             },
             "status": "high",
-            "interpretation": "The alkaline phosphatase H value is 152.0 U/L."
+            "interpretation": "The alkaline phosphatase H value is 152.0 U/L.",
+            "interpretation_fr": "La valeur de la phosphatase H alcaline est de 152,0 U/L."
         },
         {
             "test_name": "Gamma Glutamyl Transferase H",
@@ -85,7 +91,8 @@
                 "high": 55.0
             },
             "status": "high",
-            "interpretation": "Gamma Glutamyl Transferase H Value: 177.0 U/L Status: high (normal range: 0.0 - 55.0)"
+            "interpretation": "Gamma Glutamyl Transferase H Value: 177.0 U/L Status: high (normal range: 0.0 - 55.0)",
+            "interpretation_fr": "Gamma Glutamyl Transferase H Valeur : 177,0 U/L État : élevé (intervalle normal : 0,0 - 55,0)"
         },
         {
             "test_name": "Biuret Proteins (Total)",
@@ -97,7 +104,8 @@
                 "high": 8.3
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Albumin",
@@ -109,7 +117,8 @@
                 "high": 5.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "Globulin",
@@ -121,7 +130,8 @@
                 "high": 3.5
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "AG Ratio",
@@ -133,7 +143,8 @@
                 "high": 2.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         }
     ],
     "summary": "Identify the following lab abnormalities.",
@@ -144,5 +155,6 @@
     "clinical_priority": "normal",
     "ocr_confidence": 0.83,
     "extraction_confidence": 0.96,
-    "pipeline_confidence": 0.9
+    "pipeline_confidence": 0.9,
+    "summary_fr": "Identifier les anomalies de laboratoire suivantes."
 }

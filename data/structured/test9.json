@@ -16,7 +16,8 @@
                 "high": 1.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "CONJUGATED (D. Bilirubin)",
@@ -28,7 +29,8 @@
                 "high": 0.25
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "UNCONJUGATED (I.D.Bilirubin)",
@@ -40,7 +42,8 @@
                 "high": 0.7
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "TOTAL PROTEIN",
@@ -52,7 +55,8 @@
                 "high": 8.3
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "ALBUMIN",
@@ -64,7 +68,8 @@
                 "high": 4.8
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "GLOBULIN",
@@ -76,7 +81,8 @@
                 "high": 3.5
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "SGOT",
@@ -88,7 +94,8 @@
                 "high": 40.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "SGPT",
@@ -100,7 +107,8 @@
                 "high": 40.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         },
         {
             "test_name": "ALKALINE PHOSPHATASE",
@@ -112,7 +120,8 @@
                 "high": 250.0
             },
             "status": "normal",
-            "interpretation": "Within normal range."
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
         }
     ],
     "summary": "All laboratory values are within normal limits.",
@@ -121,5 +130,6 @@
     "clinical_priority": "normal",
     "ocr_confidence": 0.72,
     "extraction_confidence": 1.0,
-    "pipeline_confidence": 0.91
+    "pipeline_confidence": 0.91,
+    "summary_fr": "Toutes les valeurs biologiques sont dans les limites normales."
 }
