@@ -1,4 +1,5 @@
 import os
+import re
 
 from src.config.settings import RAW_DIR, PROCESSED_DIR, OCR_OUTPUT_DIR, RESIZE_WIDTH
 from src.preprocessing.image_loader import load_image
@@ -19,6 +20,7 @@ from src.nlp.summary import add_global_summary
 from src.nlp.translator_mt import translate_medical_json
 from src.nlp.clinical_analysis import add_clinical_analysis
 from src.evaluation.confidence import add_confidence_scores
+from src.utils.export import insert_into_postgres
 from src.nlp.json_exporter import save_json
 
 def process_image(image_filename):
@@ -86,6 +88,8 @@ def process_image(image_filename):
     # Structured Data Export only (ex: JSON)
     file_name = os.path.splitext(image_filename)[0]
     save_json(structured_data, file_name ,"data/structured")
+    # Export PostgreSQL
+    insert_into_postgres(structured_data)
 
     """
     # Sauvegarde sous forme text lisible
@@ -94,17 +98,32 @@ def process_image(image_filename):
 
     print(f"[SUCCESS] OCR saved to {output_file}")
 
+
+def natural_sort_key(filename):
+    return [
+        int(text) if text.isdigit() else text.lower()
+        for text in re.split(r'(\d+)', filename)
+    ]
+
+
 if __name__ == "__main__":
-    for file in os.listdir(RAW_DIR):
+
+    files = sorted(os.listdir(RAW_DIR), key=natural_sort_key)
+
+    for file in files:
         full_path = os.path.join(RAW_DIR, file)
+
+        print(f"[PROCESSING] {file}")
 
         # Cas PDF
         if file.lower().endswith(".pdf"):
             image_paths = pdf_to_images(full_path, RAW_DIR)
 
+            image_paths = sorted(image_paths, key=natural_sort_key)
+
             for img_path in image_paths:
                 process_image(os.path.basename(img_path))
 
-        # Cas images classiques
+        # Cas images
         elif file.lower().endswith((".png", ".jpg", ".jpeg")):
             process_image(file)
