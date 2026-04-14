@@ -39,14 +39,14 @@ def insert_into_postgres(data):
 
     # Insertion du rapport principal
     cursor.execute("""
-        INSERT INTO reports (summary, summary_fr, priority, severity)
-        VALUES (%s, %s, %s, %s)
-        RETURNING id
+    INSERT INTO reports (summary, summary_fr, priority, severity)
+    VALUES (%s, %s, %s, %s)
+    RETURNING id
     """, (
-        data.get("summary"),
-        data.get("summary_fr"),
-        data.get("clinical_priority"),
-        data.get("severity_score")
+    data.get("summary"),
+    data.get("summary_fr"),
+    data.get("clinical_priority"),
+    data.get("severity_score")
     ))
 
     result = cursor.fetchone()
