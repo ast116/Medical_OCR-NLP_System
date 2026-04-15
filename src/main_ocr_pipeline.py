@@ -97,7 +97,7 @@ def process_image(image_filename):
     """
 
     print(f"[SUCCESS] OCR saved to {output_file}")
-
+    return structured_data
 
 def natural_sort_key(filename):
     return [
