@@ -44,8 +44,24 @@ async def process_files(
                 "status": "error",
                 "message": str(e)
             })
-        print("[DEBUG] Returning response")
+           
+    print("[DEBUG] Returning response")
     return {
         "total_files": len(files),
         "results": results
+    }
+
+@app.post("/files/")
+async def create_file(file: Annotated[bytes, File()]):
+    return {"file_size": len(file)}
+
+
+@app.post("/uploadfile/")
+async def create_upload_file(file: UploadFile):
+    return {"filename": file.filename}
+
+@app.post("/test-upload")
+async def test_upload(files: List[UploadFile] = File(...)):
+    return {
+        "filenames": [file.filename for file in files]
     }
