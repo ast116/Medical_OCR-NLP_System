@@ -1,0 +1,44 @@
+{
+    "metadata": {
+        "patient_id": null,
+        "sample_no": null,
+        "doctor": null,
+        "dates": []
+    },
+    "lab_results": [
+        {
+            "test_name": "(Hexokinase) Blood Glucose (Random)-Plasma",
+            "value": 86.0,
+            "unit": "mg/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 70.0,
+                "high": 140.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "(Kinetc Alkallne Plcrate) Creatinine Serum",
+            "value": 0.0,
+            "unit": "mg/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.9,
+                "high": 1.3
+            },
+            "status": "low",
+            "interpretation": "The concentration of a metabolite of cytrate nephrone is 0.0 mg/dL.",
+            "interpretation_fr": "La concentration d'un métabolite du cytrate néphrone est de 0,0 mg/dL."
+        }
+    ],
+    "summary": "Creatinine Serum is low.",
+    "alerts": [],
+    "severity_score": 0.33,
+    "clinical_priority": "normal",
+    "ocr_confidence": 0.8,
+    "extraction_confidence": 1.0,
+    "pipeline_confidence": 0.9,
+    "summary_fr": "Creatinine Sérum est faible."
+}

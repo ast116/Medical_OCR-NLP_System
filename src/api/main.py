@@ -30,9 +30,8 @@ async def process_files(
         save_upload_file(file, file_path)
 
         try:
-            # 🔥 Récupération du JSON complet
+            # Récupération du JSON complet
             structured_data = process_image(filename)
-
             results.append({
                 "filename": file.filename,
                 "status": "success",
@@ -45,7 +44,7 @@ async def process_files(
                 "status": "error",
                 "message": str(e)
             })
-
+        print("[DEBUG] Returning response")
     return {
         "total_files": len(files),
         "results": results
