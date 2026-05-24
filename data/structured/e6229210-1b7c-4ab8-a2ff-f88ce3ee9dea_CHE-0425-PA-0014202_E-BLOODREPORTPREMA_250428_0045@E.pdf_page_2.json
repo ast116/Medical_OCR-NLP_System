@@ -1,0 +1,17 @@
+{
+    "metadata": {
+        "patient_id": "01002270",
+        "sample_no": null,
+        "doctor": "S.KRISHNAN",
+        "dates": []
+    },
+    "lab_results": [],
+    "summary": "All laboratory values are within normal limits.",
+    "alerts": [],
+    "severity_score": 0,
+    "clinical_priority": "normal",
+    "ocr_confidence": 0.89,
+    "extraction_confidence": 0,
+    "pipeline_confidence": 0.63,
+    "summary_fr": "Toutes les valeurs biologiques sont dans les limites normales."
+}

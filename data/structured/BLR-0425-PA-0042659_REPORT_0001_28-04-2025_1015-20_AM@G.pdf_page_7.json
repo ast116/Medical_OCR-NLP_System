@@ -1,0 +1,61 @@
+{
+    "metadata": {
+        "patient_id": null,
+        "sample_no": null,
+        "doctor": "SHIRISH KHATU",
+        "dates": [
+            "01:00 AM"
+        ]
+    },
+    "lab_results": [
+        {
+            "test_name": "SODIUM (Serum)",
+            "value": 133.0,
+            "unit": "mmol/L",
+            "reference_range": {
+                "type": "interval",
+                "low": 135.0,
+                "high": 148.0
+            },
+            "status": "low",
+            "interpretation": "The molar mass of the sample is 133.0 mmol/L.",
+            "interpretation_fr": "La masse molaire de l'échantillon est de 133,0 mmol/L."
+        },
+        {
+            "test_name": "POTASSIUM (Serum)",
+            "value": 3.0,
+            "unit": "mmol/L",
+            "reference_range": {
+                "type": "interval",
+                "low": 3.5,
+                "high": 5.5
+            },
+            "status": "low",
+            "interpretation": "The value of the sulfate in the blood is 3.0 mmol/L.",
+            "interpretation_fr": "La valeur du sulfate dans le sang est de 3,0 mmol/L."
+        },
+        {
+            "test_name": "CHLORIDE (Serum)",
+            "value": 101.0,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 85.0,
+                "high": 108.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        }
+    ],
+    "summary": "Abnormal results: SODIUM (Serum) is low; POTASSIUM (Serum) is low.",
+    "alerts": [
+        "possible electrolyte imbalance"
+    ],
+    "severity_score": 0.43,
+    "clinical_priority": "normal",
+    "ocr_confidence": 0.85,
+    "extraction_confidence": 0.93,
+    "pipeline_confidence": 0.88,
+    "summary_fr": "Résultats anormaux: SODIUM (Serum) est faible; POTASSIUM (Serum) est faible."
+}
