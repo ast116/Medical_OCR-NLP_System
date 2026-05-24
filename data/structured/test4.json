@@ -7,14 +7,6 @@
     },
     "lab_results": [
         {
-            "test_name": "Ph",
-            "value": 5015246.0,
-            "unit": null,
-            "status": "unknown",
-            "interpretation": "The ph value of the test is 5015246.0.",
-            "interpretation_fr": "La valeur ph de l'essai est 5015246.0."
-        },
-        {
             "test_name": "iBlood Urea",
             "value": 28.0,
             "unit": "mg/dL",
@@ -142,10 +134,10 @@
     ],
     "summary": "A blotchy globulin.",
     "alerts": [],
-    "severity_score": 0.1,
+    "severity_score": 0.11,
     "clinical_priority": "normal",
     "ocr_confidence": 0.72,
-    "extraction_confidence": 0.95,
-    "pipeline_confidence": 0.88,
+    "extraction_confidence": 0.98,
+    "pipeline_confidence": 0.89,
     "summary_fr": "A blotchy globulin."
 }

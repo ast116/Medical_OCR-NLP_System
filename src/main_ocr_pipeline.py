@@ -13,7 +13,7 @@ from src.utils.file_utils import save_text
 from src.ocr.box_utils import sort_boxes_top_to_bottom_left_to_right, group_boxes_by_line, reconstruct_text_from_lines, refine_lines
 from src.postprocessing.postprocess_text import postprocess_medical_text
 from src.preprocessing.pdfconverte import pdf_to_images
-from src.nlp.table_extractor import extract_from_text
+from src.nlp.hybrid_extractor import extract_hybrid_structured_data
 from src.nlp.ner_extractor import extract_ner_entities
 from src.nlp.interpreter import enrich_lab_results
 from src.nlp.summary import add_global_summary
@@ -61,7 +61,7 @@ def process_image(image_filename):
     save_text(final_text, output_file)
 
     # Extraction de données structurées (ex: tables de résultats)
-    structured_data = extract_from_text(final_text)
+    structured_data = extract_hybrid_structured_data(final_text)
     # Enrichissement avec interprétation clinique
     structured_data = enrich_lab_results(structured_data)
     # Ajout d'un résumé global

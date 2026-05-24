@@ -208,6 +208,14 @@
             "status": "unknown",
             "interpretation": "The platelet count is 502000.0 cells/cumm.",
             "interpretation_fr": "Le nombre de plaquettes est de 502000.0 cellules/cum."
+        },
+        {
+            "test_name": "Hemoglobin( MCH) Calculaled",
+            "value": 24.7,
+            "unit": "pg 27",
+            "status": "unknown",
+            "interpretation": "Hemoglobin ( MCH) Calculated Value: 24.7 pg 27 Status: unknown",
+            "interpretation_fr": "Hémoglobine (MCH) Valeur calculée : 24,7 pg 27 Statut : inconnu"
         }
     ],
     "summary": "Abnormal results: Photometry Hemoglobin is low; Mean Cell Hemoglobin( MCH) Calculaled is low; Calculated Mean Cell Hb Conc(MCHC) is low; Flow Cytometry Total WBC Count is high; Absolute Neutrophils Count is high; Absolute Lymphocytes Count is high; Absolute Eosinophils Count; AEC is high.",
@@ -215,10 +223,10 @@
         "possible infection or inflammation",
         "possible anemia"
     ],
-    "severity_score": 0.24,
+    "severity_score": 0.23,
     "clinical_priority": "normal",
     "ocr_confidence": 0.81,
-    "extraction_confidence": 0.98,
-    "pipeline_confidence": 0.91,
+    "extraction_confidence": 0.96,
+    "pipeline_confidence": 0.9,
     "summary_fr": "Résultats anormaux : Photométrie L'hémoglobine est faible; hémoglobine cellulaire moyenne (MCH) Calculée est faible; Hb Conc (MCHC) moyenne calculée est faible; Cytométrie de débit Nombre total de la BBC est élevé; Neutrophiles absolus Le nombre est élevé; Lymphocytes absolus Le nombre est élevé; Eosinophiles absolus; CAE est élevé."
 }

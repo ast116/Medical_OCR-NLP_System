@@ -221,6 +221,35 @@
             "status": "normal",
             "interpretation": "Within normal range.",
             "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "Mean Corpuscular Volume (MCV:)",
+            "value": 85.3,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 83.0,
+                "high": 95.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "Mean Corpuscular Hb (MCH)",
+            "value": 28.5,
+            "unit": "pg 27.0-32.0",
+            "status": "unknown",
+            "interpretation": "The mean corpuscular Hb value is 28.5 pg.",
+            "interpretation_fr": "La valeur moyenne de Hb corpusculaire est de 28,5 pg."
+        },
+        {
+            "test_name": "Lymphocytes (abs) Eosinophils (abs)",
+            "value": 0.0,
+            "unit": null,
+            "status": "unknown",
+            "interpretation": "0.0 None Value: 0.0",
+            "interpretation_fr": "0,0 Aucune Valeur : 0,0"
         }
     ],
     "summary": "Abnormal results: Haemoglobin is low; Total R,B.C. Count is low; Haematocrit (PCV/HCT) is low; } Red cell Distribution Width (RDW is high; Total WBC. Count is high; Neutrophils is high; }MPV } IMMATURE PLATELET FRACTION is low; Neutrophils (abs) is high; Lymphocytes (abs) Eosinophils (abs) 623.04 [L] is low.",
@@ -229,10 +258,10 @@
         "possible anemia",
         "possible thrombocytopenia"
     ],
-    "severity_score": 0.33,
+    "severity_score": 0.27,
     "clinical_priority": "normal",
     "ocr_confidence": 0.68,
-    "extraction_confidence": 1.0,
-    "pipeline_confidence": 0.86,
+    "extraction_confidence": 0.96,
+    "pipeline_confidence": 0.85,
     "summary_fr": "Résultats anormaux : l'hémoglobine est faible; le nombre total de R,C.-B. est faible; l'hématocrite (PCV/HCT) est faible; } La largeur de distribution des globules rouges (RDW est élevée; Total WBC. Le nombre est élevé; les neutrophiles sont élevés; }MPV } LA FRACTION DE LA PLATELET IMMATURE est faible; les neutrophiles (abs) sont élevés; les lymphocytes (abs) Eosinophiles (abs) 623.04 [L] sont faibles."
 }

@@ -1,0 +1,222 @@
+{
+    "metadata": {
+        "patient_id": null,
+        "sample_no": null,
+        "doctor": "R.K Bajaj",
+        "dates": []
+    },
+    "lab_results": [
+        {
+            "test_name": "HAEMOGLOBIN",
+            "value": 11.8,
+            "unit": "g/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 12.0,
+                "high": 18.0
+            },
+            "status": "low",
+            "interpretation": "The urea nitrogen concentration in the blood is 11.8 g/dL.",
+            "interpretation_fr": "La concentration d'azote dans le sang est de 11,8 g/dL."
+        },
+        {
+            "test_name": "TOTAL LEUCOCYTE COUNT",
+            "value": 20500.0,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 4000.0,
+                "high": 11000.0
+            },
+            "status": "high",
+            "interpretation": "The total leucozyte count is 20500.0.",
+            "interpretation_fr": "Le nombre total de leucozytes est de 20500,0."
+        },
+        {
+            "test_name": "Neutrophils",
+            "value": 84.0,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 40.0,
+                "high": 75.0
+            },
+            "status": "high",
+            "interpretation": "Neutrophils are high in the blood.",
+            "interpretation_fr": "Les neutrophiles sont élevés dans le sang."
+        },
+        {
+            "test_name": "Lymphocyles",
+            "value": 12.0,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 20.0,
+                "high": 45.0
+            },
+            "status": "low",
+            "interpretation": "The lymphocytes are a small group of cells that are mainly located in the ear.",
+            "interpretation_fr": "Les lymphocytes sont un petit groupe de cellules qui sont principalement situées dans l'oreille."
+        },
+        {
+            "test_name": "Monocytes",
+            "value": 2.0,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.0,
+                "high": 8.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "Eosinophils",
+            "value": 2.0,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 0.0,
+                "high": 6.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "TOTAL RB.C. COUNT",
+            "value": 4.6,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 3.5,
+                "high": 6.5
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "PCVJ Haematocrit value",
+            "value": 38.6,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 35.0,
+                "high": 54.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "M C V \"",
+            "value": 778.6,
+            "unit": "fL",
+            "reference_range": {
+                "type": "interval",
+                "low": 76.0,
+                "high": 96.0
+            },
+            "status": "high",
+            "interpretation": "The fL value of the M C V test is 778.6 fl.",
+            "interpretation_fr": "La valeur fL de l ' essai M C V est de 778.6 fl."
+        },
+        {
+            "test_name": "MCH",
+            "value": 257.0,
+            "unit": "pg",
+            "reference_range": {
+                "type": "interval",
+                "low": 27.0,
+                "high": 32.0
+            },
+            "status": "high",
+            "interpretation": "Test: MCH Value: 257.0 pg Status: high (normal range: 27.0 - 32.0)",
+            "interpretation_fr": "Essai : MCH Valeur : 257,0 pg État : élevé (intervalle normal : 27,0 - 32,0)"
+        },
+        {
+            "test_name": "RDW",
+            "value": 453.0,
+            "unit": "%",
+            "status": "unknown",
+            "interpretation": "The RDW value is 453.0 %.",
+            "interpretation_fr": "La valeur de RDW est de 453,0 %."
+        },
+        {
+            "test_name": "PLATELET COUNT",
+            "value": 1.99,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 1.5,
+                "high": 4.5
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "Basophils",
+            "value": 0.0,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.0,
+                "high": 1.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "TOTAL RB.C. COUNT",
+            "value": 4.6,
+            "unit": "million/cumm",
+            "reference_range": {
+                "type": "interval",
+                "low": 3.5,
+                "high": 6.5
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "MCH",
+            "value": 257.0,
+            "unit": "pg 27.00",
+            "status": "unknown",
+            "interpretation": "Test: MCH Value: 257.0 pg 27.00 Status: unknown",
+            "interpretation_fr": "Essai : MCH Valeur : 257,0 pg 27.00 État : inconnu"
+        },
+        {
+            "test_name": "HC",
+            "value": 328.0,
+            "unit": "gJd] 30.50",
+            "status": "unknown",
+            "interpretation": "The HC value is 38.0 gJd.",
+            "interpretation_fr": "La valeur de HC est de 38,0 gJd."
+        },
+        {
+            "test_name": "PLATELET COUNT",
+            "value": 1.99,
+            "unit": "lacslmm3",
+            "status": "unknown",
+            "interpretation": "The platelet count value is 1.99 lacslmm3.",
+            "interpretation_fr": "La valeur de numération plaquettaire est de 1.99 lacslmm3."
+        }
+    ],
+    "summary": ".",
+    "alerts": [
+        "possible infection or inflammation",
+        "possible anemia"
+    ],
+    "severity_score": 0.2,
+    "clinical_priority": "normal",
+    "ocr_confidence": 0.78,
+    "extraction_confidence": 0.91,
+    "pipeline_confidence": 0.88,
+    "summary_fr": "."
+}

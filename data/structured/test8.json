@@ -3,7 +3,9 @@
         "patient_id": null,
         "sample_no": null,
         "doctor": "Lal",
-        "dates": []
+        "dates": [
+            "6:56"
+        ]
     },
     "lab_results": [
         {

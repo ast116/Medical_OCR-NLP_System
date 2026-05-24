@@ -1,0 +1,38 @@
+BOMBAY HOSPITAL INDORE Mark FblY of Excolonco LQur
+Ring Road,Indore-452 010,Ph.4771111,Extension:2156,
+OaY HO Website wwwbombayhospitalindore.com
+NABH
+DEPARTMENT OF PATHOLOGY ID
+Sample Type Ordered Loc By Dr Ravi Rathi O2nd Floor EDTA Recovery Bed No 215
+Sample Collected On Vch No 300537 7:22.24
+Sample No 25051442 Sample Reported On 10.34:09
+TEST DESCRIPTION OBSERVED VALUE UNIT BIOLOGICAL REFERENCE RANGE
+BLOQD CQUNT WITHQUT INDICES
+Hemoglobin 11.80 gmsldl 13.0 - 17.0
+Erythrocytes 3.81 mill/cmm 3.8 4.8
+Haemotocrit 35.90 % 40 - 50
+Leucocytes 7300 Icu.mm 4000 10000
+DIFFERENTIAL LEUCOCYTE
+COUNT ( % )
+Neutrophils 83.00 % 40 75
+Lymphocytes 11.20 % 20 40
+Eosinophils Monocytes 0.70 5.00 % 2 - 10 1 -6
+Basophils 0.10 % 1 - 2
+DIFFERENTIAL LEUCOCYTE
+COUNT (ABSOLUTE)
+Neutrophils 6.06 X1OOOlcumm 2 -7
+Lymphocytes 0.82 X1OOOlcumm 1 -3
+Monocytes 0.37 x1OOOlcumm 0.2 -1
+Eosinophils 0.05 X1OOOlcumm 0.02 - 0.5
+Basophils 0.01 X1OOOlcumm 0.02 - 0.1
+Platelets 0.85 lacslcumm 1.5 4.5
+Mean Platelet Volume Comments Anisocytosis 11.30 fL 7.5 - 12.0
+Platelet count has been verified/Corrected manually.
+Method CBC-Spectrophotometric Electronic / Impedance Calculation Microscopic Examination. Reference range from Dacies Lewis Practical Haematology Itth edition.
+Slide Review Criteria followed as per International Society for Laboratory Hematology (ISLH)
+END OF REPORT 0*
+huuaiLue
+Dr: Neelam Bharihoke
+MD: (Pathology)
+Pathologist
+AUTHORISED

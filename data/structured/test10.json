@@ -2,7 +2,7 @@
     "metadata": {
         "patient_id": null,
         "sample_no": null,
-        "doctor": null,
+        "doctor": "SARVODAYA HOSPITAL",
         "dates": []
     },
     "lab_results": [
@@ -276,6 +276,14 @@
             "status": "low",
             "interpretation": "The HCT value is 34.5 %.",
             "interpretation_fr": "La valeur HCT est de 34,5 %."
+        },
+        {
+            "test_name": "EOSiNOPHIL MONOCYTES",
+            "value": 0.5,
+            "unit": "%",
+            "status": "unknown",
+            "interpretation": "EOSiNOPHIL MONOCYTES Value: 0.5 % Status: unknown",
+            "interpretation_fr": "MONOCYTES EOSiNOPHIL Valeur : 0,5 % Statut : inconnu"
         }
     ],
     "summary": "Identify lab abnormalities.",
@@ -283,7 +291,7 @@
         "possible anemia",
         "possible liver dysfunction"
     ],
-    "severity_score": 0.13,
+    "severity_score": 0.12,
     "clinical_priority": "normal",
     "ocr_confidence": 0.78,
     "extraction_confidence": 0.97,

@@ -7,14 +7,6 @@
     },
     "lab_results": [
         {
-            "test_name": "PH",
-            "value": 6.5,
-            "unit": null,
-            "status": "unknown",
-            "interpretation": "The PH value is 6.5.",
-            "interpretation_fr": "La valeur PH est de 6,5."
-        },
-        {
             "test_name": "PUS CELLS",
             "value": 10.0,
             "unit": "IHPF",
@@ -39,6 +31,14 @@
             "status": "normal",
             "interpretation": "Within normal range.",
             "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "QUANTITY",
+            "value": 15.0,
+            "unit": "ml:",
+            "status": "unknown",
+            "interpretation": "The ml of a syringe is a liquid.",
+            "interpretation_fr": "Le ml d'une seringue est un liquide."
         }
     ],
     "summary": "All laboratory values are within normal limits.",
@@ -46,7 +46,7 @@
     "severity_score": 0.0,
     "clinical_priority": "normal",
     "ocr_confidence": 0.83,
-    "extraction_confidence": 0.87,
-    "pipeline_confidence": 0.9,
+    "extraction_confidence": 0.93,
+    "pipeline_confidence": 0.92,
     "summary_fr": "Toutes les valeurs biologiques sont dans les limites normales."
 }

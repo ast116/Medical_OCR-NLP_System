@@ -1,0 +1,231 @@
+{
+    "metadata": {
+        "patient_id": null,
+        "sample_no": "BASOPHIL",
+        "doctor": "Pawan Kumar Bansal Reporting Date",
+        "dates": [
+            "06:39 AM"
+        ]
+    },
+    "lab_results": [
+        {
+            "test_name": "HB L 113",
+            "value": 13.0,
+            "unit": "g/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 13.0,
+                "high": 17.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "TLC H 16.3 4.0",
+            "value": 11.0,
+            "unit": "cumm",
+            "reference_range": {
+                "type": "interval",
+                "low": 4.0,
+                "high": 11.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "MONOCYTE",
+            "value": 6.0,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 2.0,
+                "high": 10.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "EOSINOPHIL",
+            "value": 4.0,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 1.0,
+                "high": 6.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "BASOPHIL",
+            "value": 0.0,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.0,
+                "high": 1.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "PLATELET COUNT 201 150",
+            "value": 450.0,
+            "unit": "cumm",
+            "reference_range": {
+                "type": "interval",
+                "low": 150.0,
+                "high": 450.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "RBC COUNT",
+            "value": 4.1,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 4.0,
+                "high": 5.5
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "HCT",
+            "value": 34.0,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 40.0,
+                "high": 50.0
+            },
+            "status": "low",
+            "interpretation": "The HCT value is 34.0 %.",
+            "interpretation_fr": "La valeur HCT est de 34,0 %."
+        },
+        {
+            "test_name": "MCV",
+            "value": 83.2,
+            "unit": "fL",
+            "reference_range": {
+                "type": "interval",
+                "low": 82.0,
+                "high": 102.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "MCH",
+            "value": 27.5,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 27.0,
+                "high": 33.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "MCHC 33.1",
+            "value": 31.5,
+            "unit": "g/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 31.5,
+                "high": 34.5
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "RDW H 15.1",
+            "value": 11.5,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 11.5,
+                "high": 14.5
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "TLC H",
+            "value": 16.3,
+            "unit": "^3",
+            "reference_range": {
+                "type": "interval",
+                "low": 4.0,
+                "high": 11.0
+            },
+            "status": "high",
+            "interpretation": "TLC H Value: 16.3 3 Status: high (normal range: 4.0 - 11.0)",
+            "interpretation_fr": "TLC H Valeur : 16,3 3 État : élevé (intervalle normal : 4,0 - 11,0)"
+        },
+        {
+            "test_name": "MCV",
+            "value": 83.2,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 82.0,
+                "high": 102.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "MCHC",
+            "value": 33.1,
+            "unit": "g/dL",
+            "reference_range": {
+                "type": "interval",
+                "low": 31.5,
+                "high": 34.5
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "RDW H",
+            "value": 15.1,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 11.5,
+                "high": 14.5
+            },
+            "status": "high",
+            "interpretation": "The RDW H value is 15.1 %.",
+            "interpretation_fr": "La valeur de RDW H est de 15,1 %."
+        }
+    ],
+    "summary": "A spleen abnormality.",
+    "alerts": [
+        "possible infection or inflammation",
+        "possible anemia"
+    ],
+    "severity_score": 0.11,
+    "clinical_priority": "normal",
+    "ocr_confidence": 0.9,
+    "extraction_confidence": 0.96,
+    "pipeline_confidence": 0.94,
+    "summary_fr": "Une anomalie de la rate."
+}

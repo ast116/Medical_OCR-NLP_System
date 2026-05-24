@@ -2,7 +2,7 @@
     "metadata": {
         "patient_id": null,
         "sample_no": null,
-        "doctor": null,
+        "doctor": "1 MANGALORE",
         "dates": []
     },
     "lab_results": [

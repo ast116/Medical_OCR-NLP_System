@@ -1,0 +1,250 @@
+{
+    "metadata": {
+        "patient_id": null,
+        "sample_no": "25051442",
+        "doctor": "Ravi Rathi O",
+        "dates": [
+            "7:22"
+        ]
+    },
+    "lab_results": [
+        {
+            "test_name": "Hemoglobin",
+            "value": 11.8,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 13.0,
+                "high": 17.0
+            },
+            "status": "low",
+            "interpretation": "Hemoglobin values are low.",
+            "interpretation_fr": "Les valeurs d'hémoglobine sont faibles."
+        },
+        {
+            "test_name": "Erythrocytes",
+            "value": 3.81,
+            "unit": "mill/cmm",
+            "reference_range": {
+                "type": "interval",
+                "low": 3.8,
+                "high": 4.8
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "Haemotocrit",
+            "value": 35.9,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 40.0,
+                "high": 50.0
+            },
+            "status": "low",
+            "interpretation": "The hemocrit value is 35.9 %.",
+            "interpretation_fr": "La valeur hémocrite est de 35,9 %."
+        },
+        {
+            "test_name": "Neutrophils",
+            "value": 83.0,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 40.0,
+                "high": 75.0
+            },
+            "status": "high",
+            "interpretation": "Neutrophils are high in the lungs.",
+            "interpretation_fr": "Les neutrophiles sont élevés dans les poumons."
+        },
+        {
+            "test_name": "Lymphocytes",
+            "value": 11.2,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 20.0,
+                "high": 40.0
+            },
+            "status": "low",
+            "interpretation": "The value of the lymphocytes is 11.2 %.",
+            "interpretation_fr": "La valeur des lymphocytes est de 11,2 %."
+        },
+        {
+            "test_name": "Eosinophils",
+            "value": 0.7,
+            "unit": "%",
+            "status": "unknown",
+            "interpretation": "Eosinophils are a type of bacterial pathogen.",
+            "interpretation_fr": "Les éosinophiles sont un type de pathogène bactérien."
+        },
+        {
+            "test_name": "Monocytes",
+            "value": 5.0,
+            "unit": "%",
+            "status": "unknown",
+            "interpretation": "The mRNA of the mncc gene is 5.0 %.",
+            "interpretation_fr": "L'ARNm du gène mncc est de 5,0 %."
+        },
+        {
+            "test_name": "Basophils",
+            "value": 0.1,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 1.0,
+                "high": 2.0
+            },
+            "status": "low",
+            "interpretation": "The value of the bacterial spores is 0.1 %.",
+            "interpretation_fr": "La valeur des spores bactériennes est de 0,1 %."
+        },
+        {
+            "test_name": "Neutrophils",
+            "value": 6.06,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 2.0,
+                "high": 7.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "Lymphocytes",
+            "value": 0.82,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 1.0,
+                "high": 3.0
+            },
+            "status": "low",
+            "interpretation": "The value of the lymphocytes is 0.82.",
+            "interpretation_fr": "La valeur des lymphocytes est de 0,82."
+        },
+        {
+            "test_name": "Monocytes",
+            "value": 0.37,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 0.2,
+                "high": 1.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "Eosinophils",
+            "value": 0.05,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 0.02,
+                "high": 0.5
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "Mean Platelet Volume Comments Anisocytosis",
+            "value": 11.3,
+            "unit": "fL",
+            "reference_range": {
+                "type": "interval",
+                "low": 7.5,
+                "high": 12.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "Hemoglobin",
+            "value": 11.8,
+            "unit": "gmsldl",
+            "reference_range": {
+                "type": "interval",
+                "low": 13.0,
+                "high": 17.0
+            },
+            "status": "low",
+            "interpretation": "Hemoglobin values are 11.8 gmsldl.",
+            "interpretation_fr": "Les valeurs d'hémoglobine sont de 11,8 gmsldl."
+        },
+        {
+            "test_name": "Eosinophils Monocytes",
+            "value": 0.7,
+            "unit": "%",
+            "reference_range": {
+                "type": "interval",
+                "low": 2.0,
+                "high": 10.0
+            },
+            "status": "low",
+            "interpretation": "Eosinophils and monocytes are a type of inflammatory bowel disease.",
+            "interpretation_fr": "Les éosinophiles et les monocytes sont un type de maladie inflammatoire de l'intestin."
+        },
+        {
+            "test_name": "Lymphocytes",
+            "value": 0.82,
+            "unit": "X1OOOlcumm 1",
+            "status": "unknown",
+            "interpretation": "The X1OOOlcumm 1 value is 0.82 XOOO.",
+            "interpretation_fr": "La valeur X1OOOlcumm 1 est 0,82 XOOO."
+        },
+        {
+            "test_name": "Monocytes",
+            "value": 0.37,
+            "unit": "x1OOOlcumm 0.2",
+            "status": "unknown",
+            "interpretation": "The x1OOOlcumm value is 0.37 xOOO.",
+            "interpretation_fr": "La valeur x1OOOlcumm est 0,37 xOOO."
+        },
+        {
+            "test_name": "Eosinophils",
+            "value": 0.05,
+            "unit": "X1OOOlcumm",
+            "reference_range": {
+                "type": "interval",
+                "low": 0.02,
+                "high": 0.5
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "Mean Platelet Volume Comments Anisocytosis",
+            "value": 11.3,
+            "unit": null,
+            "reference_range": {
+                "type": "interval",
+                "low": 7.5,
+                "high": 12.0
+            },
+            "status": "normal",
+            "interpretation": "Within normal range.",
+            "interpretation_fr": "Dans les limites normales."
+        }
+    ],
+    "summary": "Lab abnormalities",
+    "alerts": [
+        "possible infection or inflammation",
+        "possible anemia"
+    ],
+    "severity_score": 0.22,
+    "clinical_priority": "normal",
+    "ocr_confidence": 0.85,
+    "extraction_confidence": 0.89,
+    "pipeline_confidence": 0.89,
+    "summary_fr": "Anomalies de laboratoire"
+}

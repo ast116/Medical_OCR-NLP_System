@@ -1,10 +1,11 @@
 {
     "metadata": {
         "patient_id": null,
-        "sample_no": null,
+        "sample_no": "4064030",
         "doctor": "SHIRISH KHATU",
         "dates": [
-            "01:00 AM"
+            "01:00 AM",
+            "10:44 AM"
         ]
     },
     "lab_results": [
@@ -46,16 +47,24 @@
             "status": "normal",
             "interpretation": "Within normal range.",
             "interpretation_fr": "Dans les limites normales."
+        },
+        {
+            "test_name": "CHLORIDE (Serum)",
+            "value": 101.0,
+            "unit": "mmol/ 1",
+            "status": "unknown",
+            "interpretation": "The value of the cHLORIDE (serum) is 101.0 mmol/ 1 and the status is unknown.",
+            "interpretation_fr": "La valeur du cHLORIDE (sérum) est de 101,0 mmol/ 1 et le statut n' est pas connu."
         }
     ],
     "summary": "Abnormal results: SODIUM (Serum) is low; POTASSIUM (Serum) is low.",
     "alerts": [
         "possible electrolyte imbalance"
     ],
-    "severity_score": 0.43,
+    "severity_score": 0.32,
     "clinical_priority": "normal",
     "ocr_confidence": 0.85,
-    "extraction_confidence": 0.93,
+    "extraction_confidence": 0.9,
     "pipeline_confidence": 0.88,
     "summary_fr": "Résultats anormaux: SODIUM (Serum) est faible; POTASSIUM (Serum) est faible."
 }
