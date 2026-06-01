@@ -88,8 +88,9 @@ def process_image(image_filename):
     # Structured Data Export only (ex: JSON)
     file_name = os.path.splitext(image_filename)[0]
     save_json(structured_data, file_name ,"data/structured")
-    # Export PostgreSQL
-    insert_into_postgres(structured_data)
+    # Export PostgreSQL (optional in Docker/API deployments)
+    if os.getenv("ENABLE_POSTGRES_EXPORT", "false").lower() in {"1", "true", "yes", "on"}:
+        insert_into_postgres(structured_data)
 
     """
     # Sauvegarde sous forme text lisible

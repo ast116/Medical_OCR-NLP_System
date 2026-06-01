@@ -11,7 +11,7 @@ GT_DIR = os.path.join(DATA_DIR, "gt")
 
 # OCR
 OCR_LANGUAGES = ['en']  # adapter si nécessaire ['fr','en']
-USE_GPU = False  # CPU uniquement
+USE_GPU = os.getenv("USE_GPU", "false").lower() in {"1", "true", "yes", "on"}
 
 # Image preprocessing parameters
 RESIZE_WIDTH = 1500

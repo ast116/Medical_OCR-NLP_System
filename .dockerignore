@@ -1,0 +1,15 @@
+.git
+.agents
+.codex
+venv
+__pycache__
+*.pyc
+.pytest_cache
+notebooks
+data/raw/*
+data/processed/*
+data/ocr_output/*
+data/structured/*
+data/ner_output/*
+training
+*.zip

@@ -28,11 +28,11 @@ def export_to_excel(data, filename, output_dir):
 def insert_into_postgres(data):
 
     conn = psycopg2.connect(
-        dbname="medical_db",
-        user="postgres",
-        password="ninjaas84116",
-        host="localhost",
-        port="5432"
+        dbname=os.getenv("POSTGRES_DB", "medical_db"),
+        user=os.getenv("POSTGRES_USER", "postgres"),
+        password=os.getenv("POSTGRES_PASSWORD", "SecretPassword"),
+        host=os.getenv("POSTGRES_HOST", "localhost"),
+        port=os.getenv("POSTGRES_PORT", "5432")
     )
 
     cursor = conn.cursor()

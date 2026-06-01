@@ -1,0 +1,29 @@
+services:
+  medical-ocr-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: medical-ocr-nlp-gpu:latest
+    ports:
+      - "8000:8000"
+    environment:
+      USE_GPU: "true"
+      ENABLE_POSTGRES_EXPORT: "false"
+      HF_HOME: /app/.cache/huggingface
+      EASYOCR_MODULE_PATH: /app/.cache/easyocr
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+      - hf_cache:/app/.cache/huggingface
+      - easyocr_cache:/app/.cache/easyocr
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+volumes:
+  hf_cache:
+  easyocr_cache:
