@@ -6,7 +6,7 @@
 
 ## ✨ Overview
 
-A complete system for **intelligent extraction** combining optical character recognition (OCR) and natural language processing (NLP) to convert your scanned documents into structured data ready for analysis.
+A complete system for **intelligent extraction** combining optical character recognition (OCR) and natural language processing (NLP) to convert your scanned documents into structured data ready for advanced analysis.
 
 **Use cases:**
 - 📋 Patient information and medical treatment extraction
@@ -25,7 +25,7 @@ A complete system for **intelligent extraction** combining optical character rec
 - [🚀 Quick Start](#-quick-start)
 - [📸 OCR Pipeline](#-ocr-pipeline)
 - [🧠 NLP Pipeline: Regex + Claude/spaCy Strategy](#-nlp-pipeline-regex--claudespacy-strategy)
-- [���� JSON Output Format](#-json-output-format)
+- [📋 JSON Output Format](#-json-output-format)
 - [🎓 Training the NLP Model](#-training-the-nlp-model)
 - [🛡️ Error Handling](#️-error-handling)
 - [✅ Tests and Metrics](#-tests-and-metrics)
@@ -56,7 +56,7 @@ Medical_OCR-NLP_System/
 ├── 📁 data/                    # Input/output data
 │   ├── input/                  # Scanned documents to process
 │   └── output/                 # Generated JSON results
-├── 📁 src/
+├── �� src/
 │   ├── ocr/                    # OCR pipeline
 │   │   ├── preprocessor.py     # Image preprocessing
 │   │   └── engines/            # Tesseract, EasyOCR, etc.
@@ -234,20 +234,15 @@ After collecting and annotating data:
 
 ### 🔄 Decision Logic (Fallback)
 
-```mermaid
-graph TD
-    A[Extracted Document] --> B{Regex found ?}
-    B -->|YES| C[Mark regex<br/>confidence=0.95]
-    B -->|NO| D{Claude Haiku<br/>high score ?}
-    D -->|YES| E[Mark Claude<br/>confidence=score]
-    D -->|NO| F{spaCy available<br/>& well trained ?}
-    F -->|YES| G[Mark spaCy<br/>confidence=score]
-    F -->|NO| H[Flag for human<br/>review]
-    C --> I[JSON Output]
-    E --> I
-    G --> I
-    H --> I
-```
+**Step 1:** Check regex patterns  
+↓  
+**Step 2:** If no regex match, try Claude Haiku  
+↓  
+**Step 3:** If Claude score is low, check spaCy (if available and well-trained)  
+↓  
+**Step 4:** If all methods fail, flag for human review  
+↓  
+**Final:** Output result with source and confidence score
 
 ### 📊 Example Multi-Source Decision
 
@@ -411,7 +406,7 @@ Expected performance (after 100 epochs):
 │    ├── Partial output               │
 │    ├── Mark with low confidence     │
 │    └── Suggest human review         │
-├──────────��──────────────────────────┤
+├─────────────────────────────────────┤
 │ 🟢 FALLBACK Mode                    │
 │    ├── Try alternative source       │
 │    ├── Combine results              │
@@ -505,10 +500,9 @@ To be specified: MIT / Apache 2.0 / Custom
 
 ---
 
-## 👥 Contact & Author
+## 📞 Support
 
-- **Author** : [@ast116](https://github.com/ast116)
-- **Repository** : [Medical_OCR-NLP_System](https://github.com/ast116/Medical_OCR-NLP_System)
+For issues, questions, or discussions about the project:
 - **Issues** : [Report a bug](https://github.com/ast116/Medical_OCR-NLP_System/issues)
 - **Discussions** : [Questions & ideas](https://github.com/ast116/Medical_OCR-NLP_System/discussions)
 
