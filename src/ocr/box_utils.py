@@ -63,8 +63,31 @@ def reconstruct_text_from_lines(lines):
     reconstructed_lines = []
 
     for line in lines:
-        texts = [item[1] for item in line["items"]]
-        reconstructed_lines.append(" ".join(texts))
+        items = line["items"]
+        texts = []
+
+        prev_right = None
+        widths = [
+            max(p[0] for p in item[0]) - min(p[0] for p in item[0])
+            for item in items
+        ]
+        avg_char_width = max(sum(widths) / max(sum(len(item[1]) for item in items), 1), 1)
+
+        for box, text, _ in items:
+            left = min(p[0] for p in box)
+            right = max(p[0] for p in box)
+
+            if prev_right is not None:
+                gap = left - prev_right
+                if gap > avg_char_width * 3:
+                    texts.append("  ")
+                else:
+                    texts.append(" ")
+
+            texts.append(text)
+            prev_right = right
+
+        reconstructed_lines.append("".join(texts))
 
     return "\n".join(reconstructed_lines)
 

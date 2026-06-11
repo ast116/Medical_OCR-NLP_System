@@ -8,6 +8,7 @@ from src.preprocessing.denoise import denoise_image
 from src.preprocessing.deskew import deskew_image
 from src.preprocessing.binarization import binarize_image
 from src.preprocessing.morphology import apply_morphology
+from src.preprocessing.ocr_enhance import enhance_for_ocr
 from src.ocr.easyocr_engine import EasyOCREngine
 from src.utils.file_utils import save_text
 from src.ocr.box_utils import sort_boxes_top_to_bottom_left_to_right, group_boxes_by_line, reconstruct_text_from_lines, refine_lines
@@ -33,6 +34,7 @@ def process_image(image_filename):
     image = resize_image(image, RESIZE_WIDTH)
     image = denoise_image(image)
     image = deskew_image(image)
+    image = enhance_for_ocr(image)
     image = binarize_image(image)
     image = apply_morphology(image)
 

@@ -22,8 +22,11 @@ def basic_cleaning(text: str) -> str:
         # Corriger O/0 fréquemment confondus dans les décimales
         line = re.sub(r"\bO\.(\d+)", r"0.\1", line, flags=re.IGNORECASE)
         line = re.sub(r"(\d)\.O\b", r"\1.0", line, flags=re.IGNORECASE)
+        line = re.sub(r"(?<=\d)\s*\.\s*(?=\d)", ".", line)
         line = re.sub(r"\b(\d+)l\b", r"\g<1>1", line)
         line = re.sub(r"(?<=\d)D(?=\d)", "-", line)
+        line = re.sub(r"(?<=\d)\s*[-~]\s*(?=\d)", "-", line)
+        line = re.sub(r"\bg/dL\]", "g/dL", line, flags=re.IGNORECASE)
 
         # Réduction des espaces (ESPACES SEULEMENT)
         line = re.sub(r"[ \t]+", " ", line)
@@ -53,9 +56,12 @@ def normalize_units(text: str) -> str:
         r"\bcells\/cumm\b|\bcells/cumn\b": "cells/cumm",
         r"\bcumm\b": "cumm",
         r"\bmmoll\b|\bmmoli\b|\bmmolil\b|\bmmol\/l\b": "mmol/L",
+        r"\bmmol\s*/\s*1\b": "mmol/L",
         r"\biuil\b": "IU/L",
         r"\buil\b|\bu\/l\b": "U/L",
-        r"\bx\s*1o\(\)\s*ul\b|\bx\s*10\s*\^?\s*3\s*\/\s*ul\b": "x10^3/µL",
+        r"\bx\s*1o\(\)\s*ul\b|\bx\s*10\s*\^?\s*3\s*\/\s*ul\b|\bx10\^?3\s*/\s*u?l\b": "x10^3/µL",
+        r"\blacslmm3\b|\blacs/mm3\b": "lacs/mm3",
+        r"\bgjd\]?|\bg/d\]?": "g/dL",
     }
 
     for pattern, replacement in unit_map.items():
@@ -75,6 +81,9 @@ def correct_medical_terms(text: str) -> str:
         r"\bMCiH\b": "MCH",
         r"\bMC\.?H\.?C\.?\b": "MCHC",
         r"\bPCVIHCT\b": "PCV/HCT",
+        r"\bHALMATOLOGY\b": "HEMATOLOGY",
+        r"\bHAEMOGLOB1N\b": "HAEMOGLOBIN",
+        r"\bLEUCOCYTE\s+C0UNT\b": "LEUCOCYTE COUNT",
     }
 
     for pattern, replacement in corrections.items():
