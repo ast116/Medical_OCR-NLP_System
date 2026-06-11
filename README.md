@@ -1,517 +1,433 @@
-# 🏥 Medical OCR-NLP System
+# 🏥 Medical OCR & NLP System
 
-> **Elegant and robust pipeline for extracting and analyzing medical data from scanned documents**
-
----
-
-## ✨ Overview
-
-A complete system for **intelligent extraction** combining optical character recognition (OCR) and natural language processing (NLP) to convert your scanned documents into structured data ready for advanced analysis.
-
-**Use cases:**
-- 📋 Patient information and medical treatment extraction
-- 🔍 Automatic indexing and document search
-- 📊 Analytics and queries on medical archives
-- ✅ Form validation and enrichment
+> Pipeline OCR + NLP pour extraire, structurer, interpréter et exposer via API des résultats de laboratoire médicaux à partir d'images ou de PDF.
 
 ---
 
-## 📑 Table of Contents
+## ✨ Vue d'ensemble
 
-- [🎯 Features](#-features)
-- [🏗️ Architecture](#️-architecture)
-- [📦 Repository Composition](#-repository-composition)
-- [⚙️ Installation](#️-installation)
-- [🚀 Quick Start](#-quick-start)
-- [📸 OCR Pipeline](#-ocr-pipeline)
-- [🧠 NLP Pipeline: Regex + Claude/spaCy Strategy](#-nlp-pipeline-regex--claudespacy-strategy)
-- [📋 JSON Output Format](#-json-output-format)
-- [🎓 Training the NLP Model](#-training-the-nlp-model)
-- [🛡️ Error Handling](#️-error-handling)
-- [✅ Tests and Metrics](#-tests-and-metrics)
-- [🤝 Contribution](#-contribution)
-- [📄 License](#-license)
+Ce projet transforme des comptes rendus de laboratoire scannés en données JSON exploitables.
+
+Le système combine:
+- 🖼️ **OCR EasyOCR** pour lire les images/PDF
+- 🧼 **Prétraitement image** pour améliorer la qualité OCR
+- 🧠 **Extraction NLP hybride** avec regex + spaCy NER
+- 🩺 **Interprétation clinique** des résultats biologiques
+- 🌍 **Traduction anglais vers français**
+- 🚀 **API FastAPI** pour l'intégration avec un frontend ou un système RAG
+- 🐳 **Docker GPU** pour exécuter le projet sur une machine NVIDIA
 
 ---
 
-## 🎯 Features
+## 📑 Sommaire
 
-| Feature | Description |
+- [🎯 Fonctionnalités](#-fonctionnalités)
+- [🏗️ Architecture globale](#️-architecture-globale)
+- [📁 Structure du projet](#-structure-du-projet)
+- [⚙️ Installation locale](#️-installation-locale)
+- [🚀 Utilisation de la pipeline](#-utilisation-de-la-pipeline)
+- [🌐 API FastAPI](#-api-fastapi)
+- [🐳 Docker GPU](#-docker-gpu)
+- [🧠 NLP hybride regex + spaCy](#-nlp-hybride-regex--spacy)
+- [🎓 Réentraînement spaCy](#-réentraînement-spacy)
+- [📋 Format JSON](#-format-json)
+- [📊 Évaluation et comparaison](#-évaluation-et-comparaison)
+- [⚠️ Limites connues](#️-limites-connues)
+
+---
+
+## 🎯 Fonctionnalités
+
+| Module | Rôle |
 |---|---|
-| 🖼️ **Image Preprocessing** | Skew correction, binarization, intelligent enhancement |
-| 🔤 **Configurable OCR** | Support for Tesseract, EasyOCR and other engines |
-| 🎯 **Regex Extraction** | Immediate coverage with reliable and auditable patterns |
-| 🧠 **NLP with spaCy** | Advanced NER extraction (after training) |
-| 🤖 **Claude Mode** | Support for Claude Haiku usage as fallback |
-| 📋 **JSON Output** | Standardized format with metadata and confidence scores |
-| 🔄 **Intelligent Fallback** | Auto switching regex → Claude → spaCy as needed |
-| 📊 **Audit Logging** | Complete traceability of processing decisions |
+| 🖼️ Prétraitement image | Resize, débruitage, deskew, amélioration contraste/netteté, binarisation, morphologie |
+| 🔤 OCR EasyOCR | Extraction du texte avec bounding boxes |
+| 📐 Reconstruction lignes | Tri spatial, regroupement des boxes, reconstruction du texte ligne par ligne |
+| 🧼 Post-traitement OCR | Correction unités, décimales, plages de référence et termes médicaux fréquents |
+| 🧪 Extraction regex | Extraction fiable des lignes de laboratoire connues |
+| 🧠 spaCy NER | Fallback NLP pour compléter les résultats non captés par regex |
+| 🔀 Fusion hybride | Regex prioritaire + spaCy fallback + filtres anti-bruit |
+| 🩺 Interprétation | Statut normal/bas/élevé/inconnu et interprétation clinique |
+| 🌍 Traduction FR | Traduction des interprétations et résumés vers le français |
+| 📊 Confiance | Score OCR, score extraction et score global pipeline |
+| 🚀 API | Endpoint FastAPI `/process` pour envoyer un ou plusieurs fichiers |
+| 🐳 Docker GPU | Image prête pour machine NVIDIA, par exemple RTX 3090 |
 
 ---
 
-## 🏗️ Architecture
+## 🏗️ Architecture globale
 
-```
-Medical_OCR-NLP_System/
-├── 📁 data/                    # Input/output data
-│   ├── input/                  # Scanned documents to process
-│   └── output/                 # Generated JSON results
-├── �� src/
-│   ├── ocr/                    # OCR pipeline
-│   │   ├── preprocessor.py     # Image preprocessing
-│   │   └── engines/            # Tesseract, EasyOCR, etc.
-│   ├── nlp/                    # NLP pipeline
-│   │   ├── patterns/           # Regular expressions
-│   │   ├── models/             # spaCy/Claude models
-│   │   └── extraction.py       # Extraction logic
-│   └── utils/                  # Utilities and helpers
-├── 📁 docs/                    # 📖 Documentation
-│   ├── nlp_training.md         # Model training guide
-│   ├── patterns.md             # Regex patterns reference
-│   └── api.md                  # API documentation
-├── 📁 notebooks/               # Jupyter notebooks for exploration
-├── 📁 tests/                   # Unit & integration tests
-├── 🐳 Dockerfile              # Docker image
-├── requirements.txt            # Python dependencies
-└── run_pipeline.py             # Main script
+```text
+Image/PDF médical
+      ↓
+Prétraitement image
+      ↓
+EasyOCR + bounding boxes
+      ↓
+Reconstruction du texte OCR
+      ↓
+Post-traitement médical
+      ↓
+Extraction regex
+      ↓
+spaCy NER fallback
+      ↓
+Fusion hybride + filtres anti-bruit
+      ↓
+Interprétation clinique + résumé
+      ↓
+Traduction FR
+      ↓
+JSON structuré / API FastAPI / RAG
 ```
 
 ---
 
-## 📦 Repository Composition
+## 📁 Structure du projet
 
+```text
+medical_ocr&nlp_system/
+├── data/
+│   ├── raw/                 # Images/PDF à traiter
+│   ├── ocr_output/          # Textes OCR générés
+│   ├── structured/          # JSON structurés finaux
+│   ├── ner_output/          # Sorties NER séparées
+│   ├── ner_gold/            # Données d'annotation spaCy
+│   └── gt/                  # Ground truth OCR pour évaluation
+├── docs/
+│   └── COLAB_SPACY_NER_TRAINING.md
+├── models/
+│   └── spacy_ner/           # Modèle spaCy entraîné
+├── notebooks/
+│   └── ocr_debug_pipeline.ipynb
+├── src/
+│   ├── api/                 # FastAPI
+│   ├── config/              # Paramètres globaux
+│   ├── evaluation/          # Scores et métriques
+│   ├── nlp/                 # Regex, spaCy hybride, interprétation, traduction
+│   ├── ocr/                 # EasyOCR, boxes, reconstruction
+│   ├── postprocessing/      # Nettoyage texte OCR
+│   ├── preprocessing/       # Traitements image
+│   └── utils/               # Export JSON/Excel/PostgreSQL
+├── Dockerfile
+├── docker-compose.yml
+├── requirements.txt
+└── requirements-docker-gpu.txt
 ```
-Languages used:
-├── 📓 Jupyter Notebook : 79.8%  (Exploration & experimentation)
-├── 🐍 Python           : 19.9%  (Production & scripts)
-└── 🐳 Dockerfile       : 0.3%   (Containerization)
-```
-
-For NLP model training instructions, see: 📖 [`docs/nlp_training.md`](https://github.com/ast116/Medical_OCR-NLP_System/tree/main/docs)
 
 ---
 
-## ⚙️ Installation
+## ⚙️ Installation locale
 
-### Prerequisites
-- 🐍 Python 3.8+ (3.10+ recommended)
-- 📦 pip or conda
-- 🐳 Docker (optional)
-- 🔧 Tesseract (if using Tesseract OCR)
+### Prérequis
 
-### Standard Setup
+- Python 3.12 recommandé
+- `pip`
+- Poppler si traitement PDF via `pdf2image`
+- GPU optionnel en local
+
+### Installation CPU locale
 
 ```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/ast116/Medical_OCR-NLP_System.git
-cd Medical_OCR-NLP_System
-
-# 2️⃣ Create virtual environment
-python -m venv .venv
-source .venv/bin/activate      # macOS / Linux
-# or
-.venv\Scripts\activate          # Windows
-
-# 3️⃣ Install dependencies
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
 pip install -r requirements.txt
-
-# 4️⃣ (Optional) Download models
-python scripts/download_models.py
 ```
 
-### With Docker
+Le mode local CPU utilise:
+
+```python
+USE_GPU=false
+```
+
+dans l'environnement, ou la valeur par défaut de [settings.py](src/config/settings.py).
+
+---
+
+## 🚀 Utilisation de la pipeline
+
+Place les images ou PDF dans:
+
+```text
+data/raw/
+```
+
+Puis lance:
 
 ```bash
-docker build -t medical-ocr-nlp .
-docker run -v /path/to/data:/app/data medical-ocr-nlp
+python -m src.main_ocr_pipeline
+```
+
+Sorties générées:
+
+```text
+data/ocr_output/*.txt       # texte OCR nettoyé
+data/structured/*.json      # JSON structuré enrichi
 ```
 
 ---
 
-## 🚀 Quick Start
+## 🌐 API FastAPI
 
-### Basic Example
+Lancer l'API:
 
 ```bash
-python run_pipeline.py \
-  --input data/input/example.pdf \
-  --output data/output/result.json \
-  --ocr-engine tesseract \
-  --nlp-mode regex
+uvicorn src.api.main:app --host 0.0.0.0 --port 8000
 ```
 
-### Main Options
+Documentation interactive:
 
+```text
+http://localhost:8000/docs
 ```
---input FILE              Input file (PDF, PNG, JPG, etc.)
---output FILE             JSON output path
---ocr-engine MOTOR        tesseract | easyocr (default: tesseract)
---nlp-mode MODE           regex | spacy | claude | hybrid (default: regex)
---spacy-model PATH        Path to custom spaCy model
---confidence-threshold N  Min confidence threshold (0.0-1.0, default: 0.5)
---debug                   Verbose mode with detailed logs
---language LANG           Document language (default: en)
+
+Endpoint principal:
+
+```text
+POST /process
+```
+
+Avec Postman:
+- Body: `form-data`
+- Key: `files`
+- Type: `File`
+- Ajouter plusieurs lignes `files` pour plusieurs fichiers
+
+Exemple `curl`:
+
+```bash
+curl -X POST "http://localhost:8000/process" \
+  -F "files=@data/raw/test1.png" \
+  -F "files=@data/raw/test2.png"
 ```
 
 ---
 
-## 📸 OCR Pipeline
+## 🐳 Docker GPU
 
-### Processing Steps
+Le projet contient une configuration Docker pour machine NVIDIA.
 
-```
-📄 Input document
-    ↓
-🔧 Preprocessing
-    ├── Skew correction (deskew)
-    ├── Adaptive binarization
-    ├── Noise removal (denoising)
-    └── Enhancement (contrast, sharpness)
-    ↓
-🔤 Text recognition (OCR Engine)
-    ├── Page/block segmentation
-    ├── Text zone detection
-    └── Call configured engine
-    ↓
-✨ Post-processing
-    ├── Spell correction
-    ├── Normalization (dates, numbers)
-    └── Fragment merging
-    ↓
-📋 Structured text
+### Prérequis machine GPU
+
+- Driver NVIDIA installé
+- Docker installé
+- Docker Compose installé
+- NVIDIA Container Toolkit installé
+
+Vérifier le GPU:
+
+```bash
+nvidia-smi
 ```
 
-### Configuration Tips
+Tester Docker + GPU:
 
-- **Variable quality images** → Increase preprocessing steps
-- **Multi-language documents** → Configure language per zone
-- **Performance critical** → Use EasyOCR (GPU) instead of Tesseract
+```bash
+docker run --rm --gpus all nvidia/cuda:12.1.1-base-ubuntu22.04 nvidia-smi
+```
+
+Construire et lancer:
+
+```bash
+docker compose build
+docker compose up
+```
+
+Tester PyTorch CUDA dans le conteneur:
+
+```bash
+docker compose run --rm medical-ocr-api python3 -c "import torch; print(torch.cuda.is_available()); print(torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'no gpu')"
+```
+
+Variables importantes:
+
+| Variable | Rôle | Valeur Docker |
+|---|---|---|
+| `USE_GPU` | Active EasyOCR GPU | `true` |
+| `ENABLE_POSTGRES_EXPORT` | Active l'export PostgreSQL | `false` par défaut |
+| `HF_HOME` | Cache Hugging Face | `/app/.cache/huggingface` |
+| `EASYOCR_MODULE_PATH` | Cache EasyOCR | `/app/.cache/easyocr` |
 
 ---
 
-## 🧠 NLP Pipeline: Regex + Claude/spaCy Strategy
+## 🧠 NLP hybride regex + spaCy
 
-### 🎯 The "Hidden Work" Strategy
+Le module principal est:
 
-**Current situation:** Using **Claude Haiku** and **robust regular expressions** for critical medical entity extraction.
-
-#### Phase 1️⃣ : **Regex Priority** ✅ (NOW)
-
-```
-Advantages:
-├── ✓ Immediate coverage and 100% explainable
-├── ✓ No training data needed
-├── ✓ Audit and compliance facilitated
-├── ✓ High precision on fixed formats
-└── ✓ Immediate production deployment
+```text
+src/nlp/hybrid_extractor.py
 ```
 
-**Covered patterns:**
-- 👤 Patient names, dates of birth
-- 💊 Medications, dosages
-- 🏥 Medical codes, IPS numbers
-- 📅 Prescription dates
-- 🔢 Identification numbers
+Stratégie:
 
-#### Phase 2️⃣ : **Claude Haiku as Fallback** 🚀 (NOW)
-
-In parallel with regex, **Claude Haiku** offers:
-
-```
-├── 🧠 Advanced contextual understanding
-├── 📝 Handling linguistic variations
-├── 🔗 Entity-entity relationships
-├── ⚡ Lightweight and fast (Haiku)
-└── 💰 Cost-effective at scale
+```text
+1. Extraction regex/table_extractor
+2. Chargement du modèle spaCy si disponible
+3. Extraction NER sur le texte OCR
+4. Fusion regex + spaCy
+5. Suppression des faux positifs
+6. Consolidation des doublons
 ```
 
-#### Phase 3️⃣ : **spaCy After Training** 🎓 (ROADMAP)
+Le modèle spaCy attendu est:
 
-After collecting and annotating data:
-- 📚 Train dedicated medical NER spaCy model
-- ✅ Validation on representative dataset
-- 🚀 Deploy as primary engine
+```text
+models/spacy_ner/model-best
+```
 
-### 🔄 Decision Logic (Fallback)
+Si spaCy ou le modèle n'est pas disponible, le système continue avec regex uniquement.
 
-**Step 1:** Check regex patterns  
-↓  
-**Step 2:** If no regex match, try Claude Haiku  
-↓  
-**Step 3:** If Claude score is low, check spaCy (if available and well-trained)  
-↓  
-**Step 4:** If all methods fail, flag for human review  
-↓  
-**Final:** Output result with source and confidence score
+---
 
-### 📊 Example Multi-Source Decision
+## 🎓 Réentraînement spaCy
+
+Les annotations se trouvent dans:
+
+```text
+data/ner_gold/annotated.jsonl
+```
+
+Format d'une ligne:
 
 ```json
-{
-  "entity": "medication",
-  "value": "Amoxicillin 500mg",
-  "extractions": [
-    {
-      "source": "regex",
-      "value": "Amoxicillin 500mg",
-      "confidence": 0.98,
-      "pattern": "MEDICATION_DOSAGE"
-    },
-    {
-      "source": "claude_haiku",
-      "value": "Amoxicillin 500mg",
-      "confidence": 0.92,
-      "reasoning": "Antibiotic treatment context identified"
-    },
-    {
-      "source": "spacy",
-      "value": "Amoxicillin",
-      "confidence": 0.85,
-      "entity_type": "MEDICATION"
-    }
-  ],
-  "final_value": "Amoxicillin 500mg",
-  "final_source": "regex",
-  "decision_timestamp": "2026-06-07T14:32:00Z"
-}
+{"text":"Hb 10.2 g/dL 12-15","entities":[{"start":0,"end":2,"label":"TEST_NAME"},{"start":3,"end":7,"label":"VALUE"},{"start":8,"end":12,"label":"UNIT"},{"start":13,"end":18,"label":"REFERENCE_RANGE"}],"source_file":"test.png","line_number":1}
+```
+
+Labels utilisés:
+
+```text
+TEST_NAME
+VALUE
+UNIT
+REFERENCE_RANGE
+FLAG
+PATIENT_ID
+DATE_TIME
+DOCTOR
+SAMPLE_NO
+```
+
+Guide Colab:
+
+```text
+docs/COLAB_SPACY_NER_TRAINING.md
 ```
 
 ---
 
-## 📤 JSON Output Format
+## 📋 Format JSON
 
-### Complete Structure
+Exemple simplifié d'une sortie réelle:
 
 ```json
 {
   "metadata": {
-    "document_id": "DOC_2026_0001",
-    "processed_at": "2026-06-07T14:32:00Z",
-    "pipeline_version": "2.1.0",
-    "pages": 2,
-    "language": "en",
-    "nlp_engine": "regex+haiku"
+    "patient_id": null,
+    "sample_no": "7",
+    "doctor": null,
+    "dates": []
   },
-  "ocr": {
-    "raw_text": "Extracted raw text...",
-    "confidence": 0.92,
-    "engine": "tesseract"
-  },
-  "extractions": [
+  "lab_results": [
     {
-      "entity": "patient_name",
-      "value": "John Smith",
-      "source": "regex",
-      "confidence": 0.98,
-      "pattern": "NAME_PATTERN_v3",
-      "location": { "page": 1, "bbox": [100, 150, 300, 170] }
+      "test_name": "S.Creatinine",
+      "value": 0.8,
+      "unit": "mg/dL",
+      "reference_range": {
+        "type": "interval",
+        "low": 0.2,
+        "high": 1.0
+      },
+      "status": "normal",
+      "interpretation": "Within normal range.",
+      "interpretation_fr": "Dans les limites normales."
     },
     {
-      "entity": "date_of_birth",
-      "value": "1978-05-12",
-      "source": "claude_haiku",
-      "confidence": 0.95,
-      "reasoning": "Format: MM/DD/YYYY detected in date of birth context"
-    },
-    {
-      "entity": "prescription_items",
-      "items": [
-        {
-          "medication": "Ibuprofen 400mg",
-          "dosage": "400mg",
-          "frequency": "3x/day",
-          "duration": "7 days",
-          "source": "regex"
-        }
-      ]
+      "test_name": "Alk phosphatase",
+      "value": 205.0,
+      "unit": "U/L",
+      "reference_range": {
+        "type": "interval",
+        "low": 30.0,
+        "high": 120.0
+      },
+      "status": "high",
+      "interpretation": "The alk phosphatase value is 205.0 U/L.",
+      "interpretation_fr": "La valeur alk phosphatase est de 205,0 U/L."
     }
   ],
-  "quality_metrics": {
-    "overall_confidence": 0.94,
-    "required_fields_found": 8,
-    "required_fields_total": 8,
-    "fallback_used": false
-  },
-  "audit": {
-    "patterns_matched": ["NAME_PATTERN_v3", "DOB_PATTERN_v2"],
-    "rules_applied": ["STRICT_MODE"],
-    "warnings": []
-  }
+  "summary": "A blotchy globulin.",
+  "alerts": [],
+  "severity_score": 0.11,
+  "clinical_priority": "normal",
+  "ocr_confidence": 0.72,
+  "extraction_confidence": 0.98,
+  "pipeline_confidence": 0.89,
+  "summary_fr": "A blotchy globulin."
 }
 ```
 
 ---
 
-## 🎓 Training the NLP Model
+## 📊 Évaluation et comparaison
 
-### 📖 Complete Documentation
-
-Detailed instructions for training the spaCy model (annotation, dataset preparation, configuration, training, evaluation) are available here:
-
-👉 **[docs/nlp_training.md](https://github.com/ast116/Medical_OCR-NLP_System/tree/main/docs)**
-
-### ⚡ Quick Summary (for spaCy)
+Comparer regex seul vs hybride:
 
 ```bash
-# 1. Prepare annotated data (spaCy format)
-python scripts/prepare_training_data.py \
-  --annotations data/annotations.jsonl \
-  --output data/train.spacy
-
-# 2. Create spaCy configuration
-spacy init config config.cfg \
-  --lang en \
-  --pipeline ner \
-  --optimize accuracy
-
-# 3. Train the model
-spacy train config.cfg \
-  --output models/ \
-  --paths.train data/train.spacy \
-  --paths.dev data/dev.spacy
-
-# 4. Evaluate performance
-spacy evaluate models/model-best data/test.spacy
-
-# 5. Export for production
-cp models/model-best nlp/models/spacy_medical_en
+python -m src.nlp.compare_regex_hybrid \
+  --ocr-text data/ocr_output/test7.png.txt \
+  --out /tmp/test7_diff.json
 ```
 
-### 📊 Training Metrics
+Sortie:
 
-```
-Expected performance (after 100 epochs):
-├── Precision : 0.94-0.96
-├── Recall    : 0.90-0.93
-├── F1-Score  : 0.92-0.94
-└── Time/batch : 0.3-0.5s (GPU)
-```
-
----
-
-## 🛡️ Error Handling
-
-### Robustness Strategies
-
-```
-┌─────────────────────────────────────┐
-│   Invalid Document / Error          │
-├─────────────────────────────────────┤
-│ 🔴 STRICT Mode                      │
-│    ├── Reject document              │
-│    ├── Flag for review              │
-│    └── Admin alert                  │
-├─────────────────────────────────────┤
-│ 🟡 EXPLORATORY Mode                 │
-│    ├── Partial output               │
-│    ├── Mark with low confidence     │
-│    └── Suggest human review         │
-├─────────────────────────────────────┤
-│ 🟢 FALLBACK Mode                    │
-│    ├── Try alternative source       │
-│    ├── Combine results              │
-│    └── Complete audit logging       │
-└─────────────────────────────────────┘
+```text
+regex_count       # nombre de résultats extraits par regex seul
+hybrid_count      # nombre de résultats après fusion regex + spaCy
+added_by_hybrid   # lignes ajoutées par spaCy
+removed_vs_regex  # lignes regex supprimées par les filtres
+upgraded_rows     # lignes complétées/améliorées
 ```
 
-### Mode Configuration
+Évaluation OCR:
 
 ```bash
-python run_pipeline.py \
-  --error-mode strict          # or exploratory / fallback
-  --log-level debug
+python -m src.evaluate
+```
+
+ou via les modules:
+
+```text
+src/evaluation/ocr_metrics.py
+src/evaluation/medical_metrics.py
+src/evaluation/confidence.py
 ```
 
 ---
 
-## ✅ Tests and Metrics
+## ⚠️ Limites connues
 
-### Test Suite
-
-```bash
-# Unit tests
-pytest tests/unit/ -v
-
-# Integration tests
-pytest tests/integration/ -v
-
-# OCR Benchmark
-python scripts/benchmark_ocr.py --engine tesseract
-
-# NLP Evaluation
-python scripts/eval_nlp.py --model nlp/models/spacy_medical_en
-
-# Full coverage
-pytest --cov=src/ --cov-report=html
-```
-
-### Tracked Metrics
-
-| Metric | Target | Current |
-|---|---|---|
-| 🔤 OCR WER (Word Error Rate) | < 3% | 2.1% |
-| 🧠 NER Precision (Regex) | > 95% | 96.8% |
-| 🧠 NER Recall (Regex) | > 90% | 92.3% |
-| ⚡ Processing time/page | < 2s | 1.4s |
-| 💾 Memory usage | < 500MB | 380MB |
+- La qualité OCR dépend fortement du scan d'origine.
+- Les tableaux très déformés peuvent rester difficiles à reconstruire.
+- spaCy améliore certains cas, mais le regex reste prioritaire pour limiter les faux positifs.
+- Les interprétations générées doivent rester une aide à la lecture, pas un diagnostic médical.
+- Les données anonymisées peuvent réduire la performance sur `DOCTOR`, `PATIENT_ID` ou `DATE_TIME`.
+- PostgreSQL est optionnel dans Docker et désactivé par défaut.
 
 ---
 
-## 🤝 Contribution
+## 🧭 Roadmap
 
-We welcome contributions! 🎉
-
-### Process
-
-```bash
-1. Fork the repository
-2. Create a feature branch
-   git checkout -b feature/my-feature
-
-3. Commit your changes
-   git commit -m "✨ Add: clear description"
-
-4. Push to your fork
-   git push origin feature/my-feature
-
-5. Open a Pull Request
-```
-
-### Guidelines
-
-- ✅ Code formatted with `black` and `flake8`
-- ✅ Tests for all new code
-- ✅ Document regex patterns with examples
-- ✅ Follow project conventions
-
-### Welcome Improvements
-
-- 🌐 Multi-language support (additional languages)
-- 📊 New medical-specific regex patterns
-- 🚀 GPU performance optimizations
-- 🐳 Docker image improvements
-- 📚 More example notebooks
+- 🧪 Ajouter plus d'annotations spaCy pour améliorer `UNIT` et `REFERENCE_RANGE`
+- 🧾 Export FHIR et Excel plus complet
+- 🖥️ Interface frontend avec correction manuelle
+- 🔎 Intégration RAG pour interrogation documentaire
+- 📈 Tableau de bord de métriques OCR/NLP
 
 ---
 
-## 📄 License
+## 📌 Statut
 
-To be specified: MIT / Apache 2.0 / Custom
+Projet en développement académique/prototypage avancé.
 
----
-
-## 📞 Support
-
-For issues, questions, or discussions about the project:
-- **Issues** : [Report a bug](https://github.com/ast116/Medical_OCR-NLP_System/issues)
-- **Discussions** : [Questions & ideas](https://github.com/ast116/Medical_OCR-NLP_System/discussions)
-
----
-
-<div align="center">
-
-**Made with ❤️ for medicine and innovation**
-
-⭐ If you like this project, feel free to star it!
-
-</div>
+Objectif principal: fournir une brique OCR + NLP médicale capable d'alimenter une API, une interface de correction et un système RAG.
